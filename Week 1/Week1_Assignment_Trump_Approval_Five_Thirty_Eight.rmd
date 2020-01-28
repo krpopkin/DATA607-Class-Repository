@@ -1,0 +1,62 @@
+---
+title: "DATA 607 Week 1 Assignment"
+output: html_notebook
+
+introduction: 'How Popular is Donald Trump? To answer this question FiveThirtyEight.com relies on the dataset trump-approval-ratings (link:  https://projects.fivethirtyeight.com/trump-approval-ratings). This dataset tracks the results of a number of known (i.e. Gallup, Rasmussen) and lesser known polls taken since 2017. Information provided includes the poll date, sample size, and approval and disapproval ratings.'
+
+approach: 'In this notebook, several columns are selected; then the Gallup poll data rows are used to create a chart showing how President Trumps approval numbers have varied the past three years.'
+---
+
+'Get the data'
+```{r}
+approval_data <- read.csv('https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week%201/approval_polllist.csv')
+
+head(approval_data,2)
+```
+
+'Obtain the desired columns'
+```{r}
+library(dplyr)
+chart_data <- select(approval_data, startdate, pollster, approve)
+
+head(chart_data,2)
+```
+
+Gallup runs a poll almost every day.  To make the chart look better we're only going to use polls on the 15th of each month
+```{r}
+library(lubridate)
+chart_data2 <- mutate(chart_data, startdate2 = mdy(startdate))
+chart_data2 <- mutate(chart_data2, day_of_month = day(startdate2))
+chart_data2$startdate <- NULL 
+
+head(chart_data2,2)
+```
+
+
+Select the Gallup polls
+```{r}
+chart_data3 = subset(chart_data2, (pollster == 'Gallup' & day_of_month == 15))
+head(chart_data3,2)
+```
+
+Create chart for past three years
+```{r}
+library(ggplot2)
+ggplot(data=chart_data3, aes(x=startdate2, y=approve,group=1)) +
+  geom_line(color="#aa0022", size=1) +
+  geom_point() +
+  ggtitle("Gallup Polls 2017 - 2019, Mid-month") +
+  labs(x="Year", y="Approval")
+```
+
+Key Points: This is a view of only one of may polls, but it does show several points of interest:
+1. President Trump's approval has ranged from a low of around 34% in late 2018 to a high of around 43% in late 2019.
+
+2. As of Jan 2020, he is at 39%, which is almost exactly where this poll shows him when it first started in Jan 2017.
+
+3. In spite of all the impeachment drama in recent months, he remains around 6% higher than the lowest approval in late 2018.
+
+Future Work:
+1. Continue to monitor the approval rating from this poll in the coming months
+
+2. Layer on several other polls to see how closely they align with Gallup (Rasmussen and Quinnipac are good candidates for this)
