@@ -1,0 +1,28 @@
+---
+title: "DATA 607 Week 1 Assignment"
+output: html_notebook
+
+introduction: "For this assignment I selected the "How Popular is Donald Trump?" question on FiveThirtyEight.com, which uses the dataset "trump-approval-ratings" [dataset](https://projects.fivethirtyeight.com/trump-approval-ratings/)
+---
+```{r}
+library(data.table)
+ad <- fread("http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv")
+head(ad)
+```
+
+
+```{r}
+install.packages("data.table", dependencies=TRUE)
+```
+
+
+```{r}
+library(readr)
+ad <- read_csv("http://www-bcf.usc.edu/~gareth/ISL/Advertising.csv")
+head(ad)
+```
+
+```{r}
+
+```
+
