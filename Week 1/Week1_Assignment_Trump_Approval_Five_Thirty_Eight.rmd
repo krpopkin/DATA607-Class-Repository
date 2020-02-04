@@ -32,7 +32,6 @@ chart_data2$startdate <- NULL
 head(chart_data2,2)
 ```
 
-
 Select the Gallup polls
 ```{r}
 chart_data3 = subset(chart_data2, (pollster == 'Gallup' & day_of_month == 15))

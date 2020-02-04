@@ -1,0 +1,73 @@
+response_id,response,person_id,survey_id,question_id
+1,Satisfied,1,1,1
+2,Neutral,1,1,2
+3,Neutral,1,1,3
+4,Satisfied,1,1,4
+5,,1,1,5
+6,Dissatisfied,1,1,6
+7,Very Satisfied,2,1,1
+8,Very Satisfied,2,1,2
+9,Dissatisfied,2,1,3
+10,Very Satisfied,2,1,4
+11,,2,1,5
+12,,2,1,6
+13,Very Satisfied,3,1,1
+14,Very Satisfied,3,1,2
+15,Very Satisfied,3,1,3
+16,Very Satisfied,3,1,4
+17,Satisfied,3,1,5
+18,Satisfied,3,1,6
+19,Very Satisfied,4,1,1
+20,Very Dissatisfied,4,1,2
+21,Very Satisfied,4,1,3
+22,Very Dissatisfied,4,1,4
+23,Very Satisfied,4,1,5
+24,Very Dissatisfied,4,1,6
+25,Neutral,5,1,1
+26,Neutral,5,1,2
+27,Neutral,5,1,3
+28,Neutral,5,1,4
+29,Neutral,5,1,5
+30,Neutral,5,1,6
+31,Very Satisfied,6,1,1
+32,Very Satisfied,6,1,2
+33,Very Satisfied,6,1,3
+34,,6,1,4
+35,Dissatisfied,6,1,5
+36,Dissatisfied,6,1,6
+37,Very Dissatisfied,7,1,1
+38,Dissatisfied,7,1,2
+39,Neutral,7,1,3
+40,Satisfied,7,1,4
+41,Very Satisfied,7,1,5
+42,Satisfied,7,1,6
+43,Very Satisfied,8,1,1
+44,Very Satisfied,8,1,2
+45,Very Dissatisfied,8,1,3
+46,Satisfied,8,1,4
+47,Neutral,8,1,5
+48,Dissatisfied,8,1,6
+49,Very Dissatisfied,9,1,1
+50,Very Dissatisfied,9,1,2
+51,,9,1,3
+52,,9,1,4
+53,,9,1,5
+54,,9,1,6
+55,Dissatisfied,10,1,1
+56,Dissatisfied,10,1,2
+57,Satisfied,10,1,3
+58,Neutral,10,1,4
+59,Neutral,10,1,5
+60,Very Dissatisfied,10,1,6
+61,Dissatisfied,11,1,1
+62,Dissatisfied,11,1,2
+63,Neutral,11,1,3
+64,Satisfied,11,1,4
+65,Neutral,11,1,5
+66,Dissatisfied,11,1,6
+67,Satisfied,12,1,1
+68,Neutral,12,1,2
+69,Neutral,12,1,3
+70,Neutral,12,1,4
+71,Neutral,12,1,5
+72,Neutral,12,1,6
