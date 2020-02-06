@@ -3,8 +3,8 @@ title: "Movie Surveys"
 author: "Ken Popkin"
 date: "2/3/2020"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r}
@@ -31,10 +31,10 @@ library(ggplot2)
 
 User and Password information is removed from this markdown.
 ```{r setup, include=FALSE}
-moviesdb = dbConnect(MySQL(), user='removed from this markdown', password='removed from this markdown', dbname='data607_movies', host='localhost')
+moviesdb = dbConnect(MySQL(), user='non-root', password='mysql', dbname='data607_movies', host='localhost')
 ```
 
-# Create a dataframe of each table in the movies database
+## Create a dataframe of each table in the movies database
 ```{r}
 rs = dbSendQuery(moviesdb, "select * from people")
 dfpeople = fetch(rs, n=-1)
@@ -49,16 +49,16 @@ rs = dbSendQuery(moviesdb, "select * from surveys")
 dfsurveys = fetch(rs, n=-1)
 ```
 
-# Surveys:
-## 1. How many surveys have been completed?
+## Surveys:
+### 1. How many surveys have been completed?
 
 ```{r}
 cat(nrow(dfsurveys), 'survey/s completed')
 ```
 
-# Participants in Surveys
-## 2. How many participants were in each survey?
-## 3. What is the min, max, and average age of the participants?
+## Participants in Surveys
+### 2. How many participants were in each survey?
+### 3. What is the min, max, and average age of the participants?
 
 ```{r}
 dfpeople_age <- dfpeople %>% filter(!is.na(person_age))
@@ -70,8 +70,8 @@ cat('The number of participants in the survey was', nrow(dfpeople), '\n')
 cat('The participant ages ranged from', min(dfpeople_age[,1]),'to',max(dfpeople_age[,1]),',with an average age of ', mean(dfpeople_age[,1]) )
 ```
 
-# Genre's
-## The preferred genre's of the participants is illustrated in the chart below...
+## Genre's
+### 4. The preferred genre's of the participants is illustrated in the chart below...
 ```{r}
 dfpeople_genre <- dfpeople %>% filter(!is.na(person_movie_genre))
 dfpeople_genre <- select(dfpeople_genre, person_movie_genre)
@@ -81,9 +81,8 @@ dfpeople_genre <- select(dfpeople_genre, person_movie_genre)
 qplot(dfpeople_genre$person_movie_genre, stat = 'count', main = 'Histogram for Genre', xlab = "Genre", fill=I("blue"))
 
 ```
-# Responses from Participants
-
-## 5. What is the distribution of responses for each movie?
+## Responses from Participants
+### 5. What is the distribution of responses for each movie?
 
 ```{r}
 dfquestions2 <- select(dfquestions, question_id, question_short)
