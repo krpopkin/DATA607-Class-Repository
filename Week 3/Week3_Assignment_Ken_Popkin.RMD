@@ -1,0 +1,110 @@
+---
+title: "Data607 Week 3 Assignment"
+author: "Ken Popkin"
+date: "2/7/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r message=FALSE}
+library('dplyr')
+library(stringr)
+```
+
+## Problem 1 
+Using the 173 majors listed in fivethirtyeight.com’s College Majors dataset, provide code that identifies the majors that contain either "DATA" or "STATISTICS"
+
+```{r Get-the-data, message=FALSE}
+majors <- read.csv('https://raw.githubusercontent.com/fivethirtyeight/data/master/college-majors/majors-list.csv')
+tail(majors,1)
+```
+
+```{r Majors-that-contain-data-or-statistics}
+
+majors %>% 
+  filter(str_detect(Major, ("DATA|STATISTICS")))
+```
+
+## Problem 2
+Write code that transforms the data below:
+
+[1] "bell pepper"  "bilberry"     "blackberry"   "blood orange"
+[5] "blueberry"    "cantaloupe"   "chili pepper" "cloudberry"  
+[9] "elderberry"   "lime"         "lychee"       "mulberry"    
+[13] "olive"        "salal berry"
+
+Into a format like this:
+c("bell pepper", "bilberry", "blackberry", "blood orange", "blueberry", "cantaloupe", "chili pepper", "cloudberry", "elderberry", "lime", "lychee", "mulberry", "olive", "salal berry")
+
+```{r}
+
+fruit_vector <- c("bell pepper", "bilberry", "blackberry", "blood orange", "blueberry", "cantaloupe", "chili pepper", "cloudberry", "elderberry", "lime", "lychee", "mulberry", "olive", "salal berry")
+
+dput(as.character(fruit_vector))
+```
+
+## Problem 3
+Describe, in words, what these expressions will match:
+
+```{r Data-for-this-problem}
+mine <- c("apple", "apricot", "avocado", "banana", "bepp pepper", "bilberry", "blackberry", "blackcurrant", "blood orange", "blueberry", "cranberry", "myapplebarrel")
+mine
+```
+
+
+```{r Playground-for-this-problem}
+
+pattern <- "(.)(.)(.).*\\3\\2\\1"
+mine %>% 
+  str_subset(pattern)
+```
+
+(.)\1\1  I think this is an error because all these Regex want you to use quotes around them.  Also, I can only get the \N to work when I use \\N.
+
+"(.)(.)\\2\\1" The two sets of parentheses denote two groups and the goal is to find the first string, where the group occurs twice. For example, in my data above "bepp pepper", is returned because first it found "pp" and then it found another "pp" in that string.
+
+(..)\1  Same logic as the first one above: No quotes and only one \.  I get an error when I try to use it.
+
+"(.).\\1.\\1" Find strings where there are repeating patterns.  In my data above "banana" and "bepp pepper" are returned.
+
+"(.)(.)(.).*\\3\\2\\1" Find strings where a three character pattern occurs more than once.  In my data, the "epp" in "bepp pepper" meets this criteria.
+
+## Problem 4 
+Construct regular expressions to match words that:
+Start and end with the same character.
+
+```{r Start-and-end-with-same-character}
+data1 <- c("starts", "loses", "going", "frog", "gxxxfffg")
+
+pattern1 <- "^([a-z]).*\\1$"
+
+data1 %>%
+  str_subset(pattern1)
+```
+
+
+Contain a repeated pair of letters
+```{r}
+data2 <- c("banana", "apricot", "church")
+
+#pattern2 <- "(.)(.).*\\1."
+pattern2 <- "(.)(.).*\\1."
+
+data2 %>% 
+  str_subset(pattern2)
+```
+
+Contain one letter repeated in at least three places (e.g. "eleven" contains three "e"s.)
+```{r}
+
+data3 <- c("eleven", "apricot", "abxbxbxcd", "kjjjjjjj", "Shannon", "reje")
+
+pattern3 <- "(.).\\1.\\1"
+
+data3 %>% 
+  str_subset(pattern3)
+
+```
