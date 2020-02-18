@@ -1,0 +1,123 @@
+---
+title: "Data 607 Project 1"
+author: "Ken Popkin"
+date: "2/12/2020"
+output: html_document
+---
+
+## Setup
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(stringr)
+```
+
+## Load tournament data
+```{r, Load-text-file}
+data <- read.table("tournamentinfo.txt", sep = "\t", skip = 4)
+head(data,4)
+```
+
+```{r Remove-rows-that-are-all-dashes}
+data <- filter(data, !grepl('----------------',V1))
+head(data,4)
+```
+
+## Create tournament info row1 dataframe
+```{r Load-all-the-odd-numbered-rows-to-a-dataframe}
+data1 = data[seq(1, nrow(data), 2), ]
+
+data1_df <- data.frame(do.call('rbind', strsplit(as.character(data1),'|',fixed=TRUE)))
+```
+
+```{r Add-an-ID-column-to-the-dataframe}
+data1_df <- tibble::rowid_to_column(data1_df, "ID")
+head(data1_df,3)
+```
+
+## Create tournament info row2 dataframe
+```{r Load-all-the-even-numbered-rows-to-a-dataframe}
+data2 = data[seq(2, nrow(data), 2), ]
+
+data2_df <- data.frame(do.call('rbind', strsplit(as.character(data2),'|',fixed=TRUE)))
+```
+
+```{r Add-an-ID-column-to-the-row2-dataframe}
+data2_df <- tibble::rowid_to_column(data2_df, "ID")
+head(data2_df,3)
+```
+
+## Merge to one dataframe with a row for each tournament player
+```{r Merge-the-row1-and-row2-dataframes}
+data3_df <- merge(data1_df, data2_df, by.x = "ID", by.y = "ID")
+
+data3_df <- data3_df %>% `colnames<-`(c('ID', 'v1', 'v2', 'v3', 'v4', 'v5', 'v6', 'v7', 'v8', 'v9', 'v10', 'v11', 'v12', 'v13', 'v14', 'v15', 'v16', 'v17', 'v18', 'v19', 'v20'))
+```
+
+## Extract each player's pre-rating from the field containing this data
+```{r get-the-pre-rating}
+data3_df$pre_rating = substr(data3_df$v12,15,19)
+```
+
+## Calculate the average of the pre-tournament opponents' ratings
+```{r get-each-opponents-pair-num-and-place-in-an-integer-column}
+data3_df$opp1 = as.integer(str_sub(data3_df$v4,-2))
+data3_df$opp2 = as.integer(str_sub(data3_df$v5,-2))
+data3_df$opp3 = as.integer(str_sub(data3_df$v6,-2))
+data3_df$opp4 = as.integer(str_sub(data3_df$v7,-2))
+data3_df$opp5 = as.integer(str_sub(data3_df$v8,-2))
+data3_df$opp6 = as.integer(str_sub(data3_df$v9,-2))
+data3_df$opp7 = as.integer(str_sub(data3_df$v10,-2))
+```
+
+```{r create-a-dataframe-of each-player-and-their-pre-rating}
+
+player_prerating_df <- data.frame('pair_num' = data3_df$v1,
+                                  'pre_rating' = data3_df$pre_rating)
+
+player_prerating_df$pair_num <- as.integer(player_prerating_df$pair_num)
+player_prerating_df$pre_rating <- as.character(player_prerating_df$pre_rating)
+player_prerating_df$pre_rating <- as.integer(player_prerating_df$pre_rating)
+
+head(player_prerating_df,1)
+```
+
+```{r get-opponents-pre-ratings-and-calculate-average}
+
+avg_list <- c()
+
+for(r1 in 1:nrow(data3_df)) 
+{
+    row1 <- data3_df[r1,]
+    
+    opponent_num = as.list(row1[,23:29])
+    
+    temp_df <- subset(player_prerating_df, (pair_num == opponent_num[1] | pair_num == opponent_num[2] | pair_num ==                     opponent_num[3] | pair_num == opponent_num[4] | pair_num == opponent_num[5] | pair_num == opponent_num[6]                | pair_num == opponent_num[7]))
+    
+    avg_prechess_rating <- mean(temp_df$pre_rating)
+    
+    avg_list <- c(avg_list, avg_prechess_rating)
+}
+
+data3_df$avg_pre_chess_opponents_rating = round(avg_list)
+```
+
+## Create the output dataframe and write to csv
+```{r}
+output_df <- data.frame('players_name' = data3_df$v2,
+                        'players_state' = data3_df$v11,
+                        'total_number_of_points' = data3_df$v3,
+                        'players_pre_rating' = data3_df$pre_rating,
+                        'avg_pre_chess_rating_of_opponents' = data3_df$avg_pre_chess_opponents_rating)
+
+head(output_df,3)
+```
+
+```{r write-the-output-dataframe-to-csv}
+write.csv(output_df, 'chess_tournament_results.csv', row.names = FALSE)
+```
