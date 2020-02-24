@@ -1,0 +1,114 @@
+---
+title: "Data 607 Assignment 5"
+author: "Ken Popkin"
+date: "2/26/2020"
+output: html_document
+---
+## Assignment Summary
+The data for this assignment is loaded in a wide format, making it difficult to immediately perform exploratory work on the dataset.  To address this the data will be reformatted from a wide to long format.
+
+Exploratory work to address the following questions will be completed with the reformatted data. </br>
+Information about each airline: </br>
+1. What is the number of ontime and delayed flights for each airline? </br>
+2. What is the percentage of flight delays for each airline? </br>
+
+Information about each destination (regardless of airline) </br>
+3. What is the distribution of delays? </br>
+4. Which destinations have the most and least number of flights (highest volume)? </br>
+
+A conclusion section will summarize the analysis and make recommendations for further study. </br>
+
+## Setup and load data
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(data.table)
+library(ggplot2)
+```
+
+```{r, Load-text-file}
+data <-  read.csv('flights.csv')
+head(data,4)
+```
+
+## Tidy up the data
+```{r}
+#lower case the columns and replace "." with "_"
+names(data) <- tolower(names(data))
+names(data) <- gsub(x = names(data), pattern = "\\.", replacement = "_")  
+names(data) <- gsub(x = names(data), pattern = "\\__", replacement = "_")  
+names(data) <- gsub(x = names(data), pattern = "\\ï_", replacement = "")  
+data
+```
+
+```{r}
+#Stack the destination data
+data2 <- pivot_longer(data,c(los_angeles, phoenix, san_diego, san_francisco, seattle), 'destination')
+data2
+```
+
+## Explore the Questions
+<B> 1. What is the number of ontime and delayed flights for each airline? </B>
+```{r}
+total_ontime_delays <- select(data2, airline, status, value)
+total_ontime_delays <- group_by(total_ontime_delays,airline, status) %>% summarise(flights = sum(value))
+```
+
+```{r}
+#ontime versus delayed in terms of number of flights per airline
+ggplot(total_ontime_delays, aes(fill=status, y=flights, x=airline)) + 
+  geom_bar(position="dodge", stat="identity") +
+  scale_fill_manual(values=c('darkblue','darkgreen')) +
+  geom_text(aes(label=flights), position=position_dodge(width=0.2), vjust=-0.25)
+```
+
+ <B> 2. What is the percentage of flight delays for each airline?  </B>
+```{r}
+delays_percent <- pivot_wider(total_ontime_delays, names_from = status, values_from = flights)
+names(delays_percent) <- gsub(x = names(delays_percent), pattern = "\\ ", replacement = "_")  
+
+delays_percent$percent_flights_delayed <- round(delays_percent$delayed/delays_percent$on_time,2)
+
+delays_percent
+```
+
+ <B> 3. What is the distribution of delays? </B>
+```{r}
+data3 <- select(data2, destination, status, value)
+```
+
+```{r}
+#Ontime versus delayed as a percentage per destination
+ggplot(data3, aes(fill=status, y=value, x=destination)) + 
+    geom_bar(position="fill", stat="identity") + 
+    scale_fill_manual(values=c('darkblue','darkgreen'))
+```
+
+
+
+ <B> 4. Which destination have the most and least number of flights (highest volume)? </B>
+```{r}
+#ontime versus delayed in terms of number of flights per destination
+ggplot(data3, aes(fill=status, y=value, x=destination), colors('blue','green')) + 
+  geom_bar(position="stack", stat="identity") + 
+  scale_fill_manual(values=c('darkblue','darkgreen'))
+```
+
+## Conclusion
+AmWest has almost twice as many flights (6,438 vs 3,274) as Alaska airlines, but both companies have a similar percentage of delays (12% Amwest vs 15% Alaska).  While at first glance this percentage might not seem bad, it does lend itself to needing improvement if you consider total number of travelers delayed.
+
+According to the site [Travel Weekly](https://www.travelweekly.com/Travel-News/Airline-News/Airlines-seeing-record-numbers-of-passengers-but-fewer-flights), in 2017 the average number of passengers was 91 and [Statista](https://www.statista.com/statistics/658830/passenger-load-factor-of-commercial-airlines-worldwide/) placed average capacity filled at around 82%.  Multiplying (91 * (501 Alaska + 787 AmWest delays) * 0.82) is approximately 96,000 passengers. And this is just these two airlines!
+
+Since the airlines have a similar delay percentage, lets take a look to see if some destinations have significantly better or worse rates of delay. Interesting to note is that Phoenix has the lowest percentage of delays and the highest number of flights at (8% and 5,488).  San Francisco has the highest percentage of delays and the 2nd lowest number of flights (22% and 1,054).    
+
+One hypothesis from this data is that flight delays could go down if conditions at airports with higher percentages of delay would improve.  Additional study is required to validate this hypothesis as this a very small cross-section of data from the full airline industry.
+
+## Recommendations for further study...
+1. Broaden this analysis to include a larger number of airlines and destinations to see if the hypothesis is valid
+2. Study conditions at the Phoenix and San Francisco airports to identify key differentiators between the two and the impact this could have on reducing delays.
