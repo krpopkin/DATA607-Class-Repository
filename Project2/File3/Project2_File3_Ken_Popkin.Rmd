@@ -1,0 +1,115 @@
+---
+title: "Data 607 Project 2, File 2"
+author: "Ken Popkin"
+date: "3/9/2020"
+output: html_document
+---
+## Assignment Summary
+For Project 2, choose any three of the “wide” datasets identified in the Week 6 Discussion items. This document contains the third of the three files selected for this assignment.
+
+File selected: Unicef data on Under 5 Mortality Rates submitted by Samuel Bellows.  [link to Unicef Under 5 Mortality Rates](https://bbhosted.cuny.edu/courses/1/SPS01_DATA_607_02_1202_1/db/_36347024_1/unicef-u5mr.csv)
+
+Analysis to perform: This UNICEF dataset gives the under 5 mortality for many countries across the years 1950-2015. The problem is that the year variable is spread out into 65 different columns, 1 for each year, that need to be gathered into 1 column. Produce a 3 column dataset of country, year, and mortality. Provide narrative descriptions of the data cleanup work and analysis completed, along with conclusions about the data.
+
+## Setup and load data
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(data.table)
+library(ggplot2)
+```
+
+```{r, Load-text-file}
+#Load the data
+data <-  read.csv('unicef-u5mr.csv')
+head(data,4)
+```
+
+## Tidy up the data
+```{r}
+#Convert the years data from a wide to long format
+yearlydata <- pivot_longer(data,c(2:67), 'year')
+yearlydata <- yearlydata %>% `colnames<-`(c('country', 'year', 'mortality'))
+yearlydata_sorted <- yearlydata[order(yearlydata$mortality),]
+```
+
+## Analysis
+
+```{r}
+#Generate some summary information about the dataset
+summary(yearlydata)
+
+missing_data <- sum(is.na.data.frame(yearlydata))
+percent_missing_data <- round(missing_data/length((yearlydata$year)) * 100)
+
+cat('\n')
+cat('Number of country-years missing data:', missing_data,'\n')
+cat('Percent of missing data:', percent_missing_data, '%\n')
+
+```
+
+```{r}
+mortality_avg <- data %>%
+             transmute(CountryName,
+             Mean = rowMeans(select(., c(2:67)),na.rm = TRUE))
+
+mortality_avg <- mortality_avg[order(mortality_avg$Mean, decreasing = FALSE),]
+head(mortality_avg)
+```
+
+```{r}
+#Boxplot the data
+ggplot(mortality_avg, aes(x = "", y = Mean)) + 
+  geom_boxplot()
+```
+
+```{r}
+mortality_avg_top20 <- tail(mortality_avg,20)
+mortality_avg_top20
+```
+
+
+```{r}
+#Bargraph the top 20 countries with the highest average mortality
+ggplot(mortality_avg_top20, aes(x=reorder(CountryName, Mean), y=Mean)) + 
+  geom_bar(stat="identity", fill="lightgreen", color="grey50") +
+  ggtitle("Countries with Highest Mortality Rates") +
+  xlab("country") + ylab("mortality rate") + 
+  coord_flip()
+```
+
+```{r}
+mortality_avg_bottom20 <- head(mortality_avg,20)
+mortality_avg_bottom20
+```
+
+
+```{r}
+#Bargraph the countries with the lowest mortality rates
+ggplot(mortality_avg_bottom20, aes(x=reorder(CountryName, -Mean), y=Mean)) + 
+  geom_bar(stat="identity", fill="lightgreen", color="grey50") +
+  ggtitle("Countries with Lowest Mortality Rates") +
+  xlab("country") + ylab("mortality rate") + 
+  coord_flip()
+```
+
+```{r}
+#What is the US average mortality rate
+subset(mortality_avg, CountryName == 'United States of America')
+```
+
+## Conclusions and Recommendations
+There are 196 countries in the dataset and the average mortality rate for under_5_years_of_age across all countries is 85 with a median of 54 for the years 1950 to 2015.  50% of the countries lie in a range of 20 to 130.
+
+Mali has the highest mortality rate of 273 and the rate drops to 183 for the 20th highest country.  Moving to lowest mortality rates, Andorra has a rate of 5 and the 20th best country is Estonia at 14.  Interestingly, the United States ranks 33rd with a mortality rate of 18. 
+
+Recommendations for further study of this data are to...
+1. align each country with its continent and evaluate countries by continent, similar to prior datasets in this assignment when states were analyzed by region.
+
+2. identify additional demographics about each of these countries and look for the top features that could help to predict a countries mortality rate for children under age 5 (high correlations would be the desired find).

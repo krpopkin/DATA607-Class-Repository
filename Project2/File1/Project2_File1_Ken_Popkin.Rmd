@@ -1,0 +1,129 @@
+---
+title: "Data 607 Project 2, File 1"
+author: "Ken Popkin"
+date: "3/9/2020"
+output: html_document
+---
+## Assignment Summary
+For Project 2, choose any three of the “wide” datasets identified in the Week 6 Discussion items. This document contains the first of the three files selected for this assignment.
+
+File selected: State Marriage Rates submitted by Gabriel Abreu.  [link to state marriage rates](https://data.world/siyeh/state-marriage-rate)
+
+Analysis to perform: This file provides state marriage rates breaking down the data into regions and years.  Group the data by census region or census division, then organize the rates according to year, changing it from wide data to long data. Provide narrative descriptions of the data cleanup work and analysis completed, along with conclusions about the data.
+
+## Setup and load data
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(data.table)
+library(ggplot2)
+```
+
+```{r, Load-text-file}
+data <-  read.csv('data/state_marriage_rates_90_95_99_16.csv')
+head(data,4)
+```
+
+```{r}
+regions <- read.csv('data/Census_Regions_and_Divisions.csv')
+regions <- select(regions, State, Region)
+regions <- regions %>% `colnames<-`(c('state', 'region'))
+head(regions, 4)
+```
+
+## Tidy up the data
+```{r}
+#Join the census region to the marriage rates data
+data2 <- merge(data, regions, by.x = "state", by.y = "state")
+tail(data2,2)
+```
+
+```{r}
+#Convert the year columns to a single year column with the associated value in a second column
+data3 <- pivot_longer(data2,c(2:21), 'year')
+data3 <- data3 %>% `colnames<-`(c('state', 'region', 'year', 'value'))
+head(data3)
+```
+
+## Analysis
+```{r}
+#How many regions are there and how many states are in each region?
+data4 <- data3 %>% group_by(region, state) %>% summarize(count=n())
+data4 %>% group_by(region) %>% summarize(count=n())
+data4 <- data4 %>% `colnames<-`(c('region', 'state_count'))
+```
+
+```{r}
+library(sqldf)
+
+data5 <- sqldf('SELECT region, year, SUM(value) AS marriage_rate FROM data3 GROUP BY region, year')
+head(data5,2)
+```
+
+```{r}
+#Since there are only four regions, chart each region as a series of marriage rates per year
+p<-ggplot(data5, aes(x=year, y=marriage_rate, group=region)) +
+  geom_line(aes(color=region))+
+  geom_point(aes(color=region))
+p
+```
+Based on the above chart the marriage rates in the Northeast and Midwest have declined since 2002, but leveled off.  Of greater interest is the steep decline in marriage rates in the West and South and in recent years the merging of the marriage rate in the West and South.
+
+```{r}
+#Create a series that shows each states marriage rate per year in the South
+south <- subset(data3, data3$region == 'South')
+
+p<-ggplot(south, aes(x=year, y=value, group=state)) +
+  geom_line(aes(color=state))+
+  geom_point(aes(color=state))
+p
+```
+It looks like South Carolina, Tennessee, and Arkansas have the steepest declines, but there is a consistent trend around all the states declining throughout the 1990's.
+
+```{r}
+#Now create a similar series for the West that shows each states marriage rate per year
+west <- subset(data3, data3$region == 'West')
+
+p<-ggplot(west, aes(x=year, y=value, group=state)) +
+  geom_line(aes(color=state))+
+  geom_point(aes(color=state))
+p
+```
+
+Nevada has an extremely large decline in marriage rates (to the point where the data might need to be reviewed for not being collected in an acceptable manner or perhaps errors in reporting the data).  Hawaii shows a slight increase in the 90's, but then it leveled off to it's former level by 2016.
+
+```{r}
+#For our final analysis, we'll perform a t-test on the 1990 data versus 2016.
+#We are assuming the data is independent and collected in a probabilistic manner.
+
+#H0: 1990 marriage rates = 2016 marriage rates
+#H1: 1900 marriage rates != 2016 marriage rates
+
+tdata <- select(data2, X2016, X1990)
+
+#t.test(tdata$X1990, tdata$X2016, alternative=c('two-sided','less','greater'), mu = 0, paired = FALSE, var.equal = #FALSE, conf.level=0.95)
+t.test(tdata$X1990, tdata$X2016)
+```
+
+## Conclusions and Recommendations
+Marriage rates have declined across the United States by a statistically significant amount from 1990 to 2016.  The t-test results using these years resulted in a p-value of 0.02 at a confidence level of 95%.  In 1990 the mean marriage rate was 11.6 and in 2016 it was 7.4.
+
+Across the four census regions (there was no Puerto Rico data in this dataset) marriage rates in Northeast, Midwest, South, and West all declined the most in the 1990's and since 2009 the marriage rates in each region have remained relatively stable.  
+
+The sharpest declines occurred in the West and the South and within these regions the states that contributed most to the decline were South Carolina, Tennessee, Arkansas and Nevada (West). 
+
+Recommendations for further analysis and study are...
+
+1. Validate the accuracy of Nevada's data.  It is extremely sharper in declining marriage rates than other states.
+
+2. Investigate data that might help to further explain this story, such as divorce rates
+
+3. It would be interesting to assess if birth rates are declining in proportion to marriage rates
+
+4. Conduct further analysis at a per state level - if there are states where marriage rates increased, compare them to several states that decreased.

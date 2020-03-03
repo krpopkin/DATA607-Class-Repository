@@ -1,0 +1,141 @@
+---
+title: "Data 607 Project 2, File 2"
+author: "Ken Popkin"
+date: "3/9/2020"
+output: html_document
+---
+## Assignment Summary
+For Project 2, choose any three of the “wide” datasets identified in the Week 6 Discussion items. This document contains the second of the three files selected for this assignment.
+
+File selected: Undergraduate and Graduate Enrollment submitted by Christian Thieme.  [link to undergraduate and graduate rates](https://nces.ed.gov/ipeds/Search/ViewTable?tableId=12607&returnUrl=%2Fipeds%2FSearch)
+
+Analysis to perform: Look at enrollment trends over time by region (south, west, etc.) or state to see if enrollment is dropping in any state/region. Provide narrative descriptions of the data cleanup work and analysis completed, along with conclusions about the data.
+
+## Setup and load data
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(data.table)
+library(ggplot2)
+```
+
+```{r, Load-text-file}
+#Load the data
+data <-  read.csv('undergraduate_and_graduate_enrollment.csv', skip=12, header = FALSE)
+
+data <- data %>% `colnames<-`(c('state', 'y06_07', 'y07_08', 'y08_09', 'y09_10', 'y10_11', 'y11_12', 'y12_13', 'y13_14'))
+
+head(data,4)
+```
+
+```{r}
+#Load the regions
+regions <- read.csv('Census_Regions_and_Divisions.csv')
+regions <- select(regions, State, Region)
+regions <- regions %>% `colnames<-`(c('state', 'region'))
+head(regions, 2)
+```
+
+## Tidy up the data
+```{r}
+#Merge the region column with the graduation rates
+data2 <- merge(data, regions, by.x = "state", by.y = "state")
+head(data2,2)
+```
+
+```{r}
+#Convert the undergraduate and graduate yearly data from a wide to long format
+yearlydata <- pivot_longer(data2,c(2:9), 'year')
+yearlydata <- yearlydata %>% `colnames<-`(c('state', 'region', 'year', 'grad_rate'))
+head(yearlydata,2)
+```
+
+```{r}
+#Calculate the %change from 06_07 grad rate to the 13_14 grad rate to identify each states change in grad rate
+percentchangedata <- select(data2, state, y06_07, y13_14)
+percentchangedata <- mutate(percentchangedata, (y13_14-y06_07)/y06_07)
+percentchangedata <- percentchangedata %>% `colnames<-`(c('state', 'y06_07', 'y13_14', 'percent_change'))
+percentchangedata <- select(percentchangedata, state, percent_change)
+head(percentchangedata,2)
+```
+
+## Analysis
+To find states where enrollment is dropping we'll take two approaches.  The first will use the long dataset (yearlydata) to produce some time series graphs.  Then we'll use the percentchangedata created from the wide dataset to create some bar graphs.
+
+```{r}
+library(sqldf)
+
+yearlydata1 <- sqldf('SELECT region, year, SUM(grad_rate) AS grad_rate FROM yearlydata GROUP BY region, year')
+head(yearlydata1,2)
+```
+
+
+```{r}
+#Chart each region's graduation rates per year
+p<-ggplot(yearlydata1, aes(x=year, y=grad_rate, group=region)) +
+  geom_line(aes(color=region))+
+  geom_point(aes(color=region))
+p
+```
+
+All regions except Puerto Rico experienced increased graduation rates from 2006 thru 2010.  By 2014 the Midwest, Northeast and West had tapered down to roughly where they were in 2008.
+
+```{r}
+#Now we'll take the top 5 states that increased graduation percentages the most and do a series of their results
+percentchangedata_sorted <- percentchangedata[order(percentchangedata$percent_change),]
+top5increase <- tail(percentchangedata_sorted,5)
+top5increase
+```
+
+```{r}
+#Chart the top 5 states with the highest percent change in graduation rates
+top5_vector <- top5increase$state
+top5increase_series <- subset(yearlydata, state == 'Virginia' | state == 'Utah' | state == 'Idaho' | state == 'New Hampshire' | state == 'West Virginia')
+
+p<-ggplot(top5increase_series, aes(x=year, y=grad_rate, group=state)) +
+  geom_line(aes(color=state))+
+  geom_point(aes(color=state))
+p
+```
+
+```{r}
+#Now we'll take the top 5 states with decreased graduation percentages and create a series of their results
+bottom5 <- head(percentchangedata_sorted,5)
+bottom5
+```
+
+```{r}
+#Chart the top 5 states with the lowest percent change in graduation rates
+bottom5_vector <- bottom5$state
+bottom5_series <- subset(yearlydata, state == 'District of Columbia' | state == 'Michigan' | state == 'Rhode Island' | state == 'Washington' | state == 'Illinois')
+
+p<-ggplot(bottom5_series, aes(x=year, y=grad_rate, group=state)) +
+  geom_line(aes(color=state))+
+  geom_point(aes(color=state))
+p
+```
+
+## Conclusions and Recommendations
+We looked at graduation rates by region and discovered that graduation rates are highest in the South and lowest in Puerto Rico, followed by the Northeast.  Over the time period of 2006 to 2014 the South also experienced the largest increase in graduation rates.  All the regions graduation rates, except Puerto Rico increased, while Puerto Rico remained flatlined, with significantly lower rates than the other regions.
+
+Moving to an analysis of percentage changes of individual states, a review of the top 5 highest change and top 5 lowest change in graduation rates revealed the following...
+
+1. Virginia's 25% increase and West Virginia's over 54% increase in graduation rates helps explain the Southern regions dominance of the grad rate changes.
+
+2. Three of the five states that decreased in graduation rates by 2014, actually experienced an uptick in graduation rates during the middle years of 2008 - 2011.
+
+3. The District of Columbia's graduation rate dropped off sharply in 2010 and then remained steady at the lower rate thru 2014.
+
+Recommendations for further study & analysis are...
+
+1. Compare contrast conditions in Puerto Rico with the South to identify key factors that are influencing graduation rates.
+
+2. Investigate what occurred in 2010 in the District of Columbia that caused what appear to be a permanent decline in graduation rates
+
+3. Investigate the root causes for the three states (Michigan, Illinois, and Washington) to initially increase their grad rate, only to have it decline and become a decrease overall. 
