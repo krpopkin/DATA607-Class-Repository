@@ -26,8 +26,9 @@ library(dplyr)
 library(tidyr)
 ```
 
+## Load books data from an HTML file
 ```{r, Load-text-file}
-data <-  
+source("")
 head(data,4)
 ```
 
