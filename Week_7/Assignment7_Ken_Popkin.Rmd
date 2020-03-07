@@ -14,7 +14,6 @@ Write R code, using your packages of choice, to load the information from each o
 
 Your deliverable is the three source files and the R code. If you can, package your assignment solution up into an .Rmd file and publish to rpubs.com. [This will also require finding a way to make your three text files accessible from the web].<br>
 
-## Setup
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(message = FALSE)
@@ -25,6 +24,7 @@ knitr::opts_chunk$set(warning = FALSE)
 ```{r}
 library(textreadr)
 library(rvest)
+library(dplyr)
 ```
 
 ```{r, Load-text-file}
@@ -33,6 +33,7 @@ html_data <- as.data.frame(read_html("https://raw.githubusercontent.com/krpopkin
 
 ```{r}
 htmldf <- html_data %>% `colnames<-`(c('row', 'title', 'author', 'publisher', 'year', 'amazon_rank'))
+htmldf <- select(htmldf, title, author, publisher, year, amazon_rank)
 htmldf
 ```
 
@@ -72,3 +73,5 @@ jsondf <- jsondf %>% `colnames<-`(c('title', 'author', 'publisher', 'year', 'ama
 jsondf
 ```
 
+## Summary
+The three dataframes are identical after some mild tidying of the dataframes.  I had to assign common column names and for the html file had to drop an index column.

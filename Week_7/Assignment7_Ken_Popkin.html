@@ -376,12 +376,63 @@ summary {
 <p>Write R code, using your packages of choice, to load the information from each of the three sources into separate R data frames. Are the three data frames identical? <br></p>
 <p>Your deliverable is the three source files and the R code. If you can, package your assignment solution up into an .Rmd file and publish to rpubs.com. [This will also require finding a way to make your three text files accessible from the web].<br></p>
 </div>
-<div id="setup-and-load-data" class="section level2">
-<h2>Setup and load data</h2>
-<pre class="r"><code>library(dplyr)
-library(tidyr)</code></pre>
-<pre class="r"><code>data &lt;-  
-head(data,4)</code></pre>
+<div id="setup" class="section level2">
+<h2>Setup</h2>
+</div>
+<div id="load-books-data-from-an-html-file" class="section level2">
+<h2>Load books data from an HTML file</h2>
+<pre class="r"><code>library(textreadr)
+library(rvest)
+library(dplyr)</code></pre>
+<pre class="r"><code>html_data &lt;- as.data.frame(read_html(&quot;https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/html/books_for_assignment5.html&quot;) %&gt;% html_table(fill=TRUE))</code></pre>
+<pre class="r"><code>htmldf &lt;- html_data %&gt;% `colnames&lt;-`(c(&#39;row&#39;, &#39;title&#39;, &#39;author&#39;, &#39;publisher&#39;, &#39;year&#39;, &#39;amazon_rank&#39;))
+htmldf &lt;- select(htmldf, title, author, publisher, year, amazon_rank)
+htmldf</code></pre>
+<pre><code>##               title                       author                publisher year
+## 1 When to Walk Away                  Gary Thomas                Zondervan 2019
+## 2         Humilitas                 John Dickson                Zondervan 2011
+## 3       Left Behind Tim Lahaye and Jerry Jenkins Tyndale House Publishers 1995
+##   amazon_rank
+## 1        4936
+## 2      191819
+## 3       75775</code></pre>
+</div>
+<div id="load-books-data-from-an-xml-file" class="section level2">
+<h2>Load books data from an XML file</h2>
+<pre class="r"><code>library(XML)</code></pre>
+<pre class="r"><code>xml_data &lt;- read_xml(&quot;https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/xml/books_for_assignment5.xml&quot;)
+
+xml_data_result &lt;- xmlParse(xml_data)
+
+xmldf &lt;- xmlToDataFrame(xml_data_result)
+xmldf &lt;- xmldf %&gt;% `colnames&lt;-`(c(&#39;title&#39;, &#39;author&#39;, &#39;publisher&#39;, &#39;year&#39;, &#39;amazon_rank&#39;))</code></pre>
+<pre class="r"><code>xmldf</code></pre>
+<pre><code>##               title                       author                publisher year
+## 1 When to Walk Away                  Gary Thomas                Zondervan 2019
+## 2         Humilitas                 John Dickson                Zondervan 2011
+## 3       Left Behind Tim Lahaye and Jerry Jenkins Tyndale House Publishers 1995
+##   amazon_rank
+## 1        4936
+## 2      191819
+## 3       75775</code></pre>
+<p>#Load books data from a JSON file</p>
+<pre class="r"><code>library(rjson)</code></pre>
+<pre class="r"><code>json_data &lt;- fromJSON(file = &quot;https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/json/books_for_assignment5.json&quot;)</code></pre>
+<pre class="r"><code>jsondf &lt;- as.data.frame(json_data)
+jsondf &lt;- jsondf %&gt;% `colnames&lt;-`(c(&#39;title&#39;, &#39;author&#39;, &#39;publisher&#39;, &#39;year&#39;, &#39;amazon_rank&#39;))</code></pre>
+<pre class="r"><code>jsondf</code></pre>
+<pre><code>##               title                       author                publisher year
+## 1 When to Walk Away                  Gary Thomas                Zondervan 2019
+## 2         Humilitas                 John Dickson                Zondervan 2011
+## 3       Left Behind Tim Lahaye and Jerry Jenkins Tyndale House Publishers 1995
+##   amazon_rank
+## 1        4936
+## 2      191819
+## 3       75775</code></pre>
+</div>
+<div id="summary" class="section level2">
+<h2>Summary</h2>
+<p>The three dataframes are identical are some mild tidying of the dataframes. I had to assign common column names and for the html file had to drop an index column.</p>
 </div>
 
 
