@@ -52,17 +52,3 @@ xmldf <- xmlToDataFrame(result)
 ```{r}
 xmldf
 ```
-
-#Load books data from a JSON file
-```{r}
-library(rjson)
-```
-
-```{r}
-json_data <- fromJSON(file = "https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/json/books_for_assignment5.json")
-```
-
-```{r}
-json_data
-```
-

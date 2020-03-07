@@ -14,19 +14,25 @@ Write R code, using your packages of choice, to load the information from each o
 
 Your deliverable is the three source files and the R code. If you can, package your assignment solution up into an .Rmd file and publish to rpubs.com. [This will also require finding a way to make your three text files accessible from the web].<br>
 
-## Setup
+## Setup and load data
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(message = FALSE)
 knitr::opts_chunk$set(warning = FALSE)
 ```
 
-## Load books data from an HTML file
 ```{r}
+library(dplyr)
+library(tidyr)
+library(httr)
+library(XML)
+library(htmltools)
 library(textreadr)
 library(rvest)
+library(xslt)
 ```
 
+## Load books data from an HTML file
 ```{r, Load-text-file}
 html_data <- as.data.frame(read_html("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/html/books_for_assignment5.html") %>% html_table(fill=TRUE))
 ```
@@ -37,32 +43,30 @@ html_data
 
 ## Load books data from an XML file
 ```{r}
-library(XML)
+xml_data <- read_xml("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/xml/person.xml")
 ```
 
 ```{r}
-books_data <- read_xml("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/xml/books_for_assignment5.xml")
-
-result <- xmlParse(books_data)
-
-xmldf <- xmlToDataFrame(result)
-
+junk <- read_xml("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/xml/books_for_assignment5.xml")
 ```
 
 ```{r}
-xmldf
+junk
 ```
 
-#Load books data from a JSON file
-```{r}
-library(rjson)
-```
 
 ```{r}
-json_data <- fromJSON(file = "https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/json/books_for_assignment5.json")
+xml_data
 ```
 
 ```{r}
-json_data
+
+```
+
+
+```{r}
+doc<-xmlParse("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/xml/person.xml")
+xmldf <- xmlToDataFrame(nodes = getNodeSet(doc, "//record"))
+View(xmldf)
 ```
 

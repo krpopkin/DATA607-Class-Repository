@@ -7,4 +7,20 @@
 	<year>2019</year>
 	<amazon_rank>4936</amazon_rank>
     </book>
+
+    <book>
+        <title>Humilitas</title>
+	<author>John Dickson</author>
+	<publisher>Zondervan</publisher>
+	<year>2011</year>
+	<amazon_rank>191819</amazon_rank>
+    </book>
+
+    <book>
+        <title>Left Behind</title>
+	<author>Tim Lahaye and Jerry Jenkins</author>
+	<publisher>Tyndale House Publishers</publisher>
+	<year>1995</year>
+	<amazon_rank>75775</amazon_rank>
+    </book>
 </books>

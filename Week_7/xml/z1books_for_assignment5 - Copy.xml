@@ -2,23 +2,9 @@
 <books>
     <book>
         <title>When to Walk Away</title>
-	<author> </author>
-	<publisher> </publisher>
-	<year> </year>
-	<amazon_rank> </amazon_rank>
-    </book>
-    <book>
-        <title> </title>
-	<author> </author>
-	<publisher> </publisher>
-	<year> </year>
-	<amazon_rank> </amazon_rank>
-    </book>
-    <book>
-        <title> </title>
-	<author> </author>
-	<publisher> </publisher>
-	<year> </year>
-	<amazon_rank> </amazon_rank>
+	<author>Gary Thomas</author>
+	<publisher>Zondervan</publisher>
+	<year>2019</year>
+	<amazon_rank>4936</amazon_rank>
     </book>
 </books>
