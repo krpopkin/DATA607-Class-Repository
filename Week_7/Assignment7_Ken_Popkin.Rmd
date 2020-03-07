@@ -32,7 +32,8 @@ html_data <- as.data.frame(read_html("https://raw.githubusercontent.com/krpopkin
 ```
 
 ```{r}
-html_data
+htmldf <- html_data %>% `colnames<-`(c('row', 'title', 'author', 'publisher', 'year', 'amazon_rank'))
+htmldf
 ```
 
 ## Load books data from an XML file
@@ -41,12 +42,12 @@ library(XML)
 ```
 
 ```{r}
-books_data <- read_xml("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/xml/books_for_assignment5.xml")
+xml_data <- read_xml("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/xml/books_for_assignment5.xml")
 
-result <- xmlParse(books_data)
+xml_data_result <- xmlParse(xml_data)
 
-xmldf <- xmlToDataFrame(result)
-
+xmldf <- xmlToDataFrame(xml_data_result)
+xmldf <- xmldf %>% `colnames<-`(c('title', 'author', 'publisher', 'year', 'amazon_rank'))
 ```
 
 ```{r}
@@ -59,10 +60,15 @@ library(rjson)
 ```
 
 ```{r}
-json_data <- fromJSON(file = "https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/json/books_for_assignment5.json")
+json_data <- fromJSON(file = "")
 ```
 
 ```{r}
-json_data
+jsondf <- as.data.frame(json_data)
+jsondf <- jsondf %>% `colnames<-`(c('title', 'author', 'publisher', 'year', 'amazon_rank'))
+```
+
+```{r}
+jsondf
 ```
 
