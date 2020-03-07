@@ -24,11 +24,24 @@ knitr::opts_chunk$set(warning = FALSE)
 ```{r}
 library(dplyr)
 library(tidyr)
+library(httr)
+library(XML)
+library(htmltools)
+library(textreadr)
+library(rvest)
 ```
 
 ## Load books data from an HTML file
 ```{r, Load-text-file}
-source("")
-head(data,4)
+html_data <- as.data.frame(read_html("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/html/books_for_assignment5.html") %>% html_table(fill=TRUE))
+```
+
+```{r}
+html_data
+```
+
+## Load books data from an XML file
+```{r}
+xml_data <- as.data.frame(read_html("https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Week_7/html/books_for_assignment5.html") %>% html_table(fill=TRUE))
 ```
 
