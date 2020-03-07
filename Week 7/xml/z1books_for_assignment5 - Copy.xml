@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<books>
+    <book>
+        <title>When to Walk Away</title>
+	<author> </author>
+	<publisher> </publisher>
+	<year> </year>
+	<amazon_rank> </amazon_rank>
+    </book>
+    <book>
+        <title> </title>
+	<author> </author>
+	<publisher> </publisher>
+	<year> </year>
+	<amazon_rank> </amazon_rank>
+    </book>
+    <book>
+        <title> </title>
+	<author> </author>
+	<publisher> </publisher>
+	<year> </year>
+	<amazon_rank> </amazon_rank>
+    </book>
+</books>
