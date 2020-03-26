@@ -1,0 +1,275 @@
+---
+title: "project_3"
+author: "Patrick Maloney"
+date: "3/21/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+```
+
+
+## Operating systems
+
+```{r}
+survey_os_raw <- read.csv("https://raw.githubusercontent.com/hillt5/Project-3-DATA-607/master/OpSysSkills.csv")
+
+head(survey_os_raw)
+names(survey_os_raw)
+```
+
+This portion looks fairly clean, and is already in a tall format
+
+```{r}
+sapply(survey_os_raw, function(x) sum(is.na(x)))
+survey_os_remove_na <- subset(survey_os_raw, is.na(survey_os_raw$OpSys) == FALSE)
+
+sapply(survey_os_remove_na, function(x) sum(is.na(x)))
+```
+
+```{r}
+os_wide <- survey_os_remove_na %>%
+  select(OpSys) %>%
+  group_by(OpSys) %>%
+  summarize(Count = n()) %>%
+  arrange(desc(Count))
+
+plot_os_freq <- os_wide %>%
+  ggplot(aes(x = reorder(OpSys, Count), y = Count)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label = Count), vjust = -0.3) +
+  theme(axis.text.x = element_text(angle = 45))
+plot_os_freq
+```
+
+It appears Windows is by far the most popular operating system, followed by Linux. MacOS comes in third, which may be surprising at first, given the popularity of Macs in the uNited States, but this is a global survey, which may play a factor in these rankings.
+
+```{r}
+demo_raw <- read.csv('https://raw.githubusercontent.com/hillt5/Project-3-DATA-607/master/Demographics.csv')
+
+sapply(demo_raw, function(x) sum(is.na(x)))
+demo_remove_na <- subset(demo_raw, is.na(demo_raw$Respondent) == FALSE)
+
+nrow(survey_os_raw)
+nrow(demo_raw)
+```
+
+I will investigate if the countries have an effect on the OS numbers
+
+```{r}
+os_countries <- left_join(survey_os_raw, demo_raw, by = "Respondent")
+keep <- c("Respondent", "OpSys", "Country")
+os_countries <- os_countries[keep]
+head(os_countries)
+```
+```{r}
+# drop NA
+sapply(os_countries, function(x) sum(is.na(x)))
+os_countries <- subset(os_countries, is.na(os_countries$OpSys) == FALSE && is.na(os_countries$Country) == FALSE)
+
+# consolidate to US and International
+
+#for(i in 1:nrow(os_countries)){
+#  if(os_countries$Country[i] != "United States"){
+#    os_countries$Country[i] <- "International"
+#  }
+
+os_countries$USvsIntl <- ifelse(os_countries$Country == "United States", "United States", "International")
+
+#os_countries_wide <- os_countries %>%
+#  select(OpSys, Country) %>%
+#  group_by(Country, OpSys) %>%
+#  summarize(Count = n()) %>%
+#  arrange(desc(Count, Country))
+#os_countries_wide
+
+os_countries_wide <- os_countries %>%
+  select(OpSys, USvsIntl) %>%
+  group_by(USvsIntl, OpSys) %>%
+  summarize(Count = n()) %>%
+  arrange(desc(Count, USvsIntl))
+
+plot_os_countries <- os_countries_wide %>%
+  ggplot(aes(x = reorder(OpSys, Count), y = Count)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label = Count), vjust = -0.3) +
+  theme(axis.text.x = element_text(angle = 45))
+plot_os_countries
+
+```
+
+
+## Webframes
+
+```{r}
+survey_wf_raw <- read.csv("https://raw.githubusercontent.com/hillt5/Project-3-DATA-607/master/WebFrameSkills.csv")
+
+head(survey_wf_raw)
+names(survey_wf_raw)
+```
+There seems to be 12 webframe values. We will see how many contain mostly null values.
+
+```{r}
+sapply(survey_wf_raw, function(x) sum(is.na(x)))
+survey_wf_remove_na <- subset(survey_wf_raw, is.na(survey_wf_raw$WebFrame1) == FALSE)
+
+round(1-sapply(survey_wf_remove_na, function(x) sum(is.na(x))) /sum(is.na(survey_wf_remove_na$WebFrame12)),3)
+```
+It appears that the majority of respondents use no more than 2 web frameworks. Given this, it seems reasonable to limit this to the top 4.
+
+```{r}
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+
+wf_tall <- survey_wf_remove_na %>%
+  select(WebFrame1:WebFrame4) %>%
+  gather(WfRank, WebFrame, na.rm = TRUE)
+
+wf_wide <- wf_tall %>%
+  select(WebFrame) %>%
+  group_by(WebFrame) %>%
+  summarize(Count = n()) %>%
+  arrange(desc(Count))
+
+head(wf_wide)
+nrow(wf_wide)
+wf_wide[[2]][12]/wf_wide[[2]][1]
+
+plot_wf_freq <- head(wf_wide, 10) %>%
+  ggplot(aes(x = reorder(WebFrame, Count), y = Count)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label = Count), vjust = -0.3) +
+  theme(axis.text.x = element_text(angle = 45))
+plot_wf_freq
+```
+
+jQuery is the runaway favorite web framework, followed by Angular, now lets looks at the top two.
+
+```{r}
+wf_tall_trim <- survey_wf_remove_na %>%
+  select(WebFrame1:WebFrame2) %>%
+  gather(WfRank, WebFrame, na.rm = TRUE)
+
+tail(wf_tall_trim)
+  
+plot_wf_wrap_trim <- wf_tall_trim %>%
+  ggplot(aes(x= WebFrame)) +
+  geom_bar() +
+  facet_wrap(~WfRank)+
+  theme(axis.text.x = element_text(angle = 90))
+plot_wf_wrap_trim
+```
+
+Interestingly, Angular appears to be the most popular first, and jQuery picks up many tallies as the second choice of many developers. JavaScript frameworks are heavily represented in the top choices. It is also interesting that Angular does not appear as a second choice.
+
+## Development Environment SKills
+
+```{r}
+survey_de_raw <- read.csv("https://raw.githubusercontent.com/hillt5/Project-3-DATA-607/master/DevEnvironSkills.csv")
+
+head(survey_de_raw)
+names(survey_de_raw)
+```
+
+There seem to be 22 DevEnviron columns. We will see how how contain significant information.
+
+```{r}
+sapply(survey_de_raw, function(x) sum(is.na(x)))
+survey_de_remove_na <- subset(survey_de_raw, is.na(survey_de_raw$DevEnviron1) == FALSE)
+
+round(1-sapply(survey_de_remove_na, function(x) sum(is.na(x))) /sum(is.na(survey_de_remove_na$DevEnviron22)),3)
+```
+
+Since nearly 90% of respondents listed 5 or fewer environments, we will trim this to the top 5.
+
+```{r}
+de_tall <- survey_de_remove_na %>%
+  select(DevEnviron1:DevEnviron5) %>%
+  gather(DeRank, DevEnviron, na.rm = TRUE)
+
+de_wide <- de_tall %>%
+  select(DevEnviron) %>%
+  group_by(DevEnviron) %>%
+  summarize(Count = n()) %>%
+  arrange(desc(Count))
+
+plot_de_freq <- head(de_wide, 12) %>%
+  ggplot(aes(x = reorder(DevEnviron, Count), y = Count)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label = Count), vjust = -0.3) +
+  theme(axis.text.x = element_text(angle = 90))
+plot_de_freq
+```
+
+Visual Studio COde has the most appearances in the top five. Jupyter is in thrid and RStudio is in 12th. Let look at the top preferences.
+
+```{r}
+de_1_tall <- survey_de_remove_na %>%
+  select(DevEnviron1) %>%
+  gather(DeRank, DevEnviron, na.rm = TRUE)
+
+de_1_wide <- de_1_tall %>%
+  select(DevEnviron) %>%
+  group_by(DevEnviron) %>%
+  summarize(Count = n()) %>%
+  arrange(desc(Count))
+
+plot_de_1_freq <- head(de_1_wide, 12) %>%
+  ggplot(aes(x = reorder(DevEnviron, Count), y = Count)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label = Count), vjust = -0.3) +
+  theme(axis.text.x = element_text(angle = 90))
+plot_de_1_freq
+```
+Interesetingly, Visual Studio Code falls to 11th in first choices,depite having the most occurences in the top five, while Android Studio or Jupyter are the top picks for most people. Let's see second choices.
+
+```{r}
+de_2_tall <- survey_de_remove_na %>%
+  select(DevEnviron2) %>%
+  gather(DeRank, DevEnviron, na.rm = TRUE)
+
+de_2_wide <- de_2_tall %>%
+  select(DevEnviron) %>%
+  group_by(DevEnviron) %>%
+  summarize(Count = n()) %>%
+  arrange(desc(Count))
+
+plot_de_2_freq <- head(de_2_wide, 12) %>%
+  ggplot(aes(x = reorder(DevEnviron, Count), y = Count)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label = Count), vjust = -0.3) +
+  theme(axis.text.x = element_text(angle = 90))
+plot_de_2_freq
+```
+We see that Notepad++ is a popular second choice, and Jupyter reamins a strong second as a second choice. RStudio was the 10th most popular second choice.
+
+```{r}
+de_3_tall <- survey_de_remove_na %>%
+  select(DevEnviron3) %>%
+  gather(DeRank, DevEnviron, na.rm = TRUE)
+
+de_3_wide <- de_3_tall %>%
+  select(DevEnviron) %>%
+  group_by(DevEnviron) %>%
+  summarize(Count = n()) %>%
+  arrange(desc(Count))
+
+plot_de_3_freq <- head(de_3_wide, 12) %>%
+  ggplot(aes(x = reorder(DevEnviron, Count), y = Count)) + 
+  geom_bar(stat = "identity") + 
+  geom_text(aes(label = Count), vjust = -0.3) +
+  theme(axis.text.x = element_text(angle = 90))
+plot_de_3_freq
+```
+
+It seems this is where Visual Studio picked up many of its mentions, as a third preference.
+

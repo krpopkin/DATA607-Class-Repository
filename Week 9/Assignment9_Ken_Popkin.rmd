@@ -1,0 +1,40 @@
+---
+title: "Assignment for Week 9.rmd"
+author: "Ken Popkin"
+date: "3/25/2020"
+output: html_document
+---
+
+#### Introduction
+The New York Times web site provides a rich set of APIs, as described here: [NY Times API's](https://developer.nytimes.com/apis).  This notebook connects to the Articles API, reads in the JSON data, and transforms it to a dataframe.
+
+#### Setup
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+#libraries
+library(jsonlite)
+library(dplyr)
+```
+
+#### Retrieve data via API
+```{r}
+#Retrieve articles using my API key, in which John Grisham is mentioned
+
+articles <- fromJSON("http://api.nytimes.com/svc/search/v2/articlesearch.json?q=john%20grisham&api-key=rqcHM5dPov1NfBSDtKEjuWvf4vSjY1bt", flatten = TRUE) %>% data.frame()
+
+dim(articles)
+```
+
+#### Display a few columns of interest
+```{r}
+#Select a few columns of interest from the dataframe
+articles <- articles %>%
+  select(source = response.docs.source, doc_type = response.docs.document_type, purpose = response.docs.subsection_name, headline = response.docs.headline.main, article_author = response.docs.byline.original)
+
+head(articles,1)
+```
