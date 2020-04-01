@@ -1,0 +1,250 @@
+---
+title: "Home Values Analysis and Conlusions"
+author: "Ken Popkin"
+---
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(tidyverse)
+library(reshape2)
+library(ggpubr)
+library(ggfortify)
+
+require(scales)
+```
+
+```{r echo=FALSE}
+# load data
+data <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/%20master.csv')
+
+cases = dim(data)[1]
+features = dim(data)[2]
+cat('Data for this project is', cases, 'cases and', features, 'features')
+```
+
+```{r data}
+head(data,1)
+```
+
+### Part 1 - Introduction
+<I> Can education and wages be used as predictors for home values? </I>    
+There are many factors theorized to influence a home’s value and for this project we’ll attempt to answer if two popular topics, education and wages, can be used as predictors for a third popular topic, home values.
+
+Knowing key factors to monitor regarding your home’s value can prove beneficial in multiple areas of modern life.  Areas such as assessing your long term financial outlook, deciding whether to move or not, and perhaps most important, enabling these and similar decisions to not be based solely on emotion.  
+
+### Part 2 - Data
+The master data file loaded above is a combination of three files ([education](https://nces.ed.gov/ccd/f33agency.asp), [wages](https://www.bls.gov/cew/downloadable-data-files.htm), and [home values](https://www.zillow.com/research/data/)) that were merged using state/county as the key.  For details about the cleaning, filtering, and merging of this data to create the master file refer to the [project proposal](https://www.rpubs.com/krpopkin/591317).
+
+### Part 3 - Exploratory data analysis
+<B> Correlation Heat Maps </B>  
+We'll start off with heat maps to highlight the correlations between Education, Wages, Resident Count and Home Values.  Our first heatmap will look at the four education categories of high school dropout, high school diploma, some college, and four year degree.  There should be high correlation between each of these so we'll select the one with highest correlation to home values to move forward with.
+
+```{r education-heatmap}
+#Select the data for the education heat map
+ehm <- data %>%
+  select(hs_dropout = dropout_percent, hs_diploma = hs_diploma_percent, some_college = some_college_percent,  college_degree = four_year_degree_percent, avg_home_value)
+
+#Calculate the correlation values
+cormat <- round(cor(ehm),2)
+
+melted_cormat <- melt(cormat)
+
+#Create the Heatmap
+library(ggplot2)
+ggheatmap <- ggplot(data = melted_cormat, aes(Var2, Var1, fill = value))+
+ geom_tile(color = "white")+
+ scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+   midpoint = 0, limit = c(-1,1), space = "Lab", 
+   name="Pearson\nCorrelation") +
+  theme_minimal()+ 
+ theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+    size = 12, hjust = 1))+
+ coord_fixed()
+
+reorder_cormat <- function(cormat){
+# Use correlation between variables as distance
+dd <- as.dist((1-cormat)/2)
+hc <- hclust(dd)
+cormat <-cormat[hc$order, hc$order]
+}
+
+ggheatmap + 
+geom_text(aes(Var2, Var1, label = value), color = "black", size = 4)
+```
+
+The education heatmap correlation of 69% with a college degree and home values was somewhat expected.  The -61% corelation for a high school diploma (so no higher education) with home values was initially surprising, but does make sense.
+
+Next we'll generate a heatmap using wages, resident count, and home values.
+```{r heatmap}
+#Select the data for the heat map
+chm <- data %>%
+  select(avg_annual_pay, resident_count, avg_home_value)
+
+#Calculate the correlation values
+cormat <- round(cor(chm),2)
+
+melted_cormat <- melt(cormat)
+
+#Create the Heatmap
+library(ggplot2)
+ggheatmap <- ggplot(data = melted_cormat, aes(Var2, Var1, fill = value))+
+ geom_tile(color = "white")+
+ scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+   midpoint = 0, limit = c(-1,1), space = "Lab", 
+   name="Pearson\nCorrelation") +
+  theme_minimal()+ 
+ theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+    size = 12, hjust = 1))+
+ coord_fixed()
+
+reorder_cormat <- function(cormat){
+# Use correlation between variables as distance
+dd <- as.dist((1-cormat)/2)
+hc <- hclust(dd)
+cormat <-cormat[hc$order, hc$order]
+}
+
+ggheatmap + 
+geom_text(aes(Var2, Var1, label = value), color = "black", size = 4)
+```
+
+The 52% correlation for wages is strong, but not as strong as expected.  What's surprising is that average pay is showing a lower correlation than education in the previous heatmap.
+
+<B> Home Values Compared to Education, Wages, and Resident Count Colored by Census Region </B>   
+There are 2,745 counties across 50 states, but only 4 census regions. We'll use regions to create several scatter charts of the relationship between education, wages, resident count, and home values. 
+```{r scatter-charts}
+scatterdf <- select(data, region, region_num, hs_diploma_percent, four_year_degree_percent, avg_annual_pay, resident_count, avg_home_value)
+
+#Scatter chart of hs diploma percent
+hsd_scatter <- ggplot(scatterdf, aes(avg_home_value, hs_diploma_percent, colour = region)) + 
+  geom_point(alpha=0.5, position = 'jitter') +
+  scale_x_continuous(labels = comma) + 
+  scale_y_continuous(labels = comma)
+
+#Scatter chart of four year degree percent
+fyd_scatter <- ggplot(scatterdf, aes(avg_home_value, four_year_degree_percent, colour = region)) + 
+  geom_point(alpha=0.5, position = 'jitter') +
+  scale_x_continuous(labels = comma) + 
+  scale_y_continuous(labels = comma)
+
+#Scatter chart of average annual pay
+aap_scatter <- ggplot(scatterdf, aes(avg_home_value, avg_annual_pay, colour = region)) + 
+  geom_point(alpha=0.5, position = 'jitter') +
+  scale_x_continuous(labels = comma) + 
+  scale_y_continuous(labels = comma)
+
+#Scatter chart of resident count
+rc_scatter <- ggplot(scatterdf, aes(avg_home_value, resident_count, colour = region)) + 
+  geom_point(alpha=0.5, position = 'jitter') +
+  scale_x_continuous(labels = comma) + 
+  scale_y_continuous(labels = comma)
+
+#Show scatter charts
+ggarrange(hsd_scatter, fyd_scatter, aap_scatter, rc_scatter, 
+                    labels = c("hsd", "fyd", "aap", "rc"),
+                    ncol = 2, nrow = 2,
+                    common.legend = TRUE, legend = "bottom")
+```
+
+We'll conclude this visuals section with comparisons of the violin plots   
+<I> Home Values </I>
+```{r violin-plots}
+#Violin of home values
+hv_violin <- ggplot(scatterdf, aes(region_num, avg_home_value, colour = region)) + 
+  geom_violin(trim = FALSE) 
+
+#Display the violin plots
+ggarrange(hv_violin,
+          labels = c("hv"),
+          ncol = 1, nrow = 1,
+          common.legend = TRUE, legend = "top")
+```
+
+<I> Education </I>
+```{r}
+#Violin of high school diploma
+hsd_violin <- ggplot(scatterdf, aes(region_num, hs_diploma_percent, colour = region)) + 
+  geom_violin(trim = FALSE)
+
+#Violin of four year degree
+fyd_violin <- ggplot(scatterdf, aes(region_num, four_year_degree_percent, colour = region)) +
+  geom_violin(trim = FALSE)
+
+#Display the violin plots
+ggarrange(hsd_violin, fyd_violin,
+          labels = c("hsd", "fyd"),
+          ncol = 2, nrow = 1,
+          common.legend = TRUE, legend = "bottom")
+```
+
+<I> Wages and Resident Count </I>
+```{r}
+#Violin of wages
+aap_violin <- ggplot(scatterdf, aes(region_num, avg_annual_pay, colour = region)) + 
+  geom_violin(trim = FALSE) + 
+  scale_y_continuous(labels = comma)
+
+#Violin of resident count
+rc_violin <- ggplot(scatterdf, aes(region_num, resident_count, colour = region)) + 
+  geom_violin(trim = FALSE) + 
+  scale_y_continuous(labels = comma)
+
+#Display the violin plots
+ggarrange(aap_violin, rc_violin,
+          labels = c("aap", "rc"),
+          ncol = 2, nrow = 1,
+          common.legend = TRUE, legend = "bottom")
+```
+
+As we move into Inference and apply a regression model to this data, education will probably be the best predictor of home values, and wages is expected to be signifiant enough to retain in the final model. Given resident counts lower correlation, it may not make it to the final regression model.
+
+### Part 4 - Inference
+We'll start with a full regression model for home values with explanatory variables of...        
+region = census region (Northeast, South, Midwest, West)       
+hs = high school diploma       
+college = four year degree      
+wages = average annual pay      
+rc = resident count      
+hv = home values      
+
+<B> Create the Regression Model </B>  
+```{r}
+rmdata <- data %>%
+  select(region_num, hs = hs_diploma_percent, college = four_year_degree_percent, wages = avg_annual_pay, rc = resident_count, hv = avg_home_value)
+
+rmall <- lm(hv ~ region_num + hs + college + wages + rc, data = rmdata)
+summary(rmall)
+```
+
+<B> Check for Reasonable Conditions </B>  
+This model looks pretty good as all the p-values are a lot less than 0.05 and the adjusted R-squared is at 55.4%.  Prior to concluding that this is the final model, we'll check if the conditions to use Regression are reasonable.  To do this we will use the ggfortify library's autoplot function to create diagnostic plots.
+```{r}
+autoplot(rmall)
+```
+
+<B> Analyzing the regression relationships... </B>  
+<I> Residuals vs Fitted </I> checks the linear relationship assumptions. Our results show that up to values of $500K the relationship is a horizontal line; above $500K the outliers take the data in an upward curve.
+
+<I>Normal Q-Q </I> is used to examine whether the residuals are normally distributed. Similar to the "Residuals vs Fitted" the data skews right among outliers of high home values.
+
+<I>Scale-Location (or Spread-Location) </I> is used to check the homogeneity of variance of the residuals (homoscedasticity). Our "$500K" pattern continues as there is good homoscedasticity up to this amount.
+
+<I>Residuals vs Leverage </I> is used to identify influential cases, that is extreme values that might influence the regression results when included or excluded from the analysis. The dashed line in the plot is called "Cook's line" and values above this line should be considered for removal from the model.  The above result aligns with the prior notes that values above $500K appear to be impacting the model's ability to forecast with regression.
+
+### Part 5 - Conclusion
+Conclusions from this study are...      
+1. at a county level across the United States the explanatory variables of high school diploma, four year degree, wages, resident count, and region produce a useable regression model to forecast home values.
+<br> <br>
+2. a next step for this project could be to run this notebook excluding counties with home values that exceed $500K.  It's reasonable to assume that the model's forecasting ability would improve.   
+
+### References
+[This article from STHDA](http://www.sthda.com/english/wiki/ggplot2-quick-correlation-matrix-heatmap-r-software-and-data-visualization) was a huge help in generating the heatmaps.
+
+[This article from STHDA](http://www.sthda.com/english/articles/39-regression-model-diagnostics/161-linear-regression-assumptions-and-diagnostics-in-r-essentials/#diagnostic-plots) helped me analye the data's alignment to regression conditions.

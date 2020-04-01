@@ -1,0 +1,2841 @@
+"county","state","metro","avg_home_value"
+"Los Angeles County","CA","Los Angeles-Long Beach-Anaheim",623588.416666667
+"Cook County","IL","Chicago-Naperville-Elgin",240966.666666667
+"Harris County","TX","Houston-The Woodlands-Sugar Land",189334
+"Maricopa County","AZ","Phoenix-Mesa-Scottsdale",269839.75
+"San Diego County","CA","San Diego-Carlsbad",581475.833333333
+"Orange County","CA","Los Angeles-Long Beach-Anaheim",723042.916666667
+"Kings County","NY","New York-Newark-Jersey City",655214.583333333
+"Miami-Dade County","FL","Miami-Fort Lauderdale-West Palm Beach",304717
+"Dallas County","TX","Dallas-Fort Worth-Arlington",203781.25
+"Queens County","NY","New York-Newark-Jersey City",509714.333333333
+"Riverside County","CA","Riverside-San Bernardino-Ontario",376522.5
+"San Bernardino County","CA","Riverside-San Bernardino-Ontario",344212.416666667
+"Clark County","NV","Las Vegas-Henderson-Paradise",273674
+"King County","WA","Seattle-Tacoma-Bellevue",646416.166666667
+"Wayne County","MI","Detroit-Warren-Dearborn",97446
+"Tarrant County","TX","Dallas-Fort Worth-Arlington",212634.25
+"Santa Clara County","CA","San Jose-Sunnyvale-Santa Clara",1266396.58333333
+"Broward County","FL","Miami-Fort Lauderdale-West Palm Beach",263982.25
+"Bexar County","TX","San Antonio-New Braunfels",177211.083333333
+"New York County","NY","New York-Newark-Jersey City",1063433.66666667
+"Philadelphia County","PA","Philadelphia-Camden-Wilmington",166747
+"Alameda County","CA","San Francisco-Oakland-Hayward",857178.916666667
+"Middlesex County","MA","Boston-Cambridge-Newton",550853.166666667
+"Suffolk County","NY","New York-Newark-Jersey City",518494.416666667
+"Sacramento County","CA","Sacramento--Roseville--Arden-Arcade",365465.25
+"Bronx County","NY","New York-Newark-Jersey City",279662.166666667
+"Nassau County","NY","New York-Newark-Jersey City",540481.166666667
+"Palm Beach County","FL","Miami-Fort Lauderdale-West Palm Beach",283111.833333333
+"Cuyahoga County","OH","Cleveland-Elyria",130188.583333333
+"Hillsborough County","FL","Tampa-St. Petersburg-Clearwater",225153.833333333
+"Allegheny County","PA","Pittsburgh",155728.166666667
+"Oakland County","MI","Detroit-Warren-Dearborn",247699.833333333
+"Franklin County","OH","Columbus",178924.666666667
+"Hennepin County","MN","Minneapolis-St. Paul-Bloomington",289967.916666667
+"Orange County","FL","Orlando-Kissimmee-Sanford",251924.916666667
+"Fairfax County","VA","Washington-Arlington-Alexandria",545095.583333333
+"Contra Costa County","CA","San Francisco-Oakland-Hayward",682048.25
+"Salt Lake County","UT","Salt Lake City",351541.25
+"Travis County","TX","Austin-Round Rock",354751
+"Saint Louis County","MO","St. Louis",186416.166666667
+"Pima County","AZ","Tucson",203199.25
+"Montgomery County","MD","Washington-Arlington-Alexandria",468347.583333333
+"Honolulu County","HI","Urban Honolulu",701837.083333333
+"Westchester County","NY","New York-Newark-Jersey City",637165.666666667
+"Milwaukee County","WI","Milwaukee-Waukesha-West Allis",151487.5
+"Fresno County","CA","Fresno",247048.75
+"Shelby County","TN","Memphis",129552.416666667
+"Fulton County","GA","Atlanta-Sandy Springs-Roswell",288058.833333333
+"Mecklenburg County","NC","Charlotte-Concord-Gastonia",244561.583333333
+"Erie County","NY","Buffalo-Cheektowaga-Niagara Falls",165235.916666667
+"DuPage County","IL","Chicago-Naperville-Elgin",293603.583333333
+"Fairfield County","CT","Bridgeport-Stamford-Norwalk",410543.25
+"Pinellas County","FL","Tampa-St. Petersburg-Clearwater",227613.75
+"Bergen County","NJ","New York-Newark-Jersey City",481144.166666667
+"Marion County","IN","Indianapolis-Carmel-Anderson",135045.833333333
+"Wake County","NC","Raleigh",290997.916666667
+"Hartford County","CT","Hartford-West Hartford-East Hartford",220221.333333333
+"Duval County","FL","Jacksonville",181762.583333333
+"Prince Georges County","MD","Washington-Arlington-Alexandria",302792.833333333
+"New Haven County","CT","New Haven-Milford",221759.25
+"Macomb County","MI","Detroit-Warren-Dearborn",174083.416666667
+"Kern County","CA","Bakersfield",216729.416666667
+"Ventura County","CA","Oxnard-Thousand Oaks-Ventura",600079.833333333
+"Middlesex County","NJ","New York-Newark-Jersey City",335732.75
+"Gwinnett County","GA","Atlanta-Sandy Springs-Roswell",228630.75
+"San Francisco County","CA","San Francisco-Oakland-Hayward",1341756.41666667
+"Baltimore County","MD","Baltimore-Columbia-Towson",249813.833333333
+"Hamilton County","OH","Cincinnati",149965.5
+"El Paso County","TX","El Paso",125954.333333333
+"Montgomery County","PA","Philadelphia-Camden-Wilmington",305132
+"Worcester County","MA","Worcester",286810.75
+"Pierce County","WA","Seattle-Tacoma-Bellevue",343707.833333333
+"Essex County","NJ","New York-Newark-Jersey City",392321.75
+"Collin County","TX","Dallas-Fort Worth-Arlington",339488.75
+"Hidalgo County","TX","McAllen-Edinburg-Mission",106616.833333333
+"Monroe County","NY","Rochester",147515.833333333
+"Essex County","MA","Boston-Cambridge-Newton",446060.5
+"Jefferson County","KY","Louisville/Jefferson County",167014.083333333
+"Multnomah County","OR","Portland-Vancouver-Hillsboro",420856.333333333
+"Suffolk County","MA","Boston-Cambridge-Newton",574723.583333333
+"Oklahoma County","OK","Oklahoma City",137758.583333333
+"San Mateo County","CA","San Francisco-Oakland-Hayward",1357304
+"Snohomish County","WA","Seattle-Tacoma-Bellevue",470850.833333333
+"Lake County","IL","Chicago-Naperville-Elgin",242546.416666667
+"Dekalb County","GA","Atlanta-Sandy Springs-Roswell",214471.083333333
+"Cobb County","GA","Atlanta-Sandy Springs-Roswell",257792.166666667
+"San Joaquin County","CA","Stockton-Lodi",364904.166666667
+"Will County","IL","Chicago-Naperville-Elgin",232146.833333333
+"Jackson County","MO","Kansas City",144464.166666667
+"Norfolk County","MA","Boston-Cambridge-Newton",508753.916666667
+"Denton County","TX","Dallas-Fort Worth-Arlington",303179.083333333
+"Bernalillo County","NM","Albuquerque",196246.25
+"Jefferson County","AL","Birmingham-Hoover",130107.75
+"Hudson County","NJ","New York-Newark-Jersey City",459296.916666667
+"Monmouth County","NJ","New York-Newark-Jersey City",427553.916666667
+"Davidson County","TN","Nashville-Davidson--Murfreesboro--Franklin",269380.666666667
+"Providence County","RI","Providence-Warwick",255770.75
+"Bucks County","PA","Philadelphia-Camden-Wilmington",329432.666666667
+"El Paso County","CO","Colorado Springs",291239.416666667
+"Baltimore City","MD","Baltimore-Columbia-Towson",144240.416666667
+"Lee County","FL","Cape Coral-Fort Myers",235428.083333333
+"Tulsa County","OK","Tulsa",144531.833333333
+"Kent County","MI","Grand Rapids-Wyoming",191806.583333333
+"Polk County","FL","Lakeland-Winter Haven",176466.083333333
+"District of Columbia","DC","Washington-Arlington-Alexandria",601869.25
+"Denver County","CO","Denver-Aurora-Lakewood",439065.416666667
+"Fort Bend County","TX","Houston-The Woodlands-Sugar Land",264642.916666667
+"Ocean County","NJ","New York-Newark-Jersey City",287101.083333333
+"Arapahoe County","CO","Denver-Aurora-Lakewood",382552.083333333
+"Delaware County","PA","Philadelphia-Camden-Wilmington",220489.583333333
+"Bristol County","MA","Providence-Warwick",322880.25
+"Johnson County","KS","Kansas City",286526.666666667
+"Brevard County","FL","Palm Bay-Melbourne-Titusville",219248.333333333
+"Summit County","OH","Akron",134408.583333333
+"New Castle County","DE","Philadelphia-Camden-Wilmington",245388.583333333
+"Anne Arundel County","MD","Baltimore-Columbia-Towson",350383.083333333
+"Union County","NJ","New York-Newark-Jersey City",370734.916666667
+"Montgomery County","OH","Dayton",107518.416666667
+"Jefferson County","CO","Denver-Aurora-Lakewood",431934.25
+"Washington County","OR","Portland-Vancouver-Hillsboro",416933.833333333
+"Lancaster County","PA","Lancaster",224786.166666667
+"Douglas County","NE","Omaha-Council Bluffs",177404.916666667
+"Utah County","UT","Provo-Orem",326333.916666667
+"Kane County","IL","Chicago-Naperville-Elgin",230870.916666667
+"Stanislaus County","CA","Modesto",308561.833333333
+"Camden County","NJ","Philadelphia-Camden-Wilmington",171966.166666667
+"Ramsey County","MN","Minneapolis-St. Paul-Bloomington",248009.333333333
+"Passaic County","NJ","New York-Newark-Jersey City",340231.916666667
+"Chester County","PA","Philadelphia-Camden-Wilmington",353609.916666667
+"Sedgwick County","KS","Wichita",136571.5
+"Lake County","IN","Chicago-Naperville-Elgin",144378.75
+"Plymouth County","MA","Boston-Cambridge-Newton",388828.416666667
+"Volusia County","FL","Deltona-Daytona Beach-Ormond Beach",196711.833333333
+"Morris County","NJ","New York-Newark-Jersey City",443049.25
+"Guilford County","NC","Greensboro-High Point",152692.5
+"Dane County","WI","Madison",271354.25
+"Sonoma County","CA","Santa Rosa",642819.333333333
+"Spokane County","WA","Spokane-Spokane Valley",238371.833333333
+"Richmond County","NY","New York-Newark-Jersey City",546283.333333333
+"Onondaga County","NY","Syracuse",144260
+"Pasco County","FL","Tampa-St. Petersburg-Clearwater",179398.833333333
+"Hampden County","MA","Springfield",207924
+"Montgomery County","TX","Houston-The Woodlands-Sugar Land",244995.166666667
+"Greenville County","SC","Greenville-Anderson-Mauldin",201259.416666667
+"Burlington County","NJ","Philadelphia-Camden-Wilmington",225409
+"Tulare County","CA","Visalia-Porterville",212079
+"Lucas County","OH","Toledo",98576.5833333333
+"Adams County","CO","Denver-Aurora-Lakewood",347636.916666667
+"East Baton Rouge Parish","LA","Baton Rouge",186742.5
+"Virginia Beach City","VA","Virginia Beach-Norfolk-Newport News",269052.583333333
+"York County","PA","York-Hanover",179934.833333333
+"Jefferson Parish","LA","New Orleans-Metairie",201384.333333333
+"Knox County","TN","Knoxville",184553.166666667
+"Polk County","IA","Des Moines-West Des Moines",188685.666666667
+"Genesee County","MI","Flint",112896.666666667
+"Clark County","WA","Portland-Vancouver-Hillsboro",358502.5
+"Santa Barbara County","CA","Santa Maria-Santa Barbara",621203.5
+"Seminole County","FL","Orlando-Kissimmee-Sanford",252799.833333333
+"Williamson County","TX","Austin-Round Rock",289166.75
+"Washoe County","NV","Reno",360166.25
+"Monterey County","CA","Salinas",567607.25
+"Solano County","CA","Vallejo-Fairfield",432834.916666667
+"Mobile County","AL","Mobile",118903.25
+"Berks County","PA","Reading",179923.583333333
+"Cameron County","TX","Brownsville-Harlingen",103119.75
+"Prince William County","VA","Washington-Arlington-Alexandria",377200.166666667
+"Hillsborough County","NH","Manchester-Nashua",287934.75
+"Dakota County","MN","Minneapolis-St. Paul-Bloomington",285564.25
+"Ada County","ID","Boise City",291460.5
+"Waukesha County","WI","Milwaukee-Waukesha-West Allis",285664.083333333
+"Richland County","SC","Columbia",146016.25
+"Pulaski County","AR","Little Rock-North Little Rock-Conway",136477.916666667
+"Sarasota County","FL","North Port-Sarasota-Bradenton",261233.666666667
+"Clackamas County","OR","Portland-Vancouver-Hillsboro",439027.583333333
+"Pinal County","AZ","Phoenix-Mesa-Scottsdale",209946.5
+"Stark County","OH","Canton-Massillon",125608.333333333
+"Orange County","NY","New York-Newark-Jersey City",253033.75
+"Butler County","OH","Cincinnati",172799.083333333
+"Mercer County","NJ","Trenton",243271.333333333
+"Westmoreland County","PA","Pittsburgh",156222.416666667
+"Saint Charles County","MO","St. Louis",226790.583333333
+"Allen County","IN","Fort Wayne",132556.5
+"Lane County","OR","Eugene",285336.083333333
+"Forsyth County","NC","Winston-Salem",147179.833333333
+"Charleston County","SC","Charleston-North Charleston",333088.416666667
+"Lehigh County","PA","Allentown-Bethlehem-Easton",201567.75
+"Placer County","CA","Sacramento--Roseville--Arden-Arcade",491637.916666667
+"Washtenaw County","MI","Ann Arbor",273638.333333333
+"Orleans Parish","LA","New Orleans-Metairie",233576.5
+"Nueces County","TX","Corpus Christi",151785.583333333
+"Hamilton County","TN","Chattanooga",178301.333333333
+"Madison County","AL","Huntsville",178838.333333333
+"Marion County","FL","Ocala",154562.833333333
+"Anoka County","MN","Minneapolis-St. Paul-Bloomington",251806.25
+"Somerset County","NJ","New York-Newark-Jersey City",417410.666666667
+"Manatee County","FL","North Port-Sarasota-Bradenton",267893.583333333
+"Collier County","FL","Naples-Immokalee-Marco Island",344975.916666667
+"Luzerne County","PA","Scranton--Wilkes-Barre--Hazleton",107353.916666667
+"Cumberland County","NC","Fayetteville",116887.666666667
+"Saint Louis City","MO","St. Louis",122265.416666667
+"Chesterfield County","VA","Richmond",242186.666666667
+"Marion County","OR","Salem",271373.25
+"Brazoria County","TX","Houston-The Woodlands-Sugar Land",222942.25
+"Loudoun County","VA","Washington-Arlington-Alexandria",518981.666666667
+"Rockland County","NY","New York-Newark-Jersey City",461918.166666667
+"Bell County","TX","Killeen-Temple",141982.583333333
+"McHenry County","IL","Chicago-Naperville-Elgin",212963.416666667
+"Henrico County","VA","Richmond",239442.833333333
+"Davis County","UT","Ogden-Clearfield",324458.5
+"Albany County","NY","Albany-Schenectady-Troy",222820.916666667
+"Lorain County","OH","Cleveland-Elyria",144383.166666667
+"Larimer County","CO","Fort Collins",391507.083333333
+"Northampton County","PA","Allentown-Bethlehem-Easton",209264.333333333
+"Escambia County","FL","Pensacola-Ferry Pass-Brent",155061.083333333
+"Dutchess County","NY","New York-Newark-Jersey City",281342.75
+"Lake County","FL","Orlando-Kissimmee-Sanford",215806.166666667
+"Fayette County","KY","Lexington-Fayette",184752.333333333
+"Winnebago County","IL","Rockford",107368.25
+"Rockingham County","NH","Boston-Cambridge-Newton",355266
+"Boulder County","CO","Boulder",546478.833333333
+"Anchorage Borough","AK","Anchorage",304594.416666667
+"Galveston County","TX","Houston-The Woodlands-Sugar Land",217380.416666667
+"Gloucester County","NJ","Philadelphia-Camden-Wilmington",197362.166666667
+"Howard County","MD","Baltimore-Columbia-Towson",447692.416666667
+"Douglas County","CO","Denver-Aurora-Lakewood",506290.416666667
+"Lancaster County","NE","Lincoln",187425.5
+"Spartanburg County","SC","Spartanburg",145339.416666667
+"Cumberland County","ME","Portland-South Portland",300511.75
+"Ingham County","MI","Lansing-East Lansing",133615.916666667
+"Erie County","PA","Erie",123573.083333333
+"Lubbock County","TX","Lubbock",140678.75
+"Saint Lucie County","FL","Port St. Lucie",212599.416666667
+"Leon County","FL","Tallahassee",183087.75
+"Greene County","MO","Springfield",137349.333333333
+"Hamilton County","IN","Indianapolis-Carmel-Anderson",275477.166666667
+"Atlantic County","NJ","Atlantic City-Hammonton",187007.666666667
+"New London County","CT","Norwich-New London",233449.416666667
+"Saint Clair County","IL","St. Louis",106904.25
+"San Luis Obispo County","CA","San Luis Obispo-Paso Robles-Arroyo Grande",601356.5
+"Horry County","SC","Myrtle Beach-Conway-North Myrtle Beach",179402.583333333
+"Madison County","IL","St. Louis",125954.916666667
+"Osceola County","FL","Orlando-Kissimmee-Sanford",211669.583333333
+"Dauphin County","PA","Harrisburg-Carlisle",161248.75
+"Durham County","NC","Durham-Chapel Hill",230217.25
+"Saint Joseph County","IN","South Bend-Mishawaka",123174
+"Chatham County","GA","Savannah",184406.083333333
+"Ottawa County","MI","Grand Rapids-Wyoming",221858.25
+"Rutherford County","TN","Nashville-Davidson--Murfreesboro--Franklin",242998.333333333
+"Lexington County","SC","Columbia",163094.416666667
+"Santa Cruz County","CA","Santa Cruz-Watsonville",821562.75
+"Clayton County","GA","Atlanta-Sandy Springs-Roswell",115320.25
+"Merced County","CA","Merced",262832.083333333
+"Cleveland County","OK","Oklahoma City",160467.333333333
+"Caddo Parish","LA","Shreveport-Bossier City",107919.833333333
+"Weld County","CO","Greeley",339160.166666667
+"Marin County","CA","San Francisco-Oakland-Hayward",1159282.33333333
+"Jefferson County","TX","Beaumont-Port Arthur",106101.75
+"Thurston County","WA","Olympia-Tumwater",312133.666666667
+"Kitsap County","WA","Bremerton-Silverdale",361812.083333333
+"Kalamazoo County","MI","Kalamazoo-Portage",157966
+"Webb County","TX","Laredo",153211.583333333
+"Brown County","WI","Green Bay",169125.916666667
+"Alachua County","FL","Gainesville",183226.166666667
+"Hinds County","MS","Jackson",81883.3333333333
+"Harford County","MD","Baltimore-Columbia-Towson",289618.666666667
+"Yakima County","WA","Yakima",197264.583333333
+"Norfolk City","VA","Virginia Beach-Norfolk-Newport News",191245.5
+"Mahoning County","OH","Youngstown-Warren-Boardman",89028.9166666667
+"Buncombe County","NC","Asheville",287069.5
+"Washington County","MN","Minneapolis-St. Paul-Bloomington",308475.083333333
+"Cumberland County","PA","Harrisburg-Carlisle",204699
+"McLennan County","TX","Waco",154954.083333333
+"Oneida County","NY","Utica-Rome",130219.5
+"Saint Tammany Parish","LA","New Orleans-Metairie",205562
+"Frederick County","MD","Washington-Arlington-Alexandria",336036.666666667
+"Weber County","UT","Ogden-Clearfield",255133.083333333
+"Lake County","OH","Cleveland-Elyria",149783
+"Montgomery County","AL","Montgomery",94194
+"York County","SC","Charlotte-Concord-Gastonia",198467.75
+"Chesapeake City","VA","Virginia Beach-Norfolk-Newport News",266032.833333333
+"Clay County","MO","Kansas City",188735.25
+"Lafayette Parish","LA","Lafayette",175175.25
+"Benton County","AR","Fayetteville-Springdale-Rogers",191731.916666667
+"Butte County","CA","Chico",283876.083333333
+"Saratoga County","NY","Albany-Schenectady-Troy",272712.166666667
+"Jefferson County","MO","St. Louis",167906
+"Niagara County","NY","Buffalo-Cheektowaga-Niagara Falls",137984.916666667
+"Barnstable County","MA","Barnstable Town",424542.583333333
+"Lackawanna County","PA","Scranton--Wilkes-Barre--Hazleton",131364.666666667
+"Cherokee County","GA","Atlanta-Sandy Springs-Roswell",262938.75
+"Warren County","OH","Cincinnati",229931.583333333
+"Linn County","IA","Cedar Rapids",153760.333333333
+"Yavapai County","AZ","Prescott",297511.333333333
+"Trumbull County","OH","Youngstown-Warren-Boardman",92346.5833333333
+"Smith County","TX","Tyler",154114.916666667
+"Dona Ana County","NM","Las Cruces",161440.916666667
+"Washington County","PA","Pittsburgh",157672.166666667
+"Arlington County","VA","Washington-Arlington-Alexandria",671685.5
+"Gaston County","NC","Charlotte-Concord-Gastonia",154508.583333333
+"Richmond City","VA","Richmond",213421.333333333
+"Henry County","GA","Atlanta-Sandy Springs-Roswell",178056.166666667
+"Jackson County","OR","Medford",313138.166666667
+"Washington County","AR","Fayetteville-Springdale-Rogers",180531.5
+"New Hanover County","NC","Wilmington",244153.833333333
+"Union County","NC","Charlotte-Concord-Gastonia",258141
+"Whatcom County","WA","Bellingham",375875.25
+"Champaign County","IL","Champaign-Urbana",139795.416666667
+"Yolo County","CA","Sacramento--Roseville--Arden-Arcade",443379.333333333
+"Broome County","NY","Binghamton",112423.333333333
+"Richmond County","GA","Augusta-Richmond County",100428.5
+"Saint Louis County","MN","Duluth",157219.333333333
+"Mohave County","AZ","Lake Havasu City-Kingman",220731.583333333
+"Saginaw County","MI","Saginaw",87209.4166666667
+"Elkhart County","IN","Elkhart-Goshen",150587.666666667
+"Sangamon County","IL","Springfield",131411.333333333
+"Clermont County","OH","Cincinnati",181148
+"Sussex County","DE","Salisbury",298701.583333333
+"York County","ME","Portland-South Portland",289094.25
+"Yuma County","AZ","Yuma",149133.75
+"Racine County","WI","Racine",215680.583333333
+"Shelby County","AL","Birmingham-Hoover",198670.916666667
+"Brazos County","TX","College Station-Bryan",211845
+"Tuscaloosa County","AL","Tuscaloosa",165371.833333333
+"Kanawha County","WV","Charleston",102001.666666667
+"Calcasieu Parish","LA","Lake Charles",175301.083333333
+"Clay County","FL","Jacksonville",204798.75
+"Saint Johns County","FL","Jacksonville",312547.083333333
+"Litchfield County","CT","Torrington",238626.166666667
+"Muscogee County","GA","Columbus",104488.166666667
+"Canyon County","ID","Boise City",202793.083333333
+"Anderson County","SC","Greenville-Anderson-Mauldin",149851.333333333
+"Harrison County","MS","Gulfport-Biloxi-Pascagoula",133494.166666667
+"Peoria County","IL","Peoria",101723.083333333
+"Hawaii County","HI","Hilo",365803
+"Butler County","PA","Pittsburgh",249882.75
+"Williamson County","TN","Nashville-Davidson--Murfreesboro--Franklin",480651
+"Ulster County","NY","Kingston",225226.75
+"Baldwin County","AL","Daphne-Fairhope-Foley",194301.583333333
+"El Dorado County","CA","Sacramento--Roseville--Arden-Arcade",480530.5
+"Livingston County","MI","Detroit-Warren-Dearborn",275296.583333333
+"Okaloosa County","FL","Crestview-Fort Walton Beach-Destin",217909.916666667
+"Newport News City","VA","Virginia Beach-Norfolk-Newport News",178581.833333333
+"Vanderburgh County","IN","Evansville",121844.583333333
+"Hall County","GA","Gainesville",215161.25
+"Cabarrus County","NC","Charlotte-Concord-Gastonia",212249.166666667
+"Shawnee County","KS","Topeka",122888.833333333
+"Berkeley County","SC","Charleston-North Charleston",210103.833333333
+"Onslow County","NC","Jacksonville",150371.083333333
+"Shasta County","CA","Redding",257680.916666667
+"Outagamie County","WI","Appleton",163851.583333333
+"Forsyth County","GA","Atlanta-Sandy Springs-Roswell",343399.166666667
+"Benton County","WA","Kennewick-Richland",273009.5
+"Imperial County","CA","El Centro",229441.833333333
+"Delaware County","OH","Columbus",327908.25
+"Tippecanoe County","IN","Lafayette-West Lafayette",160554
+"Hernando County","FL","Tampa-St. Petersburg-Clearwater",165661
+"Medina County","OH","Cleveland-Elyria",207676.5
+"Montgomery County","TN","Clarksville",164981.833333333
+"Muskegon County","MI","Muskegon",129431.916666667
+"Beaver County","PA","Pittsburgh",125247.166666667
+"Monroe County","PA","East Stroudsburg",156049.166666667
+"McLean County","IL","Bloomington",152686.666666667
+"Minnehaha County","SD","Sioux Falls",199826.25
+"Johnston County","NC","Raleigh",191006.083333333
+"Bay County","FL","Panama City",202006.75
+"Pitt County","NC","Greenville",132543.25
+"Carroll County","MD","Baltimore-Columbia-Towson",338590.666666667
+"Winnebago County","WI","Oshkosh-Neenah",141296.333333333
+"Licking County","OH","Columbus",183148.666666667
+"Kenosha County","WI","Chicago-Naperville-Elgin",183477.75
+"Kent County","RI","Providence-Warwick",241826.416666667
+"Middlesex County","CT","Hartford-West Hartford-East Hartford",282646.916666667
+"Scott County","IA","Davenport-Moline-Rock Island",156511
+"Porter County","IN","Chicago-Naperville-Elgin",199240.333333333
+"Saint Clair County","MI","Detroit-Warren-Dearborn",154830.916666667
+"Davidson County","NC","Winston-Salem",138465.583333333
+"Boone County","MO","Columbia",182322.416666667
+"Kent County","DE","Dover",218513.25
+"Beaufort County","SC","Hilton Head Island-Bluffton-Beaufort",310130.5
+"Greene County","OH","Dayton",168452.916666667
+"Portage County","OH","Akron",161886.916666667
+"DeSoto County","MS","Memphis",174227.416666667
+"Sumner County","TN","Nashville-Davidson--Murfreesboro--Franklin",256478.5
+"Rock County","WI","Janesville-Beloit",139602.25
+"Jackson County","MI","Jackson",140842.666666667
+"Aiken County","SC","Augusta-Richmond County",144045.583333333
+"Charlotte County","FL","Punta Gorda",209384.583333333
+"Kenton County","KY","Cincinnati",160823.416666667
+"Iredell County","NC","Charlotte-Concord-Gastonia",207473.083333333
+"Rensselaer County","NY","Albany-Schenectady-Troy",188393.5
+"Pueblo County","CO","Pueblo",168298.75
+"Sarpy County","NE","Omaha-Council Bluffs",212675.666666667
+"Hampshire County","MA","Springfield",276150.166666667
+"Deschutes County","OR","Bend-Redmond",392924.583333333
+"Wyandotte County","KS","Kansas City",106411.75
+"Hays County","TX","Austin-Round Rock",274546.333333333
+"Cumberland County","NJ","Vineland-Bridgeton",140315.666666667
+"Sullivan County","TN","Kingsport-Bristol-Bristol",136343.333333333
+"Berrien County","MI","Niles-Benton Harbor",167911
+"Chittenden County","VT","Burlington-South Burlington",318020.583333333
+"Bibb County","GA","Macon-Bibb County",84040
+"Maui County","HI","Kahului-Wailuku-Lahaina",656511.083333333
+"Schenectady County","NY","Albany-Schenectady-Troy",172683.583333333
+"Catawba County","NC","Hickory-Lenoir-Morganton",150057.333333333
+"Centre County","PA","State College",238394.5
+"Penobscot County","ME","Bangor",147545.416666667
+"Ouachita Parish","LA","Monroe",156772.916666667
+"Kings County","CA","Hanford-Corcoran",215619.416666667
+"Tolland County","CT","Hartford-West Hartford-East Hartford",237497.416666667
+"Monroe County","MI","Monroe",159963.666666667
+"Santa Rosa County","FL","Pensacola-Ferry Pass-Brent",205871.5
+"Alamance County","NC","Burlington",151648.416666667
+"Johnson County","TX","Dallas-Fort Worth-Arlington",201447.666666667
+"Madera County","CA","Madera",257142.583333333
+"Stearns County","MN","St. Cloud",198604.5
+"Cass County","ND","Fargo",229798.083333333
+"Franklin County","PA","Chambersburg-Waynesboro",171855.083333333
+"Ellis County","TX","Dallas-Fort Worth-Arlington",222558
+"Sussex County","NJ","New York-Newark-Jersey City",239424.25
+"Schuylkill County","PA","Pottsville",75551.25
+"Yellowstone County","MT","Billings",245149.416666667
+"Rock Island County","IL","Davenport-Moline-Rock Island",108118.416666667
+"Washington County","MD","Hagerstown-Martinsburg",204094.333333333
+"Mesa County","CO","Grand Junction",245258.166666667
+"Charles County","MD","Washington-Arlington-Alexandria",305005.333333333
+"Merrimack County","NH","Concord",254617.666666667
+"Martin County","FL","Port St. Lucie",278386.916666667
+"Fairfield County","OH","Columbus",198046.583333333
+"Hendricks County","IN","Indianapolis-Carmel-Anderson",197491.833333333
+"Olmsted County","MN","Rochester",231659.416666667
+"Santa Fe County","NM","Santa Fe",336054
+"Cambria County","PA","Johnstown",71833.5
+"Paulding County","GA","Atlanta-Sandy Springs-Roswell",181743.166666667
+"Randolph County","NC","Greensboro-High Point",132857.75
+"Rankin County","MS","Jackson",170953.333333333
+"Citrus County","FL","Homosassa Springs",155373.583333333
+"Lee County","AL","Auburn-Opelika",185315.75
+"Alexandria City","VA","Washington-Arlington-Alexandria",529545.25
+"Houston County","GA","Warner Robins",134995.5
+"Jackson County","MS","Gulfport-Biloxi-Pascagoula",123004.25
+"Johnson County","IN","Indianapolis-Carmel-Anderson",175023
+"Kootenai County","ID","Coeur d'Alene",300560.416666667
+"Rowan County","NC","Charlotte-Concord-Gastonia",141396.166666667
+"Clark County","OH","Springfield",106999.333333333
+"Washington County","UT","St. George",305129.583333333
+"Indian River County","FL","Sebastian-Vero Beach",222208.083333333
+"Monroe County","IN","Bloomington",192882.083333333
+"Hampton City","VA","Virginia Beach-Norfolk-Newport News",161283.166666667
+"Ector County","TX","Odessa",175993.666666667
+"Florence County","SC","Florence",118565.25
+"Midland County","TX","Midland",243312.916666667
+"Fayette County","PA","Pittsburgh",96002.9166666667
+"Dorchester County","SC","Charleston-North Charleston",215055.25
+"Napa County","CA","Napa",680806.583333333
+"Calhoun County","MI","Battle Creek",117867.833333333
+"Tazewell County","IL","Peoria",124561.916666667
+"Chautauqua County","NY","Jamestown-Dunkirk-Fredonia",89977
+"Humboldt County","CA","Eureka-Arcata-Fortuna",319209.25
+"Coconino County","AZ","Flagstaff",346133.833333333
+"Robeson County","NC","Lumberton",70788.9166666667
+"Marathon County","WI","Wausau",155268
+"Orange County","NC","Durham-Chapel Hill",300018.083333333
+"Lebanon County","PA","Lebanon",173399.583333333
+"Douglas County","GA","Atlanta-Sandy Springs-Roswell",166480.333333333
+"Washington County","WI","Milwaukee-Waukesha-West Allis",235648.083333333
+"Madison County","IN","Indianapolis-Carmel-Anderson",91132.3333333333
+"Rapides Parish","LA","Alexandria",129452.75
+"Sandoval County","NM","Albuquerque",201286.333333333
+"Guadalupe County","TX","San Antonio-New Braunfels",224048.916666667
+"Taylor County","TX","Abilene",130376.583333333
+"Wichita County","TX","Wichita Falls",92010.4166666667
+"Cochise County","AZ","Sierra Vista-Douglas",143018.5
+"Berkshire County","MA","Pittsfield",220646.5
+"Black Hawk County","IA","Waterloo-Cedar Falls",129911.583333333
+"Johnson County","IA","Iowa City",227383.75
+"San Juan County","NM","Farmington",164319.25
+"Scott County","MN","Minneapolis-St. Paul-Bloomington",316089.166666667
+"Stafford County","VA","Washington-Arlington-Alexandria",341423.833333333
+"Hunterdon County","NJ","New York-Newark-Jersey City",389020.5
+"Livingston Parish","LA","Baton Rouge",176892.916666667
+"Coweta County","GA","Atlanta-Sandy Springs-Roswell",217428.75
+"Blair County","PA","Altoona",110061.166666667
+"Washington County","RI","Providence-Warwick",377036.666666667
+"Sebastian County","AR","Fort Smith",110755.666666667
+"Wood County","OH","Toledo",163758.833333333
+"Wright County","MN","Minneapolis-St. Paul-Bloomington",252027.5
+"Richland County","OH","Mansfield",97336.4166666667
+"Comanche County","OK","Lawton",92978.9166666667
+"Columbia County","GA","Augusta-Richmond County",200646.916666667
+"Strafford County","NH","Boston-Cambridge-Newton",258646.5
+"Blount County","TN","Knoxville",185951.916666667
+"Washington County","TN","Johnson City",159213.416666667
+"Wayne County","NC","Goldsboro",123158.416666667
+"Spotsylvania County","VA","Washington-Arlington-Alexandria",279243.916666667
+"Kennebec County","ME","Augusta-Waterville",158477
+"Oswego County","NY","Syracuse",107130.416666667
+"Gregg County","TX","Longview",144236.583333333
+"Tangipahoa Parish","LA","Hammond",143638
+"Potter County","TX","Amarillo",86904.75
+"Grayson County","TX","Sherman-Denison",162948.75
+"Randall County","TX","Amarillo",165883.833333333
+"Morgan County","AL","Decatur",124918.25
+"Pickens County","SC","Greenville-Anderson-Mauldin",157456.666666667
+"Boone County","KY","Cincinnati",203050.916666667
+"Calhoun County","AL","Anniston-Oxford-Jacksonville",94925.5833333333
+"Windham County","CT","Worcester",193006.916666667
+"Delaware County","IN","Muncie",87579
+"Jasper County","MO","Joplin",112566.166666667
+"Bossier Parish","LA","Shreveport-Bossier City",168347.5
+"Parker County","TX","Dallas-Fort Worth-Arlington",263859.333333333
+"Skagit County","WA","Mount Vernon-Anacortes",354529.083333333
+"Clarke County","GA","Athens-Clarke County",171862.5
+"Linn County","OR","Albany",250543.416666667
+"Mercer County","PA","Youngstown-Warren-Boardman",118936.5
+"Jefferson County","NY","Watertown-Fort Drum",137113.083333333
+"Lycoming County","PA","Williamsport",147602.416666667
+"Canadian County","OK","Oklahoma City",163067
+"Sheboygan County","WI","Sheboygan",137320.416666667
+"Kendall County","IL","Chicago-Naperville-Elgin",233389
+"Harnett County","NC","Dunn",161581.416666667
+"La Crosse County","WI","La Crosse-Onalaska",166460.583333333
+"Wayne County","OH","Wooster",156193.75
+"Wilson County","TN","Nashville-Davidson--Murfreesboro--Franklin",292193.416666667
+"La Salle County","IL","Ottawa-Peru",109918.5
+"Warren County","KY","Bowling Green",174468
+"Kankakee County","IL","Kankakee",137633.25
+"Faulkner County","AR","Little Rock-North Little Rock-Conway",154842.75
+"Cache County","UT","Logan",242786.916666667
+"Saint Lawrence County","NY","Ogdensburg-Massena",76768.5
+"Terrebonne Parish","LA","Houma-Thibodaux",167897.166666667
+"La Porte County","IN","Michigan City-La Porte",139768.583333333
+"Allegan County","MI","Holland",187260.333333333
+"Douglas County","KS","Lawrence",205764.916666667
+"Macon County","IL","Decatur",91741.5833333333
+"Carroll County","GA","Atlanta-Sandy Springs-Roswell",151397.25
+"Clark County","IN","Louisville/Jefferson County",148971.75
+"Tom Green County","TX","San Angelo",139614.5
+"Missoula County","MT","Missoula",305549.083333333
+"Lowndes County","GA","Valdosta",121714.75
+"Warren County","NJ","Allentown-Bethlehem-Easton",234534.75
+"Comal County","TX","San Antonio-New Braunfels",314437.833333333
+"Ontario County","NY","Rochester",173402.5
+"Vigo County","IN","Terre Haute",94690.3333333333
+"Columbiana County","OH","Salem",94135.75
+"Bay County","MI","Bay City",115315.833333333
+"Eaton County","MI","Lansing-East Lansing",155462.583333333
+"Androscoggin County","ME","Lewiston-Auburn",168126.666666667
+"Douglas County","OR","Roseburg",190874.333333333
+"Sumter County","SC","Sumter",115284.583333333
+"Navajo County","AZ","Show Low",198965.333333333
+"Brunswick County","NC","Myrtle Beach-Conway-North Myrtle Beach",250380.416666667
+"Ascension Parish","LA","Baton Rouge",222946.416666667
+"Saline County","AR","Little Rock-North Little Rock-Conway",159367.333333333
+"Henderson County","NC","Asheville",251607.5
+"Fayette County","GA","Atlanta-Sandy Springs-Roswell",288547.916666667
+"Allen County","OH","Lima",100065.666666667
+"Hardin County","KY","Elizabethtown-Fort Knox",144876.916666667
+"DeKalb County","IL","Chicago-Naperville-Elgin",170154.166666667
+"Saint Marys County","MD","California-Lexington Park",289004.916666667
+"Etowah County","AL","Gadsden",93219.9166666667
+"Bonneville County","ID","Idaho Falls",199420.25
+"Berkeley County","WV","Hagerstown-Martinsburg",180162.333333333
+"Craven County","NC","New Bern",149139.833333333
+"Kaufman County","TX","Dallas-Fort Worth-Arlington",215932.583333333
+"Whitfield County","GA","Dalton",128884.083333333
+"Miami County","OH","Dayton",138581
+"Cowlitz County","WA","Longview",254115.583333333
+"Walworth County","WI","Whitewater-Elkhorn",218651
+"Woodbury County","IA","Sioux City",112974.916666667
+"Fond du Lac County","WI","Fond du Lac",129319
+"Tompkins County","NY","Ithaca",216763.166666667
+"Houston County","AL","Dothan",120137
+"Ashtabula County","OH","Ashtabula",99311.25
+"Franklin County","MO","St. Louis",158561.583333333
+"Adams County","PA","Gettysburg",204995
+"Cecil County","MD","Philadelphia-Camden-Wilmington",237841.5
+"Pennington County","SD","Rapid City",206394.666666667
+"Bartow County","GA","Atlanta-Sandy Springs-Roswell",168698.083333333
+"Newton County","GA","Atlanta-Sandy Springs-Roswell",148618.833333333
+"Lenawee County","MI","Adrian",144979.583333333
+"Hanover County","VA","Richmond",282508.25
+"Putnam County","NY","New York-Newark-Jersey City",352693.083333333
+"Cass County","MO","Kansas City",196089.416666667
+"Yamhill County","OR","Portland-Vancouver-Hillsboro",328573.083333333
+"Steuben County","NY","Corning",103415.75
+"Albemarle County","VA","Charlottesville",343187.25
+"Bradley County","TN","Cleveland",161908.5
+"Highlands County","FL","Sebring",129920.166666667
+"Nevada County","CA","Truckee-Grass Valley",449306.75
+"Eau Claire County","WI","Eau Claire",170854.416666667
+"Wicomico County","MD","Salisbury",159224.25
+"Madison County","TN","Jackson",113439
+"Cleveland County","NC","Shelby",100874.833333333
+"Fairbanks North Star Borough","AK","Fairbanks",244178.083333333
+"Cape May County","NJ","Ocean City",377062.666666667
+"Roanoke City","VA","Roanoke",119176.916666667
+"Daviess County","KY","Owensboro",124030.833333333
+"Craighead County","AR","Jonesboro",133395.666666667
+"Cabell County","WV","Huntington-Ashland",100502.666666667
+"Lafourche Parish","LA","Houma-Thibodaux",158067.666666667
+"Floyd County","GA","Rome",115713
+"Monongalia County","WV","Morgantown",191203.916666667
+"Garland County","AR","Hot Springs",141285.666666667
+"Nash County","NC","Rocky Mount",126702.25
+"Flagler County","FL","Deltona-Daytona Beach-Ormond Beach",221741.916666667
+"Portsmouth City","VA","Virginia Beach-Norfolk-Newport News",157326.083333333
+"Madison County","MS","Jackson",221689
+"Sutter County","CA","Yuba City",293173.333333333
+"Dougherty County","GA","Albany",82167
+"Northumberland County","PA","Sunbury",104060.333333333
+"Montgomery County","VA","Blacksburg-Christiansburg-Radford",204127.916666667
+"Wayne County","NY","Rochester",128474.083333333
+"Dubuque County","IA","Dubuque",174025.333333333
+"Rockingham County","NC","Greensboro-High Point",96463.6666666667
+"Sumter County","FL","The Villages",261223.583333333
+"Geauga County","OH","Cleveland-Elyria",238749.5
+"Pottawattamie County","IA","Omaha-Council Bluffs",135344.583333333
+"Marshall County","AL","Albertville",115063.833333333
+"Lauderdale County","AL","Florence-Muscle Shoals",126862.75
+"Tuscarawas County","OH","New Philadelphia-Dover",129678.25
+"Bowie County","TX","Texarkana",117426.083333333
+"Orangeburg County","SC","Orangeburg",93820.1666666667
+"Roanoke County","VA","Roanoke",194932.833333333
+"Laramie County","WY","Cheyenne",258797
+"Lawrence County","PA","New Castle",97956.5
+"Carver County","MN","Minneapolis-St. Paul-Bloomington",334684.25
+"Flathead County","MT","Kalispell",317352.916666667
+"Burke County","NC","Hickory-Lenoir-Morganton",134109.25
+"Campbell County","KY","Cincinnati",165459.25
+"Sevier County","TN","Sevierville",196736.416666667
+"Story County","IA","Ames",198324.25
+"Gallatin County","MT","Bozeman",402997.083333333
+"Platte County","MO","Kansas City",228812.75
+"Buchanan County","MO","St. Joseph",106661.916666667
+"Grant County","WA","Moses Lake",191207.25
+"Grafton County","NH","Claremont-Lebanon",210122.083333333
+"Matanuska Susitna Borough","AK","Anchorage",268820.916666667
+"Indiana County","PA","Indiana",119798.75
+"Chemung County","NY","Elmira",98647.6666666667
+"Crawford County","PA","Meadville",100030.583333333
+"Dodge County","WI","Beaver Dam",155211
+"Calvert County","MD","Washington-Arlington-Alexandria",340866.833333333
+"Sherburne County","MN","Minneapolis-St. Paul-Bloomington",247958.25
+"Lapeer County","MI","Detroit-Warren-Dearborn",187152.25
+"Moore County","NC","Pinehurst-Southern Pines",206085.666666667
+"Mendocino County","CA","Ukiah",383451.166666667
+"Grand Traverse County","MI","Traverse City",239773.083333333
+"Wood County","WV","Parkersburg-Vienna",106067.166666667
+"Rogers County","OK","Tulsa",161335.916666667
+"Angelina County","TX","Lufkin",118217.75
+"Ozaukee County","WI","Milwaukee-Waukesha-West Allis",299745.75
+"Hunt County","TX","Dallas-Fort Worth-Arlington",157088.416666667
+"Muskingum County","OH","Zanesville",110338.5
+"Benton County","OR","Corvallis",356135.166666667
+"Rockdale County","GA","Atlanta-Sandy Springs-Roswell",170171.166666667
+"Suffolk City","VA","Virginia Beach-Norfolk-Newport News",241525.333333333
+"Saint Croix County","WI","Minneapolis-St. Paul-Bloomington",260302.833333333
+"Walton County","GA","Atlanta-Sandy Springs-Roswell",201840.75
+"Jefferson County","WI","Watertown-Fort Atkinson",204021.75
+"Midland County","MI","Midland",133972.166666667
+"Saint Clair County","AL","Birmingham-Hoover",174641.5
+"Saint Landry Parish","LA","Opelousas",114081.666666667
+"Caldwell County","NC","Hickory-Lenoir-Morganton",122146.083333333
+"Madison County","KY","Richmond-Berea",162058.75
+"Lee County","MS","Tupelo",123012
+"Newport County","RI","Providence-Warwick",427999.166666667
+"Bannock County","ID","Pocatello",168512.666666667
+"Limestone County","AL","Huntsville",161877.583333333
+"Howard County","IN","Kokomo",102367.333333333
+"Josephine County","OR","Grants Pass",291441
+"Talladega County","AL","Talladega-Sylacauga",97289.1666666667
+"Clinton County","NY","Plattsburgh",136649
+"Orange County","TX","Beaumont-Port Arthur",130068.25
+"Clearfield County","PA","DuBois",95043.4166666667
+"Vermilion County","IL","Danville",65972.9166666667
+"Manitowoc County","WI","Manitowoc",113424.166666667
+"Cascade County","MT","Great Falls",183043
+"Burleigh County","ND","Bismarck",272564.666666667
+"Wilson County","NC","Wilson",117127.833333333
+"Maury County","TN","Nashville-Davidson--Murfreesboro--Franklin",212902.083333333
+"Cullman County","AL","Cullman",125348.333333333
+"Cattaraugus County","NY","Olean",78057
+"Lauderdale County","MS","Meridian",99332.5
+"Cayuga County","NY","Auburn",123747.166666667
+"Glynn County","GA","Brunswick",208889.5
+"Scioto County","OH","Portsmouth",79176.25
+"Elmore County","AL","Montgomery",160870.5
+"Raleigh County","WV","Beckley",85949.4166666667
+"Henderson County","TX","Athens",141202.333333333
+"Island County","WA","Oak Harbor",397024.833333333
+"Rockwall County","TX","Dallas-Fort Worth-Arlington",284054.166666667
+"Frederick County","VA","Winchester",263732
+"Lincoln County","NC","Charlotte-Concord-Gastonia",217452.416666667
+"Franklin County","WA","Kennewick-Richland",238466.916666667
+"Ross County","OH","Chillicothe",114570.583333333
+"Somerset County","PA","Somerset",103827.666666667
+"Sullivan County","NY","",155252.666666667
+"Jefferson County","AR","Pine Bluff",54723.1666666667
+"Christian County","MO","Springfield",170173.083333333
+"Kosciusko County","IN","Warsaw",168925.083333333
+"Payne County","OK","Stillwater",140808.833333333
+"Twin Falls County","ID","Twin Falls",192167.583333333
+"Cheshire County","NH","Keene",197154.833333333
+"Erie County","OH","Sandusky",129242.083333333
+"White County","AR","Searcy",119815.5
+"Bartholomew County","IN","Columbus",157076.5
+"Lancaster County","SC","Charlotte-Concord-Gastonia",199203.416666667
+"Valencia County","NM","Albuquerque",140093.666666667
+"Rockingham County","VA","Harrisonburg",211328.083333333
+"Van Buren County","MI","Kalamazoo-Portage",158944.666666667
+"Leavenworth County","KS","Kansas City",196540.833333333
+"Cole County","MO","Jefferson City",153996.25
+"Umatilla County","OR","Hermiston-Pendleton",191468
+"Cape Girardeau County","MO","Cape Girardeau",159513.583333333
+"Liberty County","TX","Houston-The Woodlands-Sugar Land",139713.75
+"Lynchburg City","VA","Lynchburg",138084
+"Lewis County","WA","Centralia",227152.166666667
+"Natrona County","WY","Casper",193452.083333333
+"Polk County","OR","Salem",301653.416666667
+"Coryell County","TX","Killeen-Temple",130851.333333333
+"Clinton County","MI","Lansing-East Lansing",191082.916666667
+"Anderson County","TN","Knoxville",138251.083333333
+"Allegany County","MD","Cumberland",89806
+"Forrest County","MS","Hattiesburg",114019.333333333
+"Hancock County","OH","Findlay",142085.25
+"Wood County","WI","Wisconsin Rapids-Marshfield",120824.916666667
+"Floyd County","IN","Louisville/Jefferson County",172103.333333333
+"Putnam County","FL","Palatka",109982.083333333
+"Bullitt County","KY","Louisville/Jefferson County",167425.833333333
+"Oconee County","SC","Seneca",157003.666666667
+"Bastrop County","TX","Austin-Round Rock",227387.166666667
+"Christian County","KY","Clarksville",98637.4166666667
+"Augusta County","VA","Staunton-Waynesboro",215147.166666667
+"Surry County","NC","Mount Airy",125499.583333333
+"Madison County","NY","Syracuse",132908.416666667
+"Nassau County","FL","Jacksonville",271120
+"Iberia Parish","LA","Lafayette",98615.3333333333
+"Monroe County","FL","Key West",583193.583333333
+"Wagoner County","OK","Tulsa",159766.5
+"Grays Harbor County","WA","Aberdeen",172246.916666667
+"Chelan County","WA","Wenatchee",330059.333333333
+"Putnam County","TN","Cookeville",155622.833333333
+"Yuba County","CA","Yuba City",260367.333333333
+"Aroostook County","ME","",97821.8333333333
+"Apache County","AZ","",169959.25
+"McKinley County","NM","Gallup",154897.083333333
+"Clallam County","WA","Port Angeles",282699.416666667
+"Franklin County","MA","Greenfield Town",231685.916666667
+"Riley County","KS","Manhattan",186940.75
+"De Kalb County","AL","Fort Payne",93105.75
+"Muskogee County","OK","Muskogee",75090.4166666667
+"Shiawassee County","MI","Owosso",111442.666666667
+"Belmont County","OH","Wheeling",94537.3333333333
+"Isabella County","MI","Mount Pleasant",133251.75
+"Bulloch County","GA","Statesboro",148731.333333333
+"Grant County","IN","Marion",81568.6666666667
+"Portage County","WI","Stevens Point",171126
+"Hancock County","IN","Indianapolis-Carmel-Anderson",188016.083333333
+"Creek County","OK","Tulsa",109567.333333333
+"Jefferson County","OH","Weirton-Steubenville",74787.1666666667
+"Greenwood County","SC","Greenwood",104679
+"Pottawatomie County","OK","Shawnee",90883.1666666667
+"Barrow County","GA","Atlanta-Sandy Springs-Roswell",176173.416666667
+"Wilkes County","NC","North Wilkesboro",122957.416666667
+"Harrison County","WV","Clarksburg",100118.583333333
+"Armstrong County","PA","Pittsburgh",101505.5
+"Wayne County","IN","Richmond",98642.5
+"Morgan County","IN","Indianapolis-Carmel-Anderson",162478.333333333
+"Greene County","TN","Greeneville",103101.166666667
+"Walker County","GA","Chattanooga",115533.75
+"Darlington County","SC","Florence",90967.6666666667
+"Bedford County","VA","Lynchburg",210276.916666667
+"Lonoke County","AR","Little Rock-North Little Rock-Conway",135621.666666667
+"Walker County","TX","Huntsville",181227.833333333
+"Rutherford County","NC","Forest City",114754.166666667
+"Jones County","MS","Laurel",100917.166666667
+"Columbia County","FL","Lake City",150626
+"Columbia County","PA","Bloomsburg-Berwick",148270.583333333
+"Adams County","IL","Quincy",119145.75
+"Kauai County","HI","Kapaa",553433.25
+"Marquette County","MI","Marquette",156186.833333333
+"Troup County","GA","LaGrange",116010.5
+"Walker County","AL","Birmingham-Hoover",88302.6666666667
+"James City County","VA","Virginia Beach-Norfolk-Newport News",320530.5
+"Grand Forks County","ND","Grand Forks",215369.5
+"Laurens County","SC","Greenville-Anderson-Mauldin",89076.25
+"Marion County","OH","Marion",93372.8333333333
+"Carteret County","NC","Morehead City",257411.416666667
+"Klamath County","OR","Klamath Falls",170811.916666667
+"Williamson County","IL","Carbondale-Marion",101338.166666667
+"Robertson County","TN","Nashville-Davidson--Murfreesboro--Franklin",209568.75
+"Dallas County","IA","Des Moines-West Des Moines",240842.916666667
+"Salem County","NJ","Philadelphia-Camden-Wilmington",158113.666666667
+"Butler County","KS","Wichita",150316.166666667
+"Warren County","NY","Glens Falls",203690.083333333
+"Chaves County","NM","Roswell",95491.1666666667
+"Harrison County","TX","Marshall",131082
+"McCracken County","KY","Paducah",110330
+"York County","VA","Virginia Beach-Norfolk-Newport News",298893.416666667
+"Livingston County","NY","Rochester",132181.833333333
+"Saint Francois County","MO","Farmington",109968.333333333
+"Carbon County","PA","Allentown-Bethlehem-Easton",144556.25
+"Fauquier County","VA","Washington-Arlington-Alexandria",402403.083333333
+"Pike County","KY","",44860.6666666667
+"San Patricio County","TX","Corpus Christi",149971.75
+"Athens County","OH","Athens",108582.75
+"Lea County","NM","Hobbs",152822.166666667
+"Lake County","CA","Clearlake",241667.75
+"Nacogdoches County","TX","Nacogdoches",145975.25
+"Herkimer County","NY","Utica-Rome",105485.666666667
+"Reno County","KS","Hutchinson",96972.8333333333
+"Rice County","MN","Faribault-Northfield",233950.333333333
+"Spalding County","GA","Atlanta-Sandy Springs-Roswell",116334.75
+"Blue Earth County","MN","Mankato-North Mankato",204184.666666667
+"Catoosa County","GA","Chattanooga",148095.416666667
+"Ionia County","MI","Ionia",126535.583333333
+"Otero County","NM","Alamogordo",120346
+"Pittsylvania County","VA","Danville",128517.5
+"Chatham County","NC","Durham-Chapel Hill",309665.833333333
+"Tehama County","CA","Red Bluff",207883.916666667
+"Liberty County","GA","Hinesville",143165.166666667
+"Sampson County","NC","",111081.583333333
+"Lewis and Clark County","MT","Helena",252033.833333333
+"Montcalm County","MI","Grand Rapids-Wyoming",121709.166666667
+"Washington County","NY","Glens Falls",155312.083333333
+"Columbia County","NY","Hudson",236067.583333333
+"Pulaski County","KY","Somerset",136387.166666667
+"Coos County","OR","Coos Bay",201477.333333333
+"Bradford County","PA","Sayre",130677.666666667
+"Hamblen County","TN","Morristown",129225.75
+"Crow Wing County","MN","Brainerd",189781.333333333
+"Lawrence County","OH","Huntington-Ashland",99644.0833333333
+"Chippewa County","WI","Eau Claire",157530.166666667
+"Mercer County","WV","Bluefield",68042.25
+"Otsego County","NY","Oneonta",146363.25
+"Sauk County","WI","Baraboo",184702.25
+"Crawford County","AR","Fort Smith",113355.916666667
+"Washington County","OH","Marietta",116087.916666667
+"Acadia Parish","LA","Lafayette",99677.25
+"Pope County","AR","Russellville",116799.75
+"Kershaw County","SC","Columbia",118113
+"Ward County","ND","Minot",217150.916666667
+"Rutland County","VT","Rutland",175663.666666667
+"Saint Joseph County","MI","Sturgis",119243.833333333
+"Tipton County","TN","Memphis",140536.416666667
+"Starr County","TX","Rio Grande City",58628.75
+"Sandusky County","OH","Fremont",115546.916666667
+"Knox County","OH","Mount Vernon",130286.833333333
+"Mason County","WA","Shelton",264121.666666667
+"Franklin County","NC","Raleigh",181343.75
+"Stanly County","NC","Albemarle",140834.833333333
+"Garfield County","OK","Enid",87415.9166666667
+"Jackson County","GA","Jefferson",211106.25
+"Oldham County","KY","Louisville/Jefferson County",295395.333333333
+"Jackson County","IL","Carbondale-Marion",121035.25
+"Georgetown County","SC","Georgetown",251050.833333333
+"Belknap County","NH","Laconia",249828.916666667
+"Genesee County","NY","Batavia",123458.5
+"Granville County","NC","Oxford",170079.166666667
+"Lowndes County","MS","Columbus",108034.333333333
+"Warrick County","IN","Evansville",172168.333333333
+"Huron County","OH","Norwalk",105852.583333333
+"Washington County","VT","Barre",214060.083333333
+"Lenoir County","NC","Kinston",87737.5
+"Barry County","MI","Grand Rapids-Wyoming",176663
+"Wise County","TX","Dallas-Fort Worth-Arlington",224034.916666667
+"Haywood County","NC","Asheville",192648.833333333
+"Clay County","MN","Fargo",200740.583333333
+"Laurel County","KY","London",108149.666666667
+"Walla Walla County","WA","Walla Walla",256970.166666667
+"Hall County","NE","Grand Island",152440.666666667
+"Duplin County","NC","",83889.5
+"Whiteside County","IL","Sterling",105669.083333333
+"Anderson County","TX","Palestine",103575.083333333
+"Tooele County","UT","Salt Lake City",258401.333333333
+"Newton County","MO","Joplin",120695.333333333
+"Columbus County","NC","",93842.0833333333
+"Vermilion Parish","LA","Lafayette",138991.083333333
+"Lee County","NC","Sanford",136270.25
+"Oxford County","ME","",162009.166666667
+"Carter County","TN","Johnson City",121998.583333333
+"Pike County","PA","New York-Newark-Jersey City",158726.75
+"Blount County","AL","Birmingham-Hoover",135182.333333333
+"Otter Tail County","MN","Fergus Falls",226229.75
+"Hawkins County","TN","Kingsport-Bristol-Bristol",118978.416666667
+"Columbia County","WI","Madison",195124.583333333
+"Seneca County","OH","Tiffin",101570.333333333
+"Windsor County","VT","Claremont-Lebanon",240766.75
+"Boone County","IN","Indianapolis-Carmel-Anderson",247566.75
+"Edgecombe County","NC","Rocky Mount",55550.75
+"Marion County","WV","Fairmont",102554.75
+"Garfield County","CO","Glenwood Springs",390917.416666667
+"Franklin County","VA","Roanoke",202910.916666667
+"Cumberland County","TN","Crossville",147432.916666667
+"Broomfield County","CO","Denver-Aurora-Lakewood",453521.916666667
+"Pearl River County","MS","Picayune",134284.333333333
+"Tuscola County","MI","",92134.9166666667
+"Pickaway County","OH","Columbus",169413.583333333
+"Lamar County","MS","Hattiesburg",172819.333333333
+"Saline County","KS","Salina",122694.25
+"Fulton County","NY","Gloversville",122275.75
+"Putnam County","WV","Huntington-Ashland",155382.5
+"Kenai Peninsula Borough","AK","",218094.916666667
+"Tuolumne County","CA","Sonora",274401.833333333
+"Cherokee County","SC","Gaffney",79152.1666666667
+"Carson City","NV","Carson City",309944.083333333
+"San Benito County","CA","San Jose-Sunnyvale-Santa Clara",570258.333333333
+"Gordon County","GA","Calhoun",133915.833333333
+"Walton County","FL","Crestview-Fort Walton Beach-Destin",380265.25
+"Venango County","PA","Oil City",80148
+"Washington County","VA","Kingsport-Bristol-Bristol",148303.166666667
+"Campbell County","VA","Lynchburg",166610.916666667
+"Halifax County","NC","Roanoke Rapids",64556.5833333333
+"Saint Mary Parish","LA","Morgan City",109506.166666667
+"Hardin County","TX","Beaumont-Port Arthur",168028.75
+"Autauga County","AL","Montgomery",156874.5
+"Colbert County","AL","Florence-Muscle Shoals",104606.75
+"Hancock County","ME","",226548.666666667
+"Maverick County","TX","Eagle Pass",129835.083333333
+"Roane County","TN","Knoxville",144433.083333333
+"Boone County","IL","Rockford",167662.666666667
+"Henry County","VA","Martinsville",84691
+"Chisago County","MN","Minneapolis-St. Paul-Bloomington",253598.5
+"Coles County","IL","Charleston-Mattoon",85220.5
+"Gila County","AZ","Payson",216622.5
+"Jefferson County","WV","Washington-Arlington-Alexandria",221309.75
+"Ogle County","IL","Rochelle",130148
+"Rusk County","TX","Longview",132991.333333333
+"Jackson County","AL","Scottsboro",105918.416666667
+"Ashland County","OH","Ashland",132161.166666667
+"Darke County","OH","Greenville",123942.666666667
+"Russell County","AL","Columbus",95319.3333333333
+"Knox County","IL","Galesburg",74464.6666666667
+"Wayne County","PA","",170136.333333333
+"Coffee County","TN","Tullahoma-Manchester",140102.083333333
+"Saint Charles Parish","LA","New Orleans-Metairie",179825.166666667
+"Johnson County","MO","Warrensburg",158654.333333333
+"Van Zandt County","TX","",152378.25
+"Lincoln County","MO","St. Louis",180106.833333333
+"Grady County","OK","Oklahoma City",120104.833333333
+"Waupaca County","WI","",135927.916666667
+"Vernon Parish","LA","Fort Polk South",137487.666666667
+"Union County","OH","Columbus",237271.583333333
+"Cass County","MI","South Bend-Mishawaka",149650.75
+"Pulaski County","MO","Fort Leonard Wood",154652.666666667
+"McMinn County","TN","Athens",126908.25
+"Effingham County","GA","Savannah",186451
+"Somerset County","ME","",110688.916666667
+"Pender County","NC","Wilmington",241147.5
+"Eagle County","CO","Edwards",727314.416666667
+"Saint Martin Parish","LA","Lafayette",112354.166666667
+"Lyon County","NV","Fernley",257379.333333333
+"Taney County","MO","Branson",134799.583333333
+"Franklin County","NY","Malone",104344.75
+"Winona County","MN","Winona",183343.75
+"Worcester County","MD","Salisbury",254005.083333333
+"Jefferson County","TN","Morristown",142228.916666667
+"La Plata County","CO","Durango",410872.5
+"Grant County","WI","Platteville",128822
+"Hood County","TX","Dallas-Fort Worth-Arlington",231431.916666667
+"Washington County","MS","Greenville",610603.416666667
+"Tioga County","NY","Binghamton",129982.833333333
+"Watauga County","NC","Boone",253828.333333333
+"Washington County","OK","Bartlesville",97885.3333333333
+"Crittenden County","AR","Memphis",94778
+"Cherokee County","TX","Jacksonville",112784.166666667
+"Camden County","GA","St. Marys",166150.666666667
+"Henry County","IL","Davenport-Moline-Rock Island",119013.333333333
+"Chenango County","NY","",102125.083333333
+"LeFlore County","OK","Fort Smith",76122.6666666667
+"Dale County","AL","Ozark",89902.1666666667
+"Montgomery County","NY","Amsterdam",111973.25
+"Grundy County","IL","Chicago-Naperville-Elgin",188357.083333333
+"Dearborn County","IN","Cincinnati",179872.333333333
+"Box Elder County","UT","Ogden-Clearfield",224220.833333333
+"Coffee County","AL","Enterprise",119923.166666667
+"Bristol County","RI","Providence-Warwick",358311.916666667
+"Lamar County","TX","Paris",104094.833333333
+"Bedford County","PA","",145848.833333333
+"Jackson County","FL","",96415.1666666667
+"Gibson County","TN","",79160.25
+"Dickson County","TN","Nashville-Davidson--Murfreesboro--Franklin",173228.25
+"Kerr County","TX","Kerrville",220186.833333333
+"Boyd County","KY","Huntington-Ashland",81571.25
+"Henry County","IN","New Castle",89593.25
+"Shelby County","OH","Sidney",134454.583333333
+"Columbia County","OR","Portland-Vancouver-Hillsboro",284594.166666667
+"Cortland County","NY","Cortland",124866
+"Franklin County","KY","Frankfort",144148.833333333
+"Greene County","NY","",187761.916666667
+"Clinton County","IA","Clinton",138875.75
+"Calumet County","WI","Appleton",203035.666666667
+"Allegany County","NY","",73611.9166666667
+"Harrisonburg City","VA","Harrisonburg",191077.416666667
+"Val Verde County","TX","Del Rio",117568.25
+"Elko County","NV","Elko",301150.75
+"Warren County","MS","Vicksburg",121938.166666667
+"Jessamine County","KY","Lexington-Fayette",164622.25
+"Loudon County","TN","Knoxville",209599.083333333
+"Newaygo County","MI","",123127.25
+"Laurens County","GA","Dublin",104919.25
+"Curry County","NM","Clovis",152678.833333333
+"Delaware County","NY","",149362.25
+"Carroll County","NH","",256265.166666667
+"Queen Annes County","MD","Baltimore-Columbia-Towson",333110.666666667
+"Macoupin County","IL","St. Louis",87841.0833333333
+"Beaufort County","NC","Washington",133716.5
+"Franklin County","VT","Burlington-South Burlington",209919.75
+"Navarro County","TX","Corsicana",101559.833333333
+"Stephenson County","IL","Freeport",60681.0833333333
+"Oktibbeha County","MS","Starkville",172744.75
+"Carter County","OK","Ardmore",88862.25
+"Noble County","IN","Kendallville",126373.666666667
+"Osage County","OK","Tulsa",110441.083333333
+"Santa Cruz County","AZ","Nogales",152105.833333333
+"Stokes County","NC","Winston-Salem",146661
+"Lafayette County","MS","Oxford",181761.583333333
+"Scott County","KY","Lexington-Fayette",188605.416666667
+"Washington Parish","LA","Bogalusa",95065.0833333333
+"Marshall County","IN","Plymouth",145351
+"Douglas County","NV","Gardnerville Ranchos",423914.75
+"Cherokee County","OK","Tahlequah",103254.416666667
+"Hoke County","NC","Fayetteville",168011.416666667
+"Hopkins County","KY","Madisonville",83867.0833333333
+"Fremont County","CO","Cañon City",224997.75
+"Lincoln Parish","LA","Ruston",141809.416666667
+"Chesterfield County","SC","",102768.416666667
+"Culpeper County","VA","Washington-Arlington-Alexandria",284757.75
+"Hillsdale County","MI","Hillsdale",128488.583333333
+"Mifflin County","PA","Lewistown",95891.5
+"Richmond County","NC","Rockingham",73344.5
+"Kay County","OK","Ponca City",61629.5
+"Mississippi County","AR","Blytheville",49840.4166666667
+"Gadsden County","FL","Tallahassee",107302.083333333
+"Henderson County","KY","Evansville",110229.833333333
+"Warren County","IA","Des Moines-West Des Moines",189727.25
+"Goodhue County","MN","Red Wing",204753.833333333
+"Iron County","UT","Cedar City",222272.416666667
+"Lawrence County","IN","Bedford",101673.916666667
+"Campbell County","WY","Gillette",263163.25
+"Buffalo County","NE","Kearney",192739.75
+"Fayette County","WV","Beckley",71857.4166666667
+"Lincoln County","OR","Newport",277707.416666667
+"Medina County","TX","San Antonio-New Braunfels",216820.25
+"Perry County","PA","Harrisburg-Carlisle",177546
+"Auglaize County","OH","Wapakoneta",130778.333333333
+"Saint John the Baptist Parish","LA","New Orleans-Metairie",141571.75
+"Huntingdon County","PA","Huntingdon",113251.5
+"Barron County","WI","",148451.333333333
+"Logan County","OH","Bellefontaine",133740.583333333
+"Pittsburg County","OK","McAlester",80599.6666666667
+"Baldwin County","GA","Milledgeville",129015.583333333
+"Bingham County","ID","Blackfoot",181383.166666667
+"Calaveras County","CA","",311367.333333333
+"Colquitt County","GA","Moultrie",87988.8333333333
+"Vance County","NC","Henderson",77765.5
+"Polk County","TX","",116668.5
+"Branch County","MI","Coldwater",115215.75
+"Jefferson County","PA","",77471.8333333333
+"Phelps County","MO","Rolla",133834.916666667
+"Tazewell County","VA","Bluefield",90847.25
+"Itasca County","MN","Grand Rapids",166062.166666667
+"Bedford County","TN","Shelbyville",157038.416666667
+"Stephens County","OK","Duncan",81413.8333333333
+"McDowell County","NC","Marion",143578.416666667
+"Union County","PA","Lewisburg",171910.583333333
+"Atascosa County","TX","San Antonio-New Braunfels",150846.666666667
+"Siskiyou County","CA","",192067.166666667
+"Brown County","OH","Cincinnati",118315.583333333
+"Lincoln County","SD","Sioux Falls",219017.833333333
+"Whitman County","WA","Pullman",262887
+"Thomas County","GA","Thomasville",135650.75
+"Monroe County","WI","",151696.333333333
+"Monroe County","TN","",137153.333333333
+"Windham County","VT","",213734.083333333
+"Ohio County","WV","Wheeling",102602.416666667
+"Beltrami County","MN","Bemidji",171016.25
+"Shelby County","IN","Indianapolis-Carmel-Anderson",133377
+"Callaway County","MO","Jefferson City",145084.583333333
+"Polk County","WI","",165290.416666667
+"Douglas County","WI","Duluth",139011.583333333
+"Cerro Gordo County","IA","Mason City",117474
+"Camden County","MO","",183566.333333333
+"Nye County","NV","Pahrump",217419.083333333
+"Hancock County","MS","Gulfport-Biloxi-Pascagoula",132027.166666667
+"Dunn County","WI","Menomonie",163234.166666667
+"Dallas County","AL","Selma",54684.8333333333
+"Sweetwater County","WY","Rock Springs",219769.333333333
+"Crawford County","OH","Bucyrus",76615.25
+"Sullivan County","NH","Claremont-Lebanon",190942.333333333
+"Chilton County","AL","Birmingham-Hoover",117155.25
+"Highland County","OH","",103325.25
+"Stevens County","WA","Spokane-Spokane Valley",220631
+"Charlottesville City","VA","Charlottesville",286122.416666667
+"Miller County","AR","Texarkana",92017.5833333333
+"McKean County","PA","Bradford",64792.4166666667
+"Nelson County","KY","Bardstown",148224.666666667
+"Madison County","OH","Columbus",156175
+"Susquehanna County","PA","",74760.8333333333
+"Waller County","TX","Houston-The Woodlands-Sugar Land",232671
+"Sanilac County","MI","",89702.0833333333
+"Danville City","VA","Danville",63934
+"Habersham County","GA","Cornelia",154808.333333333
+"Wilson County","TX","San Antonio-New Braunfels",279193.833333333
+"Orleans County","NY","Rochester",104297.083333333
+"Mecosta County","MI","Big Rapids",120440.416666667
+"Butler County","MO","Poplar Bluff",108841.083333333
+"Burnet County","TX","",240916.5
+"Muscatine County","IA","Muscatine",133763.333333333
+"Fulton County","OH","Toledo",133097.083333333
+"Wayne County","WV","Huntington-Ashland",83052.5
+"Gratiot County","MI","Alma",83731.6666666667
+"Bryan County","OK","Durant",101389.333333333
+"Sequoyah County","OK","Fort Smith",84709.4166666667
+"Jackson County","IN","Seymour",132479.333333333
+"Holmes County","OH","",192271
+"Coffee County","GA","Douglas",102221.833333333
+"Preble County","OH","",131568.25
+"Kandiyohi County","MN","Willmar",174673.5
+"De Kalb County","IN","Auburn",130079.333333333
+"Pettis County","MO","Sedalia",86395
+"Barren County","KY","Glasgow",108616.583333333
+"Wyoming County","NY","",117324.416666667
+"Greene County","AR","Paragould",103915.666666667
+"Shelby County","KY","Louisville/Jefferson County",197780.666666667
+"Avoyelles Parish","LA","",105454.333333333
+"Clinton County","OH","Wilmington",114763.5
+"Shenandoah County","VA","",184699.666666667
+"Tioga County","PA","",144500.333333333
+"Wood County","TX","",144223.416666667
+"Shawano County","WI","Shawano",129123.333333333
+"Dubois County","IN","Jasper",155348.833333333
+"Lawrence County","TN","Lawrenceburg",105979.75
+"Logan County","OK","Oklahoma City",172341.666666667
+"Warren County","PA","Warren",84454
+"Marinette County","WI","Marinette",105332.333333333
+"Union County","AR","El Dorado",71807.3333333333
+"Tallapoosa County","AL","Alexander City",126398.25
+"Suwannee County","FL","",133476.5
+"Baxter County","AR","Mountain Home",129211.25
+"Delaware County","OK","",146040.916666667
+"Polk County","GA","Cedartown",96192.5833333333
+"Wise County","VA","Big Stone Gap",78999.6666666667
+"Ottawa County","OH","Port Clinton",163932.75
+"Wharton County","TX","El Campo",132746.416666667
+"Montrose County","CO","Montrose",252450
+"Mayes County","OK","",117985.583333333
+"Davie County","NC","Winston-Salem",184627.333333333
+"Webster Parish","LA","Shreveport-Bossier City",99719.5
+"Okanogan County","WA","",222063.833333333
+"Franklin County","TN","Tullahoma-Manchester",145522.916666667
+"Pierce County","WI","Minneapolis-St. Paul-Bloomington",206418.75
+"Kittitas County","WA","Ellensburg",315856.333333333
+"Bonner County","ID","Sandpoint",309862.25
+"Jim Wells County","TX","Alice",144336.5
+"Mercer County","OH","Celina",148439.083333333
+"Levy County","FL","",130529.5
+"Campbell County","TN","Knoxville",112302.666666667
+"Pasquotank County","NC","Elizabeth City",137381.666666667
+"Marshall County","IA","Marshalltown",106537.666666667
+"Pike County","MS","McComb",96323.5
+"Howell County","MO","West Plains",118224.666666667
+"Des Moines County","IA","Burlington",102162.333333333
+"Jackson County","NC","Cullowhee",225964.25
+"Rio Arriba County","NM","Española",163213.583333333
+"Ravalli County","MT","",279451.666666667
+"Fremont County","WY","Riverton",210490.75
+"Tift County","GA","Tifton",128888.916666667
+"Champaign County","OH","Urbana",129256.166666667
+"Guernsey County","OH","Cambridge",97498.3333333333
+"Okmulgee County","OK","Tulsa",61454
+"Okeechobee County","FL","Okeechobee",135334.75
+"Clarion County","PA","",89338.1666666667
+"Warren County","TN","McMinnville",104035.5
+"Knox County","ME","",226397.916666667
+"Snyder County","PA","Selinsgrove",162164.583333333
+"Murray County","GA","Dalton",125727.666666667
+"Natchitoches Parish","LA","Natchitoches",163146.333333333
+"Franklin County","IL","",60656.25
+"Person County","NC","Durham-Chapel Hill",141353.25
+"Floyd County","KY","",69615.5
+"Essex County","NY","",145082.5
+"Harrison County","IN","Louisville/Jefferson County",147487.583333333
+"Upshur County","TX","Longview",163796.416666667
+"Nez Perce County","ID","Lewiston",232205.416666667
+"Clinton County","PA","Lock Haven",131081.166666667
+"Scott County","MO","Sikeston",103904.25
+"Mower County","MN","Austin",121513.416666667
+"Hendry County","FL","Clewiston",118988.75
+"Crawford County","KS","Pittsburg",80945.25
+"Cheatham County","TN","Nashville-Davidson--Murfreesboro--Franklin",200197.25
+"Defiance County","OH","Defiance",115039.166666667
+"Cass County","IN","Logansport",82899.9166666667
+"Livingston County","IL","Pontiac",96629
+"Colleton County","SC","",129295
+"Jefferson County","IL","Mount Vernon",90198.9166666667
+"Waldo County","ME","",185771.916666667
+"Greene County","PA","",101892.083333333
+"Woodford County","IL","Peoria",162447.416666667
+"Lawrence County","MO","",111143.666666667
+"Chippewa County","MI","Sault Ste. Marie",95976.4166666667
+"Benton County","MN","St. Cloud",193622.083333333
+"Knox County","IN","Vincennes",83601.1666666667
+"Cooke County","TX","Gainesville",167886.5
+"Douglas County","WA","Wenatchee",319390.75
+"Fayette County","TN","Memphis",226118.75
+"Yadkin County","NC","Winston-Salem",127210.416666667
+"Dyer County","TN","Dyersburg",93524.9166666667
+"Escambia County","AL","Atmore",86140.5
+"Montgomery County","IN","Crawfordsville",120823.25
+"Brown County","TX","Brownwood",108768.583333333
+"Amador County","CA","",294380.833333333
+"Caldwell County","TX","Austin-Round Rock",163916.916666667
+"Webster County","IA","Fort Dodge",86320.75
+"Putnam County","IN","Indianapolis-Carmel-Anderson",144945
+"Erath County","TX","Stephenville",156100.916666667
+"Manassas City","VA","Washington-Arlington-Alexandria",309713.333333333
+"Isanti County","MN","Minneapolis-St. Paul-Bloomington",203672.416666667
+"Talbot County","MD","Easton",311684.583333333
+"Covington County","AL","",90059.8333333333
+"Clinton County","IL","St. Louis",137743
+"Oconto County","WI","Green Bay",149301.25
+"Williams County","OH","",100652.916666667
+"Warren County","VA","Washington-Arlington-Alexandria",216010.666666667
+"Madison County","ID","Rexburg",237219.5
+"Newberry County","SC","Newberry",125762.5
+"Pontotoc County","OK","Ada",92999.0833333333
+"Latah County","ID","Moscow",274627
+"Graham County","AZ","Safford",170878.333333333
+"Alexander County","NC","Hickory-Lenoir-Morganton",150084.75
+"Calloway County","KY","Murray",127222.083333333
+"Marshall County","MS","Memphis",92523.8333333333
+"Lagrange County","IN","",191373.25
+"Bennington County","VT","Bennington",210846.416666667
+"Huntington County","IN","Huntington",110083.166666667
+"Graves County","KY","Mayfield",81845.25
+"Fulton County","IL","Canton",74003.0833333333
+"Delta County","MI","Escanaba",86366.8333333333
+"Alcorn County","MS","Corinth",92543.0833333333
+"Clatsop County","OR","Astoria",314693.833333333
+"Monroe County","MS","",90410.6666666667
+"Scotts Bluff County","NE","Scottsbluff",130466.333333333
+"Greenup County","KY","Huntington-Ashland",88108.5
+"Boone County","AR","Harrison",117549.666666667
+"Miami County","IN","Peru",80886.5833333333
+"Coshocton County","OH","Coshocton",102760.166666667
+"Gloucester County","VA","Virginia Beach-Norfolk-Newport News",231381.583333333
+"Green County","WI","Madison",162218
+"Jasper County","IA","Newton",120904.25
+"Addison County","VT","",251108.416666667
+"Finney County","KS","Garden City",157570.333333333
+"Logan County","WV","Logan",65782
+"Matagorda County","TX","Bay City",144668
+"Dodge County","NE","Fremont",132312.083333333
+"McLeod County","MN","Hutchinson",168305.666666667
+"Independence County","AR","Batesville",88797.3333333333
+"Houghton County","MI","Houghton",104759.666666667
+"Steele County","MN","Owatonna",175217.25
+"Brown County","SD","Aberdeen",166016
+"Summit County","UT","Summit Park",701175.166666667
+"Ware County","GA","Waycross",73474.5
+"Cowley County","KS","Arkansas City-Winfield",78986.9166666667
+"Albany County","WY","Laramie",229850.916666667
+"Lincoln County","NE","North Platte",139476.166666667
+"Hale County","TX","Plainview",77879.6666666667
+"Halifax County","VA","",98356.5
+"Webster County","MO","Springfield",140237
+"Scotland County","NC","Laurinburg",72064.25
+"Perry County","OH","Columbus",95113.75
+"Lee County","IL","Dixon",96438.0833333333
+"Douglas County","MN","Alexandria",217125.5
+"Oneida County","WI","",180092.583333333
+"Saint Bernard Parish","LA","New Orleans-Metairie",138162.166666667
+"Lee County","IA","Fort Madison-Keokuk",88655.4166666667
+"Prince George County","VA","Richmond",205610.5
+"Jasper County","TX","",109406.333333333
+"Cocke County","TN","Newport",98219.3333333333
+"Beauregard Parish","LA","DeRidder",154234.833333333
+"Whitley County","KY","London",82056.5833333333
+"Wapello County","IA","Ottumwa",74025.5833333333
+"Clark County","KY","Lexington-Fayette",139538.083333333
+"Barry County","MO","",120639.416666667
+"Laclede County","MO","Lebanon",122949.5
+"Morgan County","IL","Jacksonville",92638.0833333333
+"Greenbrier County","WV","",113579.916666667
+"Montgomery County","KS","Coffeyville",58653.4166666667
+"Carlton County","MN","Duluth",170094.666666667
+"Sagadahoc County","ME","Portland-South Portland",217124.333333333
+"Isle of Wight County","VA","Virginia Beach-Norfolk-Newport News",262700.166666667
+"Seneca County","NY","Seneca Falls",115050
+"Bladen County","NC","",86106.6666666667
+"Chambers County","TX","Houston-The Woodlands-Sugar Land",236517
+"Hill County","TX","",99898.1666666667
+"Weakley County","TN","Martin",91876
+"Howard County","TX","Big Spring",115403.416666667
+"Bureau County","IL","Ottawa-Peru",90712.0833333333
+"Clarendon County","SC","",112673.5
+"Lassen County","CA","Susanville",163739.75
+"Madison County","NE","Norfolk",145506.5
+"Pulaski County","VA","Blacksburg-Christiansburg-Radford",141680
+"Lincoln County","MS","Brookhaven",109090.75
+"De Soto County","FL","Arcadia",122104.833333333
+"Morrow County","OH","Columbus",143469.25
+"Christian County","IL","Taylorville",80727.1666666667
+"Panola County","MS","",97111.8333333333
+"Clark County","WI","",109871.5
+"Harvey County","KS","Wichita",122879.833333333
+"McClain County","OK","Oklahoma City",161537.666666667
+"Putnam County","OH","",142661.166666667
+"Lincoln County","ME","",223908.25
+"Williamsburg County","SC","",68923.9166666667
+"Adams County","IN","Decatur",136312.083333333
+"Geary County","KS","Junction City",143896.75
+"Lawrence County","AL","Decatur",109546.083333333
+"Lincoln County","OK","Oklahoma City",89467.8333333333
+"Effingham County","IL","Effingham",133914
+"Chambers County","AL","Valley",64146.25
+"Silver Bow County","MT","Butte-Silver Bow",134777.416666667
+"Steuben County","IN","Angola",162691.166666667
+"Bolivar County","MS","Cleveland",115418.75
+"Evangeline Parish","LA","",79358.0833333333
+"Macon County","NC","",194632.666666667
+"Dare County","NC","Kill Devil Hills",334385.083333333
+"Fannin County","TX","Bonham",120538.083333333
+"Ford County","KS","Dodge City",103688.916666667
+"Washington County","TX","Brenham",211148.083333333
+"Sioux County","IA","",172027.833333333
+"Lyon County","KS","Emporia",108163
+"Preston County","WV","Morgantown",110221.416666667
+"Gibson County","IN","",111357.333333333
+"Orange County","VA","",224950.333333333
+"Jasper County","IN","Chicago-Naperville-Elgin",169997.083333333
+"Randolph County","IL","",88550.25
+"Kendall County","TX","San Antonio-New Braunfels",367111.416666667
+"Iberville Parish","LA","Baton Rouge",160223
+"Lafayette County","MO","Kansas City",131941.75
+"Lincoln County","TN","",125154.916666667
+"Marion County","IA","Pella",151154
+"Whitley County","IN","Fort Wayne",152768
+"Jackson County","OH","Jackson",82893.6666666667
+"Clinton County","IN","Frankfort",103134.833333333
+"Morrison County","MN","",189745.666666667
+"Greene County","IN","",104353.083333333
+"Accomack County","VA","",169994
+"Louisa County","VA","",212654.583333333
+"McCurtain County","OK","",67110.1666666667
+"Botetourt County","VA","Roanoke",213115.916666667
+"Chester County","SC","Charlotte-Concord-Gastonia",79487.75
+"Huron County","MI","",91860.6666666667
+"Marshall County","WV","Wheeling",80579.3333333333
+"Transylvania County","NC","Brevard",229343.916666667
+"Caroline County","MD","",184709.083333333
+"Marion County","SC","",65275.1666666667
+"Coos County","NH","Berlin",120595.416666667
+"Monroe County","IL","St. Louis",188414.166666667
+"Taos County","NM","Taos",262601.666666667
+"Hot Spring County","AR","Malvern",91731.4166666667
+"Pike County","AL","Troy",116983.166666667
+"Wabash County","IN","Wabash",104635.166666667
+"Washington County","ME","",104971.666666667
+"Sumter County","GA","Americus",83640.3333333333
+"Oconee County","GA","Athens-Clarke County",304887.25
+"Miami County","KS","Kansas City",203315.083333333
+"Schoharie County","NY","Albany-Schenectady-Troy",142490.25
+"Wexford County","MI","Cadillac",116812.5
+"Mecklenburg County","VA","",108541.25
+"Nicollet County","MN","Mankato-North Mankato",215210
+"Emmet County","MI","",204735.166666667
+"Dorchester County","MD","Cambridge",146782.75
+"McDonough County","IL","Macomb",75413.8333333333
+"Uintah County","UT","Vernal",229283.833333333
+"Warren County","MO","St. Louis",154060
+"Becker County","MN","",231387.583333333
+"Jefferson County","IN","Madison",123748.75
+"Petersburg City","VA","Richmond",63253.0833333333
+"Amherst County","VA","Lynchburg",154572.416666667
+"Titus County","TX","Mount Pleasant",122466.5
+"Henry County","TN","Paris",108596.833333333
+"Leflore County","MS","Greenwood",29574.6666666667
+"Adams County","MS","Natchez",91653.25
+"Platte County","NE","Columbus",164917.25
+"Claiborne County","TN","",111121.916666667
+"Smyth County","VA","",85222.3333333333
+"Stone County","MO","Branson",169352.166666667
+"Dillon County","SC","",78939.9166666667
+"Kleberg County","TX","Kingsville",100130.416666667
+"Hardin County","OH","",97487.25
+"Harris County","GA","Columbus",237535.5
+"Brookings County","SD","Brookings",194942.916666667
+"Dunklin County","MO","Kennett",68355.5833333333
+"Elk County","PA","St. Marys",80721.1666666667
+"Knox County","KY","London",70396.6666666667
+"Bee County","TX","Beeville",115129.416666667
+"Ottawa County","OK","Miami",69984.4166666667
+"Rhea County","TN","Dayton",134321.833333333
+"Obion County","TN","Union City",87812.9166666667
+"Franklin County","AL","",78583.4166666667
+"Daviess County","IN","Washington",124805.083333333
+"Polk County","MN","Grand Forks",184123.166666667
+"Jefferson Davis Parish","LA","Jennings",100543.583333333
+"Muhlenberg County","KY","Central City",78910.6666666667
+"Marshall County","KY","",126229.583333333
+"Adams County","NE","Hastings",126122.25
+"Malheur County","OR","Ontario",161971.25
+"Juneau Borough","AK","Juneau",382232.666666667
+"Freeborn County","MN","Albert Lea",106893.916666667
+"Caledonia County","VT","",155404.666666667
+"Polk County","MO","Springfield",130167.75
+"Delta County","CO","",247772.833333333
+"Gallia County","OH","Point Pleasant",101573.5
+"Clare County","MI","",71582.3333333333
+"Marion County","AL","",79796.1666666667
+"Wakulla County","FL","Tallahassee",176525.583333333
+"Franklin County","ME","",136285.5
+"Hancock County","WV","Weirton-Steubenville",84735.75
+"Marshall County","TN","Lewisburg",143151.916666667
+"Cass County","TX","",96857.3333333333
+"Logan County","IL","Lincoln",92658.9166666667
+"Bryan County","GA","Savannah",250439.75
+"Montgomery County","IL","",68107
+"Wayne County","GA","Jesup",111065.166666667
+"Garrett County","MD","",188874.75
+"Carroll County","VA","",114194.833333333
+"Stoddard County","MO","",82505.0833333333
+"Lumpkin County","GA","",202767.5
+"Pontotoc County","MS","Tupelo",103528.166666667
+"Jefferson County","WA","",384454.25
+"Vernon County","WI","",141569.333333333
+"Pine County","MN","",162823.416666667
+"Iroquois County","IL","",90335.1666666667
+"Neshoba County","MS","",99672.25
+"Caddo County","OK","",74197.1666666667
+"Alpena County","MI","Alpena",92807.3333333333
+"Grant County","NM","Silver City",138932.916666667
+"Giles County","TN","",118576
+"Sunflower County","MS","Indianola",58370
+"Copiah County","MS","Jackson",73726.0833333333
+"Pickens County","GA","Atlanta-Sandy Springs-Roswell",197396.333333333
+"Randolph County","WV","Elkins",102381.666666667
+"San Miguel County","NM","Las Vegas",159442.75
+"Hocking County","OH","Columbus",124325.333333333
+"Harlan County","KY","",37358
+"Wythe County","VA","",127804.75
+"Jackson County","WV","",105308.916666667
+"McPherson County","KS","McPherson",147684.583333333
+"Sheridan County","WY","Sheridan",260750
+"Fayette County","OH","Washington Court House",106885.416666667
+"Union County","SC","Spartanburg",60166.25
+"Orange County","VT","Claremont-Lebanon",184523.333333333
+"Marlboro County","SC","Bennettsville",42431.9166666667
+"Russell County","VA","",88608.9166666667
+"Tate County","MS","Memphis",127902
+"Carroll County","OH","Canton-Massillon",124948
+"Ripley County","IN","",160241.666666667
+"Trempealeau County","WI","",155637.166666667
+"Marion County","MO","Hannibal",110448.25
+"Haralson County","GA","Atlanta-Sandy Springs-Roswell",121299.5
+"Lake County","MT","",293423.416666667
+"Van Wert County","OH","Van Wert",95354
+"Lincoln County","WI","Merrill",125381.5
+"Perry County","KY","",88134.75
+"Pike County","OH","",98124.0833333333
+"Mason County","MI","Ludington",137428.666666667
+"Bell County","KY","Middlesborough",51213.1666666667
+"Jones County","GA","Macon-Bibb County",142553
+"Del Norte County","CA","Crescent City",230334.916666667
+"Meade County","KY","Elizabethtown-Fort Knox",161746
+"Cass County","MN","Brainerd",181940.916666667
+"Adams County","OH","",92701.4166666667
+"Caroline County","VA","Richmond",190461.666666667
+"Jennings County","IN","North Vernon",116353.75
+"Carroll County","TN","",83878.5833333333
+"Bradford County","FL","",124733.666666667
+"Ellis County","KS","Hays",159252.166666667
+"Boyle County","KY","Danville",129076.5
+"Austin County","TX","Houston-The Woodlands-Sugar Land",238616.5
+"Lee County","GA","Albany",172983.333333333
+"Gilmer County","GA","",186348.416666667
+"Wyoming County","PA","Scranton--Wilkes-Barre--Hazleton",165288.833333333
+"Scott County","MS","",70953.3333333333
+"Washington County","IN","Louisville/Jefferson County",117266.5
+"Saint Francis County","AR","Forrest City",50506.4166666667
+"Marion County","TN","Chattanooga",121289.25
+"Henry County","OH","",123041.75
+"Mineral County","WV","Cumberland",114418.5
+"Park County","WY","",265240.583333333
+"Morgan County","CO","Fort Morgan",191328.083333333
+"Glenn County","CA","",211470.333333333
+"Madison County","GA","Athens-Clarke County",148167.833333333
+"Palo Pinto County","TX","Mineral Wells",121085
+"Yazoo County","MS","Jackson",76141.1666666667
+"Powhatan County","VA","Richmond",280229.916666667
+"Dinwiddie County","VA","Richmond",150544
+"Summit County","CO","Breckenridge",600983.916666667
+"Morehouse Parish","LA","Bastrop",54224.25
+"Decatur County","GA","Bainbridge",96119.25
+"Sanpete County","UT","",170517.75
+"Lauderdale County","TN","",71716.75
+"Montgomery County","NC","",115631.916666667
+"Door County","WI","",200690.333333333
+"Henderson County","TN","",104501.583333333
+"Hardee County","FL","Wauchula",115720.833333333
+"Carter County","KY","",70965.3333333333
+"Le Sueur County","MN","Minneapolis-St. Paul-Bloomington",197979.333333333
+"Peach County","GA","Warner Robins",132248.5
+"Barton County","KS","Great Bend",74988.1666666667
+"Wells County","IN","Fort Wayne",134136.75
+"Garvin County","OK","",65439.75
+"Simpson County","MS","Jackson",98270.25
+"Morton County","ND","Bismarck",219940.166666667
+"Custer County","OK","Weatherford",116916.083333333
+"Barbour County","AL","Eufaula",78676.8333333333
+"Carroll County","AR","",138665.25
+"Cherokee County","NC","",149665.083333333
+"Mason County","WV","Point Pleasant",78260.75
+"Ashe County","NC","",197468.666666667
+"Hardeman County","TN","",82650.1666666667
+"Orleans County","VT","",153977.833333333
+"Codington County","SD","Watertown",190034.416666667
+"Toombs County","GA","Vidalia",99579.75
+"Cibola County","NM","Grants",88263.3333333333
+"Upson County","GA","Thomaston",78189
+"White County","GA","",179082.916666667
+"Union County","MS","",106644.083333333
+"Baker County","FL","Jacksonville",181419.583333333
+"Marion County","MS","",97967
+"Lewis County","NY","",121905.083333333
+"Elmore County","ID","Mountain Home",167037.5
+"Edgefield County","SC","Augusta-Richmond County",147270.75
+"Anson County","NC","",70147.1666666667
+"Clay County","IN","Terre Haute",95437.0833333333
+"Mingo County","WV","",42154.8333333333
+"Logan County","KY","",98642.5
+"Geneva County","AL","Dothan",85326.6666666667
+"Juneau County","WI","",117415.75
+"De Soto Parish","LA","Shreveport-Bossier City",161005.5
+"Grimes County","TX","",147710.083333333
+"Oceana County","MI","",135194.75
+"Montgomery County","KY","Mount Sterling",116841.333333333
+"Somerset County","MD","Salisbury",110224
+"Jackson County","OK","Altus",59744.25
+"Monroe County","GA","Macon-Bibb County",186071.5
+"Uvalde County","TX","Uvalde",122567.916666667
+"San Jacinto County","TX","",132383
+"Boone County","IA","Boone",134881.5
+"Nicholas County","WV","",66092.5
+"Winchester City","VA","Winchester",202508.25
+"Stephens County","GA","Toccoa",100684
+"Randolph County","IN","",82658.8333333333
+"Dickinson County","MI","Iron Mountain",97987.75
+"Cheboygan County","MI","",125386.5
+"Coahoma County","MS","Clarksdale",57963.4166666667
+"Jefferson County","ID","Idaho Falls",238155.166666667
+"Ouachita County","AR","Camden",51993.9166666667
+"Mille Lacs County","MN","Minneapolis-St. Paul-Bloomington",166814.75
+"Benton County","IA","Cedar Rapids",148992.5
+"McNairy County","TN","",87880.5
+"Hardin County","TN","",113694.833333333
+"Chattooga County","GA","Summerville",76047.6666666667
+"Texas County","MO","",116507.333333333
+"Franklin County","KS","Ottawa",129144.5
+"Cherokee County","AL","",116392.416666667
+"Cleburne County","AR","",143421.75
+"Charlevoix County","MI","",156219.083333333
+"Posey County","IN","Evansville",146184.333333333
+"Brown County","MN","New Ulm",151100.25
+"Iosco County","MI","",85295.1666666667
+"Lyon County","MN","Marshall",144672.5
+"White County","TN","",116284.666666667
+"Clarke County","AL","",96785.8333333333
+"Allen Parish","LA","",78800.1666666667
+"Union County","OR","La Grande",192700.666666667
+"Grayson County","KY","",93556.75
+"Decatur County","IN","Greensburg",143418.666666667
+"Gladwin County","MI","",113163.25
+"Fluvanna County","VA","Charlottesville",211693.916666667
+"Adair County","MO","Kirksville",109980.25
+"Lee County","VA","",77866.5
+"Johnson County","AR","",93424.5833333333
+"Montezuma County","CO","",252783.5
+"Audrain County","MO","Mexico",93067.5
+"Tattnall County","GA","",105661.5
+"Seminole County","OK","",54385.75
+"Shelby County","TX","",103105.5
+"Meade County","SD","Rapid City",211581.833333333
+"Abbeville County","SC","Greenwood",112433
+"Randolph County","MO","Moberly",88674.6666666667
+"Yates County","NY","Rochester",153537.666666667
+"Prentiss County","MS","",88986.1666666667
+"Tillamook County","OR","",316584.833333333
+"Cass County","NE","Omaha-Council Bluffs",188282.083333333
+"Hart County","GA","",167089.5
+"Wasco County","OR","The Dalles",230280.5
+"Washington County","MO","",104367.416666667
+"Luna County","NM","Deming",99568.3333333333
+"Grady County","GA","",122622.583333333
+"Plymouth County","IA","Sioux City",162860.166666667
+"Woodford County","KY","Lexington-Fayette",187167.75
+"Saline County","IL","",68005.0833333333
+"Washington County","FL","",105484.25
+"Todd County","MN","",127045.583333333
+"Churchill County","NV","Fallon",226781.25
+"Gillespie County","TX","Fredericksburg",314306.916666667
+"Salem City","VA","Roanoke",168503.916666667
+"Jasper County","SC","Hilton Head Island-Bluffton-Beaufort",150952
+"Milam County","TX","",122708.666666667
+"Miller County","MO","",122051.416666667
+"Lincoln County","KY","Danville",98975.75
+"Manistee County","MI","",122906.166666667
+"Crawford County","MO","",124903.333333333
+"Hickman County","TN","Nashville-Davidson--Murfreesboro--Franklin",126588.916666667
+"Hertford County","NC","",117795.666666667
+"Grant County","KY","Cincinnati",141546.916666667
+"White County","IN","",120557.666666667
+"Juniata County","PA","",152676.416666667
+"Boone County","WV","Charleston",58357.0833333333
+"Poinsett County","AR","Jonesboro",61877.6666666667
+"Fayette County","TX","",221427.916666667
+"Columbia County","AR","Magnolia",80135.25
+"Letcher County","KY","",41638.4166666667
+"Taylor County","KY","Campbellsville",98093
+"Martin County","NC","",81331.25
+"Waushara County","WI","",141709.75
+"Winston County","AL","",104132.833333333
+"Lamoille County","VT","",251427.75
+"Roscommon County","MI","",79863.0833333333
+"Dawson County","NE","Lexington",111329.666666667
+"Fredericksburg City","VA","Washington-Arlington-Alexandria",307107.75
+"Fayette County","IN","Connersville",76412.4166666667
+"Bremer County","IA","Waterloo-Cedar Falls",161296.416666667
+"Upshur County","WV","",108623.166666667
+"Sabine Parish","LA","",102272.833333333
+"Stark County","ND","Dickinson",257656.916666667
+"Scott County","IN","Louisville/Jefferson County",104667.916666667
+"Otsego County","MI","",131745.5
+"Sumner County","KS","Wichita",89667.5833333333
+"Buchanan County","VA","",57566.6666666667
+"Lawrence County","SD","Spearfish",223391.166666667
+"Brooke County","WV","Weirton-Steubenville",81447.0833333333
+"Page County","VA","",154544.333333333
+"Menominee County","MI","Marinette",75830.75
+"Hampshire County","WV","Winchester",145772.5
+"Fairfield County","SC","Columbia",76354.5833333333
+"Ohio County","KY","",85138
+"Leake County","MS","",95948.5833333333
+"Panola County","TX","",139193.5
+"Wyoming County","WV","",37701.9166666667
+"West Baton Rouge Parish","LA","Baton Rouge",180063
+"Meigs County","OH","",68298.8333333333
+"Staunton City","VA","Staunton-Waynesboro",151555.416666667
+"Houston County","TX","",101197.333333333
+"Caswell County","NC","",107768.75
+"Iowa County","WI","Madison",169771.916666667
+"Fannin County","GA","",228278.166666667
+"Butts County","GA","Atlanta-Sandy Springs-Roswell",120823.416666667
+"King George County","VA","",285732.666666667
+"Antrim County","MI","",161210.166666667
+"Currituck County","NC","Virginia Beach-Norfolk-Newport News",315374.833333333
+"Wasatch County","UT","Heber",438337.25
+"Osceola County","MI","",78675.8333333333
+"Routt County","CO","Steamboat Springs",526047.583333333
+"Mitchell County","GA","",83250.3333333333
+"Ray County","MO","Kansas City",116565.75
+"Crisp County","GA","Cordele",93115.4166666667
+"Assumption Parish","LA","",140509.75
+"Itawamba County","MS","Tupelo",87935.0833333333
+"Limestone County","TX","",98635
+"Saline County","MO","Marshall",96515.8333333333
+"Nodaway County","MO","Maryville",134752.583333333
+"Prince Edward County","VA","",162898.083333333
+"Starke County","IN","",108852
+"Johnson County","KY","",84656.4166666667
+"Teller County","CO","Colorado Springs",301909.083333333
+"Rowan County","KY","",114724.583333333
+"Burke County","GA","Augusta-Richmond County",91842.1666666667
+"Meeker County","MN","",149524.5
+"Scott County","VA","Kingsport-Bristol-Bristol",81594.4166666667
+"Aransas County","TX","Corpus Christi",204242
+"Franklin County","IN","",168093.166666667
+"Elbert County","CO","Denver-Aurora-Lakewood",506162
+"McDonald County","MO","Fayetteville-Springdale-Rogers",108396.416666667
+"Monroe County","AL","",62575.1666666667
+"Plaquemines Parish","LA","New Orleans-Metairie",275341.5
+"Clark County","AR","Arkadelphia",81558.5
+"Jersey County","IL","St. Louis",117716.416666667
+"Cassia County","ID","Burley",175471.083333333
+"Seward County","KS","Liberal",105458.416666667
+"Hockley County","TX","Levelland",109870.583333333
+"Bibb County","AL","Birmingham-Hoover",117018.166666667
+"Randolph County","AL","",94817
+"Pointe Coupee Parish","LA","Baton Rouge",194252.75
+"Union Parish","LA","Monroe",90246
+"Logan County","CO","Sterling",172407.166666667
+"Adair County","OK","",73311.6666666667
+"Jo Daviess County","IL","",163013.833333333
+"Grainger County","TN","Knoxville",131655.583333333
+"Payette County","ID","Ontario",182162.666666667
+"Barnwell County","SC","",88552.5833333333
+"Wyandot County","OH","",98376.5
+"Hempstead County","AR","Hope",67071.1666666667
+"Emanuel County","GA","",70985.0833333333
+"Hopewell City","VA","Richmond",111244
+"George County","MS","",116055
+"Taylor County","FL","",103123.416666667
+"Fairfax City","VA","Washington-Arlington-Alexandria",516244.083333333
+"Gray County","TX","Pampa",61854.6666666667
+"Yankton County","SD","Yankton",167277.916666667
+"Williams County","ND","Williston",251285.416666667
+"Mahaska County","IA","Oskaloosa",116305.666666667
+"Jerome County","ID","Twin Falls",169381
+"Curry County","OR","Brookings",317598.666666667
+"Shelby County","IL","",101456.583333333
+"Logan County","AR","",77710.8333333333
+"Perry County","IL","",69552.0833333333
+"Hood River County","OR","Hood River",433651.333333333
+"Dawson County","GA","Atlanta-Sandy Springs-Roswell",251078.916666667
+"Gage County","NE","Beatrice",101340
+"Grant Parish","LA","Alexandria",127589.833333333
+"Rockbridge County","VA","",196923.083333333
+"Macon County","TN","Nashville-Davidson--Murfreesboro--Franklin",102623.583333333
+"Tippah County","MS","",81624.75
+"Scott County","TN","",90271.5833333333
+"Yell County","AR","Russellville",73199.8333333333
+"Hutchinson County","TX","Borger",67869.3333333333
+"Fayette County","IL","",79043.5
+"Willacy County","TX","Raymondville",64134.8333333333
+"Beckham County","OK","Elk City",102918.75
+"Saint James Parish","LA","New Orleans-Metairie",117712.666666667
+"Northampton County","NC","Roanoke Rapids",66898
+"Franklin County","GA","",138004.25
+"Overton County","TN","Cookeville",114937.333333333
+"Meriwether County","GA","Atlanta-Sandy Springs-Roswell",95212.4166666667
+"Morgan County","TN","Knoxville",98395.5833333333
+"Grenada County","MS","Grenada",68501.0833333333
+"Moore County","TX","Dumas",113845.5
+"McDuffie County","GA","Augusta-Richmond County",112388.083333333
+"Ashley County","AR","",53654.6666666667
+"Dodge County","GA","",80542.1666666667
+"Tyler County","TX","",97293.75
+"Phillips County","AR","Helena-West Helena",33396.0833333333
+"Clay County","KY","",65047.6666666667
+"Newton County","MS","",92467.8333333333
+"Jefferson County","OR","",202530.916666667
+"Lincoln County","WV","Huntington-Ashland",69800
+"Goochland County","VA","Richmond",313695
+"Leelanau County","MI","Traverse City",314510
+"Washington County","IA","Iowa City",142756.916666667
+"Ogemaw County","MI","",96222.1666666667
+"Worth County","GA","Albany",108338.833333333
+"Wabasha County","MN","Rochester",202209
+"Asotin County","WA","Lewiston",220927.416666667
+"Labette County","KS","Parsons",51263.9166666667
+"Pottawatomie County","KS","Manhattan",196013.333333333
+"Cherokee County","KS","",64822
+"Owen County","IN","Bloomington",121179.666666667
+"Sullivan County","IN","Terre Haute",86735.9166666667
+"Macon County","AL","",50701.6666666667
+"Vilas County","WI","",206449.166666667
+"Anderson County","KY","Frankfort",143790.5
+"Colusa County","CA","",215433.25
+"Carbon County","UT","Price",148687.666666667
+"Calhoun County","TX","Port Lavaca",135908.083333333
+"Nobles County","MN","Worthington",121381.083333333
+"Blaine County","ID","Hailey",528501.583333333
+"Greene County","NC","",95779.9166666667
+"Union County","GA","",202914.916666667
+"Mercer County","KY","",123402.583333333
+"Teton County","WY","Jackson",794013
+"Bertie County","NC","",79894.0833333333
+"Conway County","AR","",88616.9166666667
+"Jay County","IN","",84551.4166666667
+"Putnam County","GA","",223354.416666667
+"Washington County","GA","",84727.1666666667
+"Vernon County","MO","",93084.0833333333
+"Uinta County","WY","Evanston",197586.833333333
+"Stutsman County","ND","Jamestown",164531.5
+"Hampton County","SC","",69337
+"Winneshiek County","IA","",175582.916666667
+"Marengo County","AL","",85567.6666666667
+"Dakota County","NE","Sioux City",140974.333333333
+"Waynesboro City","VA","Staunton-Waynesboro",157235.583333333
+"Crook County","OR","Prineville",244297.416666667
+"Warren County","NC","",135978.833333333
+"Buchanan County","IA","",134332.416666667
+"Spencer County","IN","",129845.5
+"Butler County","AL","",70775.1666666667
+"Pacific County","WA","",190406.333333333
+"Fayette County","IA","",94675.3333333333
+"Adams County","WI","",126845.416666667
+"Colorado County","TX","",135825.25
+"Fillmore County","MN","Rochester",162895
+"Martin County","MN","Fairmont",113238.833333333
+"Fulton County","IN","",106385.166666667
+"Concordia Parish","LA","Natchez",125624.083333333
+"Carroll County","IA","Carroll",133812.083333333
+"Wayne County","KY","",80167.8333333333
+"Sevier County","UT","",195502.5
+"Saunders County","NE","Omaha-Council Bluffs",176962.416666667
+"Franklin Parish","LA","",92756.9166666667
+"Madison County","NC","Asheville",211173.333333333
+"Wayne County","MS","",94147.6666666667
+"Clinton County","MO","Kansas City",147418.583333333
+"Richland Parish","LA","",77339.25
+"Taylor County","WI","",126179.666666667
+"Polk County","AR","",89905.5
+"Texas County","OK","Guymon",94348.75
+"Jones County","IA","Cedar Rapids",138784.666666667
+"Clay County","MS","West Point",102706.666666667
+"Kewaunee County","WI","Green Bay",140419
+"Polk County","NC","",207316.333333333
+"Lincoln County","NM","Ruidoso",225381
+"La Paz County","AZ","",173419.833333333
+"Bandera County","TX","San Antonio-New Braunfels",204281.666666667
+"Jackson County","WI","",134503.75
+"Hubbard County","MN","",208739.083333333
+"Klickitat County","WA","",284860.833333333
+"East Feliciana Parish","LA","Baton Rouge",162607.416666667
+"Buena Vista County","IA","Storm Lake",118509.25
+"McIntosh County","OK","",79303.6666666667
+"Washington County","NE","Omaha-Council Bluffs",202360.25
+"Jones County","TX","Abilene",93580.8333333333
+"Kent County","MD","",225533.416666667
+"Elbert County","GA","",87413
+"Carroll County","IN","Lafayette-West Lafayette",125800.916666667
+"Henry County","IA","",118526.5
+"De Witt County","TX","",119648.833333333
+"Dodge County","MN","Rochester",199951
+"Woodward County","OK","Woodward",103104.916666667
+"Minidoka County","ID","Burley",154862.75
+"Breckinridge County","KY","",99823.3333333333
+"Plumas County","CA","",246443.583333333
+"Bourbon County","KY","Lexington-Fayette",131527.083333333
+"Douglas County","IL","",100054.916666667
+"Langlade County","WI","",102501.583333333
+"Allen County","KY","Bowling Green",86185.3333333333
+"Holmes County","FL","",104302.75
+"Saluda County","SC","Columbia",105599.083333333
+"Jackson County","IA","",134823.583333333
+"Roosevelt County","NM","Portales",111435.5
+"Orange County","IN","",94091.0833333333
+"Marion County","KY","",104133.583333333
+"Crawford County","IL","",80427.8333333333
+"Freestone County","TX","",117119.833333333
+"Gonzales County","TX","",129429
+"Dickinson County","KS","",110383.583333333
+"Pickens County","AL","Tuscaloosa",82595.25
+"Montague County","TX","",106986.666666667
+"Lincoln County","MT","",208594
+"Lampasas County","TX","Killeen-Temple",175136.75
+"Paulding County","OH","",83922.9166666667
+"Tishomingo County","MS","",91818
+"Covington County","MS","",102613.416666667
+"Attala County","MS","",87233.5
+"Davison County","SD","Mitchell",153294.833333333
+"Deaf Smith County","TX","Hereford",76232.8333333333
+"Perry County","IN","",110528.916666667
+"Llano County","TX","",267951.583333333
+"Berrien County","GA","",100999.333333333
+"Lavaca County","TX","",157236.666666667
+"Madison County","FL","",104975.333333333
+"Lee County","SC","",69110.5
+"Holmes County","MS","",36695.75
+"Winston County","MS","",81080.0833333333
+"Smith County","TN","Nashville-Davidson--Murfreesboro--Franklin",128115.583333333
+"Waseca County","MN","",146270.916666667
+"Jefferson County","KS","Topeka",152977.833333333
+"Union County","TN","Knoxville",141670.25
+"Hancock County","IL","Fort Madison-Keokuk",84363.75
+"Benton County","MO","",97703
+"Green Lake County","WI","",143947.416666667
+"Houston County","MN","La Crosse-Onalaska",195387.416666667
+"Arkansas County","AR","",75385.4166666667
+"Perry County","MO","",136941.166666667
+"New Madrid County","MO","",73536.5833333333
+"Poweshiek County","IA","",144521
+"Harrison County","KY","",87864.9166666667
+"Otero County","CO","",91406.4166666667
+"Wright County","MO","",103373.833333333
+"Haywood County","TN","Brownsville",84190.5833333333
+"Pierce County","GA","Waycross",128519.833333333
+"Adams County","WA","Othello",181562.833333333
+"Dekalb County","TN","",135078.666666667
+"Adair County","KY","",101792.833333333
+"Duchesne County","UT","",214382.5
+"Eastland County","TX","",79478.5
+"Edgar County","IL","",65333.5833333333
+"Southampton County","VA","",151158.666666667
+"Young County","TX","",96233.1666666667
+"Inyo County","CA","",325844.916666667
+"Humphreys County","TN","",117221.25
+"Pike County","MO","",106446.916666667
+"Drew County","AR","",88302.75
+"Cedar County","IA","",161588
+"Patrick County","VA","",98625.5833333333
+"New Kent County","VA","Richmond",259671.25
+"Brantley County","GA","Brunswick",101808.5
+"Greene County","VA","Charlottesville",233714.166666667
+"Banks County","GA","",171286.166666667
+"Schuyler County","NY","",134380.833333333
+"Lamar County","GA","Atlanta-Sandy Springs-Roswell",124421.416666667
+"Unicoi County","TN","Johnson City",119977.25
+"McCreary County","KY","",56141.3333333333
+"Pemiscot County","MO","",69811
+"Montour County","PA","Bloomsburg-Berwick",170499.75
+"Mariposa County","CA","",273218.916666667
+"Johnson County","TN","",105849.583333333
+"Appling County","GA","",87468.1666666667
+"Bosque County","TX","",112974.5
+"Hart County","KY","",85954.1666666667
+"Clayton County","IA","",125179.583333333
+"Franklin County","AR","",91911.9166666667
+"Lincoln County","WY","",252201.833333333
+"Richland County","WI","",133481
+"Jackson County","AR","",49756.5
+"Randolph County","AR","",86084.3333333333
+"Fentress County","TN","",96348.3333333333
+"Los Alamos County","NM","Los Alamos",274877.166666667
+"Cross County","AR","",82280.25
+"Pike County","GA","Atlanta-Sandy Springs-Roswell",181682.166666667
+"Morgan County","GA","Atlanta-Sandy Springs-Roswell",234769.583333333
+"Socorro County","NM","",120173.75
+"Falls County","TX","Waco",73390.3333333333
+"Bristol City","VA","Kingsport-Bristol-Bristol",94399.9166666667
+"Yancey County","NC","",172853.5
+"Chaffee County","CO","",362790.166666667
+"Union County","IL","",94635.5
+"Avery County","NC","",154127.25
+"Stone County","MS","",112630.75
+"Bond County","IL","St. Louis",103095.416666667
+"Tama County","IA","",107019.416666667
+"Delaware County","IA","",142760.083333333
+"Warren County","IL","",80375.25
+"Ben Hill County","GA","Fitzgerald",78101.25
+"Cooper County","MO","",127376.25
+"Washington County","AL","",103526.083333333
+"Russell County","KY","",85201.75
+"Morgan County","WV","",148233.666666667
+"Piscataquis County","ME","",104892.25
+"Hardin County","IA","",91347.75
+"Gaines County","TX","",145810.333333333
+"Benzie County","MI","Traverse City",182319.083333333
+"Mason County","KY","Maysville",85015.0833333333
+"Potter County","PA","",81573
+"Westmoreland County","VA","",186762.5
+"Brunswick County","VA","",102258.416666667
+"Lawrence County","AR","",59239.4166666667
+"Colonial Heights City","VA","Richmond",156172.833333333
+"Beadle County","SD","Huron",122176.583333333
+"Rush County","IN","",112032.75
+"Chickasaw County","MS","",76297.1666666667
+"Parke County","IN","",101703.666666667
+"Simpson County","KY","",115665.75
+"Henry County","AL","Dothan",98777.6666666667
+"Van Buren County","AR","",90589.6666666667
+"Andrew County","MO","St. Joseph",156197
+"Giles County","VA","Blacksburg-Christiansburg-Radford",108562.25
+"Sharp County","AR","",68649.5
+"Fayette County","AL","",69403.3333333333
+"Fountain County","IN","",92126.0833333333
+"Frio County","TX","",85715.3333333333
+"Cook County","GA","",90743.25
+"Claiborne Parish","LA","",99895.5
+"Burleson County","TX","College Station-Bryan",131023.916666667
+"Kalkaska County","MI","Traverse City",124483.666666667
+"Pitkin County","CO","Glenwood Springs",1246447.83333333
+"Buckingham County","VA","Charlottesville",121905.666666667
+"Chester County","TN","Jackson",116363.083333333
+"Crawford County","IA","",102705
+"Spencer County","KY","Louisville/Jefferson County",195396.5
+"Sevier County","AR","",88128.6666666667
+"Rockcastle County","KY","Richmond-Berea",78025.5833333333
+"Bates County","MO","Kansas City",110494.583333333
+"Hughes County","SD","Pierre",199000
+"Wayne County","TN","",91167.5
+"Gilchrist County","FL","Gainesville",140076.166666667
+"Jefferson County","GA","",67959.3333333333
+"Atchison County","KS","Atchison",86973.9166666667
+"Scurry County","TX","Snyder",96607
+"Garrard County","KY","",140734.5
+"Taylor County","WV","Clarksburg",96391.0833333333
+"Jefferson County","IA","Fairfield",118613.333333333
+"Lafayette County","WI","",118255.166666667
+"Lawrence County","IL","",49219.5
+"Polk County","TN","Cleveland",117766.5
+"Leon County","TX","",156213.5
+"Dallas County","MO","Springfield",117046.583333333
+"Wayne County","IL","",72604.25
+"Seward County","NE","Lincoln",173738.5
+"Piatt County","IL","Champaign-Urbana",144668.666666667
+"Gem County","ID","Boise City",207930.166666667
+"Clay County","IA","Spencer",126539.5
+"Dickinson County","IA","Spirit Lake",220697.333333333
+"Marion County","AR","",112151.583333333
+"Crawford County","WI","",122934.916666667
+"Dade County","GA","Chattanooga",142573.416666667
+"Robertson County","TX","College Station-Bryan",125288
+"Lee County","TX","",196116.166666667
+"Barbour County","WV","",74265.4166666667
+"Wetzel County","WV","",71388.25
+"Pawnee County","OK","Tulsa",81494
+"Dewitt County","IL","Bloomington",93486.5
+"Sawyer County","WI","",193013
+"Dukes County","MA","Vineyard Haven",802144
+"Humboldt County","NV","Winnemucca",237865.666666667
+"Neosho County","KS","",57688.4166666667
+"Telfair County","GA","",57959
+"Smith County","MS","",89100.25
+"Benton County","TN","",91246.9166666667
+"Mercer County","IL","Davenport-Moline-Rock Island",87213.3333333333
+"Pike County","IL","",71581.8333333333
+"Gogebic County","MI","",63541.3333333333
+"Dixie County","FL","",98810.5833333333
+"Radford City","VA","Blacksburg-Christiansburg-Radford",157785.333333333
+"Torrance County","NM","Albuquerque",116564.5
+"Lewis County","WV","",102467.75
+"Iowa County","IA","",152714.416666667
+"Knott County","KY","",62331.4166666667
+"Clark County","IL","",90709.25
+"Richland County","ND","Wahpeton",123873.833333333
+"Floyd County","IA","",100377.666666667
+"Osage County","KS","Topeka",108674.333333333
+"Rabun County","GA","",210769.5
+"Jackson Parish","LA","",132533.083333333
+"Idaho County","ID","",204780.666666667
+"Alleghany County","VA","",98725.25
+"Brooks County","GA","Valdosta",111432.5
+"Kanabec County","MN","",153222.75
+"Richland County","IL","",84699.8333333333
+"Vermillion County","IN","Terre Haute",66984.75
+"Park County","CO","Denver-Aurora-Lakewood",334847.5
+"Aitkin County","MN","",188800.666666667
+"Ashland County","WI","",105165.25
+"Baker County","OR","",158229.25
+"Hill County","MT","",170515.333333333
+"Clay County","AR","",49827.0833333333
+"Redwood County","MN","",79833.1666666667
+"Greene County","GA","",328859.416666667
+"Bamberg County","SC","",56901.9166666667
+"Casey County","KY","",80232.8333333333
+"Tipton County","IN","",121803.083333333
+"King William County","VA","Richmond",194016.333333333
+"Page County","IA","",74927.3333333333
+"Washburn County","WI","",158515.166666667
+"Dickenson County","VA","Big Stone Gap",67232.5
+"Arenac County","MI","",82453.5
+"Carbon County","WY","",159998.333333333
+"Harrison County","OH","",81038.75
+"Gulf County","FL","Panama City",205381.833333333
+"Nottoway County","VA","",103035.416666667
+"Marshall County","OK","",81625.0833333333
+"San Juan County","WA","",585044.083333333
+"Hale County","AL","Tuscaloosa",95745.6666666667
+"Otoe County","NE","",141977.083333333
+"Renville County","MN","",106251.75
+"Madison County","AR","Fayetteville-Springdale-Rogers",105053.916666667
+"Madison County","IA","Des Moines-West Des Moines",173927.333333333
+"Hamilton County","IA","",101794.5
+"Dent County","MO","",103334.5
+"Park County","MT","",302371.083333333
+"Roseau County","MN","",140068.5
+"West Feliciana Parish","LA","Baton Rouge",268862.083333333
+"Moniteau County","MO","Jefferson City",131350.833333333
+"Mitchell County","NC","",136615.666666667
+"Macon County","MO","",99928
+"Kossuth County","IA","",99123.25
+"Union County","FL","",128042.583333333
+"Grayson County","VA","",108288.166666667
+"Pecos County","TX","",119640.166666667
+"Las Animas County","CO","",139369.833333333
+"Gooding County","ID","",153751
+"Burnett County","WI","",160422
+"Alamosa County","CO","",181113.083333333
+"Walthall County","MS","",101201.916666667
+"Massac County","IL","Paducah",73233.75
+"Henry County","KY","Louisville/Jefferson County",127224.333333333
+"Marquette County","WI","",131603.916666667
+"Carroll County","IL","",100130.833333333
+"Gunnison County","CO","",366684.666666667
+"Winn Parish","LA","",103958.5
+"Floyd County","VA","Blacksburg-Christiansburg-Radford",147800.333333333
+"Brown County","IN","Indianapolis-Carmel-Anderson",192629.833333333
+"Sibley County","MN","Minneapolis-St. Paul-Bloomington",125867.5
+"Gasconade County","MO","",125901
+"Nolan County","TX","Sweetwater",70991.5
+"Choctaw County","OK","",68726
+"Livingston County","MO","",109075
+"Calhoun County","SC","Columbia",149613.083333333
+"Bourbon County","KS","",77678.9166666667
+"Jeff Davis County","GA","",80591.9166666667
+"Mills County","IA","Omaha-Council Bluffs",166653
+"Morgan County","OH","",87370.0833333333
+"Kingfisher County","OK","",116688.75
+"Craig County","OK","",98156.3333333333
+"Nelson County","VA","Charlottesville",220410.75
+"Bayfield County","WI","",174105.583333333
+"Union County","KY","",76891.5
+"Appomattox County","VA","Lynchburg",137161.25
+"Cleburne County","AL","",109183.416666667
+"Harrison County","IA","Omaha-Council Bluffs",116154.166666667
+"Roane County","WV","",82936.5833333333
+"Dooly County","GA","",78450.9166666667
+"Oglethorpe County","GA","Athens-Clarke County",149301.75
+"LaSalle Parish","LA","",86385.1666666667
+"Pendleton County","KY","Cincinnati",112421.666666667
+"Butler County","IA","",126146.75
+"Missaukee County","MI","Cadillac",108339.5
+"Moultrie County","IL","",83658.5
+"Fulton County","PA","",126373.833333333
+"Grand County","CO","",377680.083333333
+"Karnes County","TX","",106082.166666667
+"Hamilton County","FL","",93636.0833333333
+"Chowan County","NC","",132167.75
+"Andrews County","TX","Andrews",151783.5
+"Jefferson County","FL","Tallahassee",157437
+"Rusk County","WI","",104334.666666667
+"San Juan County","UT","",193532.416666667
+"Macon County","GA","",51992.75
+"Washington County","IL","",105593.333333333
+"Estill County","KY","",73350.5
+"Mason County","IL","",67813.0833333333
+"White County","IL","",76296.9166666667
+"Noble County","OH","",104416.583333333
+"Monroe County","OH","",106053.166666667
+"Calhoun County","FL","",95599.0833333333
+"Screven County","GA","",87734.5833333333
+"Crockett County","TN","Jackson",86389.8333333333
+"Trinity County","TX","Huntsville",106416.333333333
+"Lamar County","AL","",66360.4166666667
+"Faribault County","MN","",96203.5
+"Braxton County","WV","",66208.9166666667
+"Long County","GA","Hinesville",170256.583333333
+"Newton County","TX","Beaumont-Port Arthur",102680
+"Greene County","MS","",99953.1666666667
+"Union County","SD","Sioux City",228633.166666667
+"O Brien County","IA","",99884.8333333333
+"Mississippi County","MO","",74117.6666666667
+"Bienville Parish","LA","",56804.0833333333
+"Fleming County","KY","",93707.1666666667
+"Trigg County","KY","Clarksville",123250
+"McIntosh County","GA","Brunswick",146584.083333333
+"Allamakee County","IA","",136269.916666667
+"Manassas Park City","VA","Washington-Arlington-Alexandria",260383.416666667
+"Newton County","IN","Chicago-Naperville-Elgin",119747.166666667
+"Mono County","CA","",421152.833333333
+"Saline County","NE","",108115.75
+"Larue County","KY","Elizabethtown-Fort Knox",109328.666666667
+"Atoka County","OK","",100948.666666667
+"Price County","WI","",105629.416666667
+"Lincoln County","AR","Pine Bluff",68640.8333333333
+"Sequatchie County","TN","Chattanooga",124319.666666667
+"Ford County","IL","Champaign-Urbana",84020.75
+"Jackson County","TX","",119793
+"Crawford County","MI","",88248.25
+"Williamsburg City","VA","Virginia Beach-Norfolk-Newport News",282907.416666667
+"Clarke County","VA","Washington-Arlington-Alexandria",337184.333333333
+"Hardy County","WV","",108603.583333333
+"Zapata County","TX","Zapata",87833.3333333333
+"Hughes County","OK","",57640
+"Cedar County","MO","",110278.916666667
+"Swain County","NC","",164200.916666667
+"Lamb County","TX","",47023.8333333333
+"Comanche County","TX","",91032.75
+"Cass County","IA","",92609.75
+"Rolette County","ND","",93413
+"Clay County","AL","",85932.5833333333
+"Pennington County","MN","",154595.75
+"Summers County","WV","",67583.8333333333
+"Morgan County","KY","",75622.75
+"Crenshaw County","AL","",70006.5
+"Jasper County","GA","Atlanta-Sandy Springs-Roswell",142544.083333333
+"Greene County","IL","",63337.25
+"Osage County","MO","Jefferson City",149016.166666667
+"Lewis County","KY","",64480.75
+"Clay County","SD","Vermillion",165041.75
+"Wadena County","MN","",109477.583333333
+"Converse County","WY","",215379.5
+"Dawson County","TX","Lamesa",66709.8333333333
+"Martinsville City","VA","Martinsville",52004.75
+"Clay County","IL","",65353.0833333333
+"Cannon County","TN","Nashville-Davidson--Murfreesboro--Franklin",146012.916666667
+"Moffat County","CO","Craig",194740.916666667
+"Howard County","AR","",78956.5833333333
+"Trinity County","CA","",244434.166666667
+"Reeves County","TX","Pecos",89059.25
+"Sumter County","AL","",44940.8333333333
+"Colfax County","NM","",135224.666666667
+"Grundy County","TN","",90350.5
+"Izard County","AR","",82975.0833333333
+"Douglas County","MO","",84499.4166666667
+"York County","NE","",121029.833333333
+"Madison County","TX","",151837.75
+"Cass County","IL","",81345.8333333333
+"Webster County","KY","",47932
+"Kodiak Island Borough","AK","",293279.416666667
+"Buffalo County","WI","",130986.416666667
+"Callahan County","TX","Abilene",115581.25
+"Wilbarger County","TX","Vernon",68583.8333333333
+"Wayne County","MO","",99867
+"Monroe County","WV","",89393.5833333333
+"Jackson County","KY","",47320.75
+"Murray County","OK","",85503.4166666667
+"Ketchikan Gateway Borough","AK","Ketchikan",289130.5
+"Perquimans County","NC","Elizabeth City",146835
+"Vinton County","OH","",76243.5833333333
+"Pulaski County","IN","",96769.5
+"Glacier County","MT","",97477.25
+"Presque Isle County","MI","",99637.9166666667
+"Allen County","KS","",70680.5833333333
+"Stewart County","TN","",124495.583333333
+"Koochiching County","MN","",103009.416666667
+"Madison County","VA","",214649.583333333
+"Goshen County","WY","",159478.833333333
+"Fremont County","ID","Rexburg",230383.5
+"Wright County","IA","",71598.0833333333
+"Conecuh County","AL","",75558.4166666667
+"Washington County","NC","",57859.6666666667
+"Little River County","AR","Texarkana",77551.3333333333
+"Pamlico County","NC","New Bern",166716.916666667
+"Amite County","MS","McComb",104380.416666667
+"Bleckley County","GA","",103793.75
+"Desha County","AR","",45705.9166666667
+"Pend Oreille County","WA","Spokane-Spokane Valley",216320.666666667
+"Caldwell County","KY","",61653.9166666667
+"Morris County","TX","",83076.3333333333
+"Lawrence County","MS","",88306.0833333333
+"Lunenburg County","VA","",90802.0833333333
+"DeKalb County","MO","St. Joseph",140594.333333333
+"Appanoose County","IA","",76802.6666666667
+"Glades County","FL","",121155.75
+"Bledsoe County","TN","",100106.166666667
+"Red River County","TX","",63678.8333333333
+"Pike County","IN","Jasper",89800.6666666667
+"Franklin County","ID","Logan",225088.583333333
+"Haskell County","OK","",77063.75
+"Blackford County","IN","",70913.5
+"Shoshone County","ID","",114179
+"Linn County","MO","",64480.3333333333
+"Menard County","IL","Springfield",150599.833333333
+"Butler County","KY","Bowling Green",92788.75
+"Amelia County","VA","Richmond",182479.416666667
+"Yalobusha County","MS","",86024.75
+"Marion County","KS","",84752.5
+"Terry County","TX","",67342.9166666667
+"Marshall County","IL","Peoria",88398.4166666667
+"Crawford County","GA","Macon-Bibb County",123113.25
+"Powell County","KY","",80947.0833333333
+"Charlotte County","VA","",96018.5
+"Johnson County","IL","",88733.25
+"Prowers County","CO","",82507.5
+"Union County","IA","",87580.9166666667
+"Millard County","UT","",170742.333333333
+"Jefferson Davis County","MS","",84436.25
+"Todd County","KY","",89836.5
+"Grundy County","IA","Waterloo-Cedar Falls",138544
+"Chippewa County","MN","",91677.1666666667
+"Chickasaw County","IA","",119945.25
+"Barton County","MO","",89412.75
+"Camp County","TX","",108345.166666667
+"Stone County","AR","",112345.916666667
+"Northampton County","VA","",229303.416666667
+"Bollinger County","MO","Cape Girardeau",113478
+"Falls Church City","VA","Washington-Arlington-Alexandria",766606.666666667
+"Northumberland County","VA","",288102.666666667
+"Perry County","MS","Hattiesburg",88483
+"Fulton County","AR","",96497.5
+"Greensville County","VA","",71187.9166666667
+"Montgomery County","MO","",93607.1666666667
+"Madison County","MO","",93742.0833333333
+"Gates County","NC","Virginia Beach-Norfolk-Newport News",129095.666666667
+"Okfuskee County","OK","",67474.4166666667
+"Charlton County","GA","",100011.166666667
+"Shelby County","IA","",127266.083333333
+"Lewis County","TN","",95687.75
+"Edmonson County","KY","Bowling Green",95390.8333333333
+"Poquoson City","VA","Virginia Beach-Norfolk-Newport News",324254.083333333
+"Sussex County","VA","Richmond",101672.166666667
+"Archuleta County","CO","",300433.583333333
+"Cherokee County","IA","",99162.8333333333
+"Pulaski County","GA","Warner Robins",95719.0833333333
+"Sierra County","NM","",110596.25
+"Rio Grande County","CO","",181292.75
+"Wabash County","IL","",88130.5
+"Blaine County","OK","",56250.5833333333
+"Grant County","WV","",111443.166666667
+"Heard County","GA","Atlanta-Sandy Springs-Roswell",115621.75
+"Iron County","MI","",77202.5
+"Chicot County","AR","",44472.75
+"Decatur County","TN","",84136.4166666667
+"Meigs County","TN","",165958.75
+"Washington County","KY","",113183.666666667
+"Custer County","MT","",162753.333333333
+"Cottonwood County","MN","",81057.5833333333
+"Zavala County","TX","",62659.25
+"Wilcox County","AL","",87214.1666666667
+"Big Horn County","WY","",150527.5
+"Jackson County","TN","Cookeville",96901.9166666667
+"Washita County","OK","",62988.25
+"West Carroll Parish","LA","",79450.75
+"Bath County","KY","Mount Sterling",80511.3333333333
+"Fergus County","MT","",183380.833333333
+"Lyon County","IA","",126958.583333333
+"Pushmataha County","OK","",76136.25
+"Noble County","OK","",79073.6666666667
+"Franklin County","FL","",270703.583333333
+"Lake County","MI","",69636
+"Coosa County","AL","Talladega-Sylacauga",102229.583333333
+"Live Oak County","TX","",131691.75
+"Owyhee County","ID","Boise City",176169.083333333
+"Bradley County","AR","",59956.6666666667
+"Ramsey County","ND","",153356.333333333
+"Sanders County","MT","",217504.666666667
+"Jefferson County","MT","Helena",291257.333333333
+"Lancaster County","VA","",240814.333333333
+"Louisa County","IA","",101227.5
+"Hancock County","IA","",100380.916666667
+"Leslie County","KY","",32252.4166666667
+"Box Butte County","NE","",91531.9166666667
+"Lowndes County","AL","Montgomery",75579.75
+"Pike County","AR","",80837.3333333333
+"Chattahoochee County","GA","Columbus",75618
+"Green County","KY","",82795.3333333333
+"Scott County","AR","",73416
+"Watonwan County","MN","",79633.75
+"Saint Helena Parish","LA","Baton Rouge",102252.833333333
+"Lake County","SD","",166170.333333333
+"Morrow County","OR","Hermiston-Pendleton",156221.5
+"Alleghany County","NC","",144606.666666667
+"Latimer County","OK","",63144.9166666667
+"Essex County","VA","",183047.916666667
+"Walsh County","ND","",88518.25
+"Mackinac County","MI","",87579.0833333333
+"Bacon County","GA","",85097.5
+"Barnes County","ND","",111846.25
+"Skamania County","WA","Portland-Vancouver-Hillsboro",331144.083333333
+"Red Willow County","NE","",100235.5
+"Cumberland County","IL","Charleston-Mattoon",93524
+"Early County","GA","",80424.9166666667
+"Evans County","GA","",92433.4166666667
+"Candler County","GA","",112030.166666667
+"Pope County","MN","",184907.666666667
+"Boundary County","ID","",236860.833333333
+"Monroe County","KY","",66718.9166666667
+"Middlesex County","VA","",252828.916666667
+"Johnston County","OK","",76457.25
+"Guthrie County","IA","Des Moines-West Des Moines",125181.666666667
+"Alcona County","MI","",105883.916666667
+"Custer County","NE","",87380.9166666667
+"Montgomery County","MS","",59284.1666666667
+"Rains County","TX","",146056.25
+"Bullock County","AL","",62145.4166666667
+"Oregon County","MO","",84753.6666666667
+"Lake County","MN","",167299.75
+"Winnebago County","IA","",103990.25
+"Owen County","KY","",113685.083333333
+"Sabine County","TX","",95260.5
+"Carroll County","KY","",92533.1666666667
+"Tunica County","MS","Memphis",113540.166666667
+"Mitchell County","IA","",118853.25
+"Clay County","TX","Wichita Falls",102897.666666667
+"Montgomery County","IA","",72560.8333333333
+"Crawford County","IN","",94421.25
+"Franklin County","IA","",84514.4166666667
+"Ward County","TX","",99343.4166666667
+"Iron County","MO","",83117.1666666667
+"Switzerland County","IN","",119577.083333333
+"Franklin County","TX","",168936.416666667
+"Wilkes County","GA","",91011.6666666667
+"Clay County","NC","",176649.583333333
+"Lincoln County","WA","",212711.916666667
+"Marion County","TX","",123816.25
+"Nowata County","OK","",67005.0833333333
+"Colfax County","NE","",113563.916666667
+"Keokuk County","IA","",76329.1666666667
+"Runnels County","TX","",60948.5
+"Blanco County","TX","",307677.666666667
+"Towns County","GA","",211567.666666667
+"Ritchie County","WV","",65979.4166666667
+"Perry County","AR","Little Rock-North Little Rock-Conway",80584.0833333333
+"Yellow Medicine County","MN","",83504.9166666667
+"Lee County","AR","",31706.0833333333
+"Allendale County","SC","",35101.25
+"Sac County","IA","",89125.5833333333
+"Martin County","IN","",92899.5833333333
+"Emmet County","IA","",88639.0833333333
+"Clinton County","KY","",85489.5833333333
+"Parmer County","TX","",100470.666666667
+"Jackson County","MN","",113077.5
+"Grundy County","MO","",65093.5833333333
+"Webster County","MS","",106251.5
+"Sublette County","WY","",277245
+"Juab County","UT","Provo-Orem",253463.416666667
+"Ochiltree County","TX","",122426.333333333
+"Lewis County","MO","Quincy",97344.5
+"Washington County","ID","",155358.833333333
+"Nantucket County","MA","",1527482.16666667
+"Teton County","ID","Jackson",339604.25
+"Ralls County","MO","Hannibal",129524.583333333
+"Jones County","NC","New Bern",89161.3333333333
+"Roberts County","SD","",135337.083333333
+"Howard County","MO","",119072.416666667
+"Caldwell Parish","LA","",84037.1666666667
+"Butte County","SD","",143790.333333333
+"Metcalfe County","KY","Glasgow",76602.6666666667
+"Rice County","KS","",63859.5833333333
+"Carbon County","MT","Billings",288884.666666667
+"Lanier County","GA","Valdosta",115846.833333333
+"Cumberland County","VA","",152568.25
+"Yuma County","CO","",159337
+"White Pine County","NV","",127048.416666667
+"Cheyenne County","NE","",126373.416666667
+"Dimmit County","TX","",88362.3333333333
+"Brown County","KS","",85474.5
+"Johnson County","GA","Dublin",68327.0833333333
+"Camden County","NC","Elizabeth City",236537.666666667
+"Valley County","ID","",319941.833333333
+"Humboldt County","IA","",102596
+"Saint Clair County","MO","",102575.916666667
+"Swift County","MN","",111039.416666667
+"Montmorency County","MI","",86410.1666666667
+"Stevens County","MN","",130061.5
+"Ozark County","MO","",136300.083333333
+"Jasper County","IL","",83035.6666666667
+"Rock County","MN","",129266.583333333
+"Modoc County","CA","",116629.25
+"Calhoun County","IA","",82349.4166666667
+"Pratt County","KS","",75383.8333333333
+"Linn County","KS","Kansas City",109323.083333333
+"Valdez Cordova Borough","AK","",243409.666666667
+"Stephens County","TX","",80484.5833333333
+"Hickory County","MO","",100748.083333333
+"Claiborne County","MS","Vicksburg",51070.5833333333
+"Alger County","MI","",113094.166666667
+"Pipestone County","MN","",85194.6666666667
+"Wayne County","NE","",144033.166666667
+"Howard County","IA","",107385.833333333
+"Wilkinson County","GA","",68591.9166666667
+"Irwin County","GA","",94692
+"McLean County","KY","Owensboro",79108.75
+"Livingston County","KY","Paducah",75907.75
+"Nome Borough","AK","",371878.75
+"Montgomery County","AR","",94986.25
+"Morgan County","UT","Ogden-Clearfield",393466.5
+"Kiowa County","OK","",45950.1666666667
+"Marshall County","MN","",102787.166666667
+"Hancock County","GA","Milledgeville",92072.4166666667
+"Caldwell County","MO","Kansas City",112896.25
+"Love County","OK","",111930
+"Palo Alto County","IA","",97209.25
+"Wilson County","KS","",72326.4166666667
+"Mitchell County","TX","",67560.1666666667
+"Clay County","WV","Charleston",85522.75
+"Greene County","IA","",88448
+"Crittenden County","KY","",77900.5833333333
+"Terrell County","GA","Albany",62827.6666666667
+"Forest County","WI","",128722
+"Deer Lodge County","MT","",121282.5
+"Carroll County","MO","",79172.6666666667
+"Clarke County","IA","",111545.833333333
+"Benewah County","ID","",147303.083333333
+"Wilcox County","GA","",74767.1666666667
+"Richmond County","VA","",143898.583333333
+"Beaverhead County","MT","",205387.75
+"Monona County","IA","",82370
+"Rosebud County","MT","",161018
+"Brewster County","TX","",171558
+"Grand County","UT","",348950.083333333
+"Tyler County","WV","",60474.1666666667
+"Phelps County","NE","",130959.666666667
+"Dawes County","NE","",116771.083333333
+"Maries County","MO","",144429.5
+"Webster County","WV","",38712.1666666667
+"Cuming County","NE","",145934.666666667
+"Charles Mix County","SD","",117648.25
+"Hamilton County","NE","Grand Island",169263.083333333
+"Montgomery County","GA","Vidalia",102346.5
+"Stillwater County","MT","",262219.416666667
+"Red River Parish","LA","",97376.9166666667
+"Clear Creek County","CO","Denver-Aurora-Lakewood",358342.5
+"Archer County","TX","Wichita Falls",127706.083333333
+"Greene County","AL","",78717.1666666667
+"Jack County","TX","",103369.416666667
+"Quay County","NM","",71678.5833333333
+"Twiggs County","GA","Macon-Bibb County",64066.4166666667
+"Nevada County","AR","Hope",38814.5833333333
+"Mathews County","VA","Virginia Beach-Norfolk-Newport News",242394.333333333
+"Dawson County","MT","",182031.083333333
+"McLean County","ND","",174831.25
+"Harrison County","MO","",81010.5
+"Turner County","GA","",73706.4166666667
+"Taylor County","GA","",78600.4166666667
+"Lucas County","IA","",81152.6666666667
+"Coleman County","TX","",53648.4166666667
+"Sitka Borough","AK","",400944
+"Woods County","OK","",70190.25
+"Lafayette County","FL","",122464
+"San Augustine County","TX","",104145.833333333
+"Graham County","NC","",135120.333333333
+"Baraga County","MI","",93037.75
+"Benton County","IN","Lafayette-West Lafayette",83125.25
+"Cedar County","NE","",122014.25
+"Monroe County","MO","",106672.583333333
+"Trimble County","KY","Louisville/Jefferson County",123517.25
+"Clearwater County","ID","",174692.916666667
+"Davis County","IA","Ottumwa",134520.166666667
+"Marion County","GA","Columbus",99531.3333333333
+"Seminole County","GA","",87136.25
+"Benton County","MS","Memphis",83497.5833333333
+"Murray County","MN","",123550
+"Pocahontas County","WV","",88467.8333333333
+"Prairie County","AR","",67450.6666666667
+"Knox County","NE","",81526.3333333333
+"Clearwater County","MN","",125148
+"Gilmer County","WV","",72077.4166666667
+"Cleveland County","AR","Pine Bluff",83111.75
+"Platte County","WY","",185112.5
+"Oscoda County","MI","",72284.0833333333
+"Coffey County","KS","",103062.833333333
+"Gallatin County","KY","Cincinnati",109459.416666667
+"Franklin City","VA","",123566.666666667
+"Johnson County","WY","",245816.916666667
+"Hancock County","KY","Owensboro",90685.5
+"Choctaw County","MS","",91397.4166666667
+"Clay County","KS","",78533.4166666667
+"Washakie County","WY","",168946.25
+"Hamilton County","TX","",99571.4166666667
+"Warren County","IN","",120167.666666667
+"Somervell County","TX","Dallas-Fort Worth-Arlington",233502
+"Bracken County","KY","Cincinnati",87539.25
+"Schoolcraft County","MI","",77267.1666666667
+"Decatur County","IA","",73343.1666666667
+"Hamilton County","IL","",75038.3333333333
+"Shannon County","MO","",88416.75
+"Greenlee County","AZ","",86682.5833333333
+"Daviess County","MO","",127241.916666667
+"Houston County","TN","",105767.166666667
+"Mercer County","ND","",178112.833333333
+"Butler County","NE","",120290.416666667
+"Atkinson County","GA","",74166.75
+"Keith County","NE","",125195.083333333
+"Liberty County","FL","",103016.083333333
+"Turner County","SD","Sioux Falls",147855.5
+"Jenkins County","GA","",59892
+"Newton County","AR","Harrison",98148.5833333333
+"Lyon County","KY","",124919.333333333
+"McCulloch County","TX","",112536
+"Kit Carson County","CO","",143340.5
+"Conejos County","CO","",126432.75
+"Ballard County","KY","Paducah",77946.4166666667
+"Custer County","SD","Rapid City",222374.5
+"Doddridge County","WV","Clarksburg",74424.3333333333
+"Searcy County","AR","",75963
+"Monroe County","AR","",42674.75
+"Traill County","ND","",126773.416666667
+"Dallas County","AR","",38588.1666666667
+"Anderson County","KS","",98664.6666666667
+"Castro County","TX","",73300.25
+"Lincoln County","GA","Augusta-Richmond County",143397.333333333
+"Tillman County","OK","",32770.8333333333
+"Monroe County","IA","",107464.083333333
+"Doniphan County","KS","St. Joseph",72296.3333333333
+"Lemhi County","ID","",218200
+"Perry County","TN","",85555.4166666667
+"Thomas County","KS","",115969.666666667
+"Lake County","OR","",89732.5833333333
+"Lee County","KY","",64582.1666666667
+"Dade County","MO","",79605
+"Trousdale County","TN","Nashville-Davidson--Murfreesboro--Franklin",131731.75
+"Clay County","TN","",87395.25
+"Kingman County","KS","Wichita",63446.5
+"Swisher County","TX","",52564.0833333333
+"Merrick County","NE","Grand Island",117885.416666667
+"Lake County","TN","",55411.0833333333
+"Chariton County","MO","",112897.833333333
+"Grant County","KS","",110583.916666667
+"Power County","ID","",167077.75
+"East Carroll Parish","LA","",45623.6666666667
+"Randolph County","GA","",52228.0833333333
+"Forest County","PA","",82215.75
+"Pendleton County","WV","",97573.3333333333
+"Madison County","MT","",330664.666666667
+"Adair County","IA","",98906.6666666667
+"Lafayette County","AR","",43906.75
+"Calhoun County","WV","",66402.5833333333
+"Pleasants County","WV","",94655.8333333333
+"Worth County","IA","Mason City",103535.416666667
+"Van Buren County","IA","",94859.5833333333
+"Ferry County","WA","",190637.833333333
+"Jefferson County","NE","",71883.8333333333
+"Major County","OK","",84135.1666666667
+"Union County","IN","Cincinnati",113689.416666667
+"Pepin County","WI","",132321.333333333
+"Grant County","OR","",150175
+"Fremont County","IA","",96611
+"Harney County","OR","",104726.916666667
+"Wheeler County","GA","",76871
+"Pembina County","ND","",87987.9166666667
+"Refugio County","TX","",89373.0833333333
+"Rappahannock County","VA","Washington-Arlington-Alexandria",366905.333333333
+"Valley County","MT","",149224.5
+"San Miguel County","CO","",744012.083333333
+"Hutchinson County","SD","",78882.5833333333
+"Henderson County","IL","Burlington",82402.1666666667
+"Lake County","CO","",236991.416666667
+"Pocahontas County","IA","",68720.6666666667
+"Pierce County","NE","Norfolk",140430.166666667
+"Woodruff County","AR","",41684.1666666667
+"Lac Qui Parle County","MN","",64854.8333333333
+"Charles City County","VA","Richmond",171816.5
+"Nemaha County","NE","",81797.0833333333
+"Brooks County","TX","",57811.5
+"Goliad County","TX","Victoria",181273
+"Weston County","WY","",172033.5
+"Bailey County","TX","",71215.8333333333
+"Tucker County","WV","",100230
+"Nicholas County","KY","",81680.1666666667
+"Kane County","UT","",239838.583333333
+"Winkler County","TX","",58891.6666666667
+"Fall River County","SD","",149656.75
+"Ida County","IA","",71445.6666666667
+"Crook County","WY","",254044.083333333
+"Surry County","VA","",160379.166666667
+"Wabaunsee County","KS","Topeka",131945
+"Galax City","VA","",89833.9166666667
+"Lexington City","VA","",204397.416666667
+"Childress County","TX","",57095.9166666667
+"Boise County","ID","Boise City",228246.5
+"Powell County","MT","",155715.833333333
+"Wallowa County","OR","",261743.25
+"Pawnee County","KS","",55783.1666666667
+"Russell County","KS","",72199.75
+"Grand Isle County","VT","Burlington-South Burlington",242574.75
+"Caribou County","ID","",165894.333333333
+"King and Queen County","VA","",144746.416666667
+"Thurston County","NE","",90575.6666666667
+"Treutlen County","GA","",65742.3333333333
+"Talbot County","GA","",105399.083333333
+"Burt County","NE","",100285.583333333
+"Cumberland County","KY","",68145.5833333333
+"Norman County","MN","",86219.0833333333
+"Cameron Parish","LA","Lake Charles",137544.25
+"Bland County","VA","",114901.25
+"Hancock County","TN","",89064.6666666667
+"Fulton County","KY","Union City",39857.0833333333
+"Clinch County","GA","",71982.25
+"Ontonagon County","MI","",30518.5833333333
+"Pershing County","NV","",125217.75
+"Gentry County","MO","",73469.1666666667
+"Edwards County","IL","",46232.75
+"Sullivan County","MO","",50326.75
+"Huerfano County","CO","",135300.583333333
+"Dallam County","TX","",62164.4166666667
+"Reynolds County","MO","",100622.916666667
+"Calhoun County","GA","",50989.1666666667
+"Greenwood County","KS","",58924.1666666667
+"Antelope County","NE","",88854.4166666667
+"Rio Blanco County","CO","",238511.5
+"Benson County","ND","",60983.1666666667
+"Buena Vista City","VA","",96064.1666666667
+"Luce County","MI","",78684.1666666667
+"Wilkin County","MN","Wahpeton",117325.5
+"Clay County","NE","",89502.3333333333
+"Bent County","CO","",61696.6666666667
+"Ellsworth County","KS","",68716.6666666667
+"Kearney County","NE","Kearney",147621
+"Moody County","SD","",157183.75
+"Jefferson County","OK","",33879.5
+"Osceola County","IA","",68706.8333333333
+"Floyd County","TX","",55295
+"Sullivan County","PA","",125277.666666667
+"Spink County","SD","",100353.25
+"Wayne County","IA","",74087.6666666667
+"Shelby County","MO","",81282.75
+"Moore County","TN","Tullahoma-Manchester",167356
+"McKenzie County","ND","",235970.916666667
+"Taylor County","IA","",76261.6666666667
+"Essex County","VT","Berlin",111560.583333333
+"Menifee County","KY","Mount Sterling",70998.5
+"Howard County","NE","Grand Island",156588.916666667
+"Greer County","OK","",48184.25
+"Cotton County","OK","Lawton",66122.75
+"Carson County","TX","Amarillo",98167
+"Pondera County","MT","",131522.666666667
+"San Saba County","TX","",94599.5833333333
+"Stanton County","NE","Norfolk",142965
+"Ohio County","IN","Cincinnati",154680
+"Miller County","GA","",95595.1666666667
+"Audubon County","IA","",73827.5
+"Saguache County","CO","",162447.416666667
+"Ottawa County","KS","Salina",102737.916666667
+"Teton County","MT","",167201.166666667
+"Crosby County","TX","Lubbock",52933.0833333333
+"Stewart County","GA","",43037.8333333333
+"Harper County","KS","",51424.3333333333
+"Grant County","MN","",118142.833333333
+"Gray County","KS","",123297.25
+"Putnam County","IL","Ottawa-Peru",112154.833333333
+"Dixon County","NE","Sioux City",112835.583333333
+"Stark County","IL","Peoria",77802
+"Bear Lake County","ID","",194503.833333333
+"Covington City","VA","",51612.8333333333
+"Emporia City","VA","",89251.4166666667
+"Coal County","OK","",60823
+"Iron County","WI","",132103.166666667
+"Hamlin County","SD","",130900.583333333
+"Haskell County","TX","",57729
+"Lincoln County","MN","",75937.25
+"Fillmore County","NE","",84706.1666666667
+"Warren County","GA","",56400.0833333333
+"Crowley County","CO","",61450.4166666667
+"Chouteau County","MT","",137553.166666667
+"Hyde County","NC","",100735
+"Lander County","NV","",187882.5
+"Stevens County","KS","",106531.833333333
+"Wirt County","WV","Parkersburg-Vienna",61986.8333333333
+"Day County","SD","",104932.333333333
+"Atchison County","MO","",80155.4166666667
+"Beaver County","OK","",95096.4166666667
+"McCook County","SD","Sioux Falls",103136.333333333
+"Broadwater County","MT","",244562.916666667
+"Van Buren County","TN","",111515.166666667
+"Lincoln County","CO","",128031.25
+"Gilpin County","CO","Denver-Aurora-Lakewood",344029.666666667
+"Mahnomen County","MN","",86692.5833333333
+"Wheeler County","TX","",84492.75
+"Polk County","NE","",116446.416666667
+"McHenry County","ND","Minot",159630.666666667
+"Calhoun County","AR","Camden",49693.75
+"Lincoln County","NV","",148298.75
+"Big Stone County","MN","",80158
+"Tensas Parish","LA","",123668.333333333
+"Delta County","TX","",78501.1666666667
+"Johnson County","NE","",112624.25
+"Lincoln County","ID","Hailey",126120
+"Craig County","VA","Roanoke",142486.666666667
+"Cook County","MN","",260380.083333333
+"Kingsbury County","SD","",112096.083333333
+"Ringgold County","IA","",82278.75
+"Carlisle County","KY","",68052.0833333333
+"Calhoun County","IL","St. Louis",125746.75
+"Cameron County","PA","",63229.5833333333
+"Pickett County","TN","",118909.583333333
+"Morrill County","NE","",95829.5
+"Schley County","GA","Americus",106994.916666667
+"Mills County","TX","",219716.583333333
+"Holt County","MO","",80185.5833333333
+"Hickman County","KY","",66810.0833333333
+"Hamilton County","NY","",199303.583333333
+"Washington County","CO","",112436.583333333
+"Hot Springs County","WY","",147643.416666667
+"Martin County","TX","Midland",193767
+"Mineral County","NV","",83241
+"Bath County","VA","",130102.583333333
+"Guadalupe County","NM","",113416.666666667
+"Kimble County","TX","",89008.5
+"Meade County","KS","",72397
+"Kittson County","MN","",79232.0833333333
+"Grant County","OK","",74320
+"Nuckolls County","NE","",58231.4166666667
+"Pope County","IL","",98806.5833333333
+"Phillips County","CO","",152148.75
+"Stafford County","KS","",41053.25
+"Ouray County","CO","",451330.083333333
+"Florence County","WI","Iron Mountain",138382.416666667
+"Tyrrell County","NC","Kill Devil Hills",84377.6666666667
+"Crane County","TX","",124056.666666667
+"Custer County","ID","",212451.583333333
+"Deuel County","SD","",131391.416666667
+"Pierce County","ND","",109437.75
+"Oneida County","ID","",163782.916666667
+"Custer County","CO","",228361.833333333
+"Mineral County","MT","",181371.666666667
+"Ellis County","OK","",63473.25
+"Red Lake County","MN","",105881
+"Columbia County","WA","Walla Walla",153036.5
+"Edmunds County","SD","Aberdeen",155248.833333333
+"Lake of the Woods County","MN","",128041
+"Echols County","GA","Valdosta",89056.75
+"Adams County","IA","",94462.3333333333
+"Storey County","NV","Reno",316461.75
+"Wahkiakum County","WA","",223964.666666667
+"Kearny County","KS","Garden City",119370.666666667
+"Adams County","ID","",243914.666666667
+"Fisher County","TX","",103717.75
+"Norton City","VA","Big Stone Gap",76098.0833333333
+"Smith County","KS","",59909.0833333333
+"Lewis County","ID","",140058.083333333
+"Petersburg Borough","AK","",237775.916666667
+"Webster County","NE","",76189.9166666667
+"Baca County","CO","",78229.9166666667
+"Mercer County","MO","",60208.5
+"Harper County","OK","",55088.0833333333
+"Donley County","TX","",80955.4166666667
+"Sweet Grass County","MT","",271603.25
+"Kinney County","TX","",72146.1666666667
+"Traverse County","MN","",42938
+"Emmons County","ND","",68299.8333333333
+"Costilla County","CO","",99296.75
+"Baker County","GA","Albany",84509.8333333333
+"Shackelford County","TX","",103229.833333333
+"Reagan County","TX","",111079.916666667
+"Hall County","TX","",45079.5833333333
+"Real County","TX","",167231.333333333
+"Woodson County","KS","",67617.25
+"Sierra County","CA","",201306.416666667
+"Clay County","GA","",79784.3333333333
+"Glascock County","GA","",93203.5833333333
+"Granite County","MT","",217250.666666667
+"Stanley County","SD","Pierre",208666.75
+"Harmon County","OK","",33868.75
+"Webster County","GA","",76080.9166666667
+"Chase County","KS","",85986.5
+"Pawnee County","NE","",69190.1666666667
+"Frontier County","NE","",72287.9166666667
+"Quitman County","GA","Eufaula",67380.9166666667
+"Haines Borough","AK","",217823.166666667
+"Sedgwick County","CO","",60287.5
+"Adams County","ND","",128301.916666667
+"Highland County","VA","",182152
+"Robertson County","KY","",99896.25
+"Garfield County","WA","",142690.083333333
+"Rich County","UT","",288947.583333333
+"Keweenaw County","MI","Houghton",141909.583333333
+"Judith Basin County","MT","",178160.833333333
+"Dolores County","CO","",138265.833333333
+"Eureka County","NV","Elko",181744
+"Armstrong County","TX","Amarillo",118535.75
+"Meagher County","MT","",170329.916666667
+"Gilliam County","OR","",126937.083333333
+"Cheyenne County","CO","",97781.9166666667
+"Sherman County","OR","",164503.166666667
+"Taliaferro County","GA","",58871.1666666667
+"Wheeler County","OR","",151177.166666667
+"Kiowa County","CO","",72308.1666666667
+"Jackson County","CO","",203287.583333333
+"Alpine County","CA","",374384.083333333
+"Camas County","ID","Hailey",105598.416666667
+"Daggett County","UT","",192556.5
+"Hinsdale County","CO","",331288.166666667
+"Mineral County","CO","",254801.583333333
+"San Juan County","CO","",267063

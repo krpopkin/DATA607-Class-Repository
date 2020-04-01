@@ -1,0 +1,193 @@
+---
+title: "Home Values Data Cleaning & Transformation"
+author: "Ken Popkin"
+date: "4/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r}
+#libraries
+library(dplyr)
+library(janitor)
+library(sqldf)
+library(stringr)
+library(psych)
+library(ggplot2)
+```
+
+### Research question 
+<I> Can education and wages be used as predictors for home values? </I>
+
+There are many factors theorized to influence a home’s value and for this project we’ll attempt to answer if two popular topics, education and wages, can be used as predictors for a third popular topic, home values.
+
+### Cases 
+Cases are counties in the United States for this project and there are 2,745 that we'll use to answer the research question.
+
+### Data source and method of collection:
+Data is collected from several sources listed below:
+
+<B> Wages: </B> [Quarterly Census of Employment and Wages](https://www.bls.gov/cew/downloadable-data-files.htm)  
+The Quarterly Census of Employment and Wages (QCEW) program publishes a quarterly count of employment and wages reported by employers covering more than 95 percent of U.S. jobs, available at the county, MSA, state and national levels by industry.
+
+<B> Education: </B> [Local Education Agency](https://nces.ed.gov/ccd/f33agency.asp)  
+Revenues and expenditures are audited after the close of the fiscal year and are then submitted to NCES by each state education agency.
+
+<B> Home Values: </B> [Zillow](https://www.zillow.com/research/data/)  
+Zillow Home Value Index (ZHVI) is a smoothed, seasonally adjusted measure of the typical home value and market changes across a given region and housing type. Zillow publishes top-tier ZHVI (typical value for homes within the 65th to 95th percentile range for a given region) and bottom-tier ZHVI (typical value for homes that fall within the 5th to 35th percentile range for a given region). 
+
+### Type of study 
+This is an observational study.
+
+### Dependent Variable
+The response variable is home values and is quantitative.
+
+### Independent Variable
+There are two independent variables; wages which is quantitative and education level which is qualitative.
+
+### Data Preparation
+In this section we'll load education, wage, and housing data. For each load the features of interest will be selected, rows filtered as needed, and the results written to clean_education, clean_wages, and clean_homes csv files.  A fourth csv called "master" is also created that is a merge of all three files using state and county as the key fields.
+
+<I> Education data </I>
+```{r}
+# load education data
+education <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/Education(Graduation_Rates).csv')
+
+cat('Dimension of raw education data', dim(education),"\n")
+
+#identify columns of interest and rename
+education <- clean_names(education)
+education <- select(education, 
+                    state, 
+                    county = area_name,
+                    dropout = less_than_a_high_school_diploma_2014_18,
+                    hs_diploma = high_school_diploma_only_2014_18,
+                    some_college = some_college_or_associate_s_degree_2014_18,
+                    four_year_degree = bachelor_s_degree_or_higher_2014_18,
+                    dropout_percent = percent_of_adults_with_less_than_a_high_school_diploma_2014_18,
+                    hs_diploma_percent = percent_of_adults_with_a_high_school_diploma_only_2014_18,
+                    some_college_percent = percent_of_adults_completing_some_college_or_associate_s_degree_2014_18,
+                    four_year_degree_percent = percent_of_adults_with_a_bachelor_s_degree_or_higher_2014_18)
+
+cat('Dimension of selected education data', dim(education), "\n")
+
+#remove rows that are missing education data
+education <- subset(education, dropout != '')
+
+#add the full state name and census region to the education dataframe
+state_mapping <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/state_mapping.csv')
+
+education <- sqldf('SELECT * 
+                    FROM education
+                    JOIN state_mapping ON education.state = state_mapping.state_short')
+
+#Region is characters, so add a Region number column as a categorical variable
+education$region_num = as.factor(ifelse(education$region == 'Northeast',1,ifelse(education$region == 'South',2,ifelse(education$region == 'Midwest',3,ifelse(education$region == 'West',4,5)))))
+
+cat('Dimension of education data after cleaning and filtering', dim(education))
+```
+```{r}
+head(education,1)
+
+path_out = 'C:\\Users\\user\\Documents\\00_Applications_DataScience\\CUNY\\DATA606\\Data606_Final_Project_Repository\\01Data\\'
+write.csv(education, paste(path_out, 'clean_education.csv'), row.names = FALSE)
+```
+
+<I> Wages data </I>
+```{r}
+# load wages data
+wages <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/allhlcn18.csv')
+
+cat('Dimension of raw wage data:', dim(wages), '\n')
+
+#filter to columns and rows of interest
+wages <- wages %>%
+  select(type = Area.Type,
+         state = St.Name, 
+         county = Area, 
+         ownership = Ownership,
+         resident_count = Annual.Average.Establishment.Count,
+         avg_annual_pay = Annual.Average.Pay) %>%
+  subset(type == 'County' & ownership == 'Total Covered') %>%
+  select(-type)
+
+#Remove the state name from the data in the county column,ie "Bibb County, Alabama" becomes "Bibb County"
+wages$position <- (regexpr(pattern =',', wages$county)) - 1
+wages$county <- str_sub(wages$county, end = wages$position)
+
+#Convert wages from fctr to double
+wages$avg_annual_pay = as.numeric(gsub("\\,", "", wages$avg_annual_pay))
+wages$avg_annual_pay = as.numeric(as.character(wages$avg_annual_pay))
+
+#Convert resident_count from fctr to double
+wages$resident_count = as.numeric(gsub("\\,", "", wages$resident_count))
+wages$resident_count = as.numeric(as.character(wages$resident_count))
+
+cat('Dimension of wages data after filtering', dim(wages))
+```
+
+```{r}
+head(wages,1)
+write.csv(wages, paste(path_out, 'clean_wages.csv'), row.names = FALSE)
+```
+
+<I> Home Values data </I>
+```{r}
+#load home values data
+homes <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/County_Zhvi_AllHomes(Home_Values).csv')
+
+homes <- clean_names(homes)
+
+cat('Dimension of homes data:', dim(homes), '\n')
+
+homes <-  homes %>%
+  select(county = region_name, state = state, metro = metro,
+         jan = x2018_01, feb = x2018_02, mar = x2018_03, apr = x2018_04, may = x2018_05, jun = x2018_06,
+         jul = x2018_07, aug = x2018_08, sep = x2018_09, oct = x2018_10, nov = x2018_11, dec = x2018_12)
+
+homes$avg_home_value = (homes$jan + homes$feb + homes$mar + homes$apr + homes$may + homes$jun + homes$jul + homes$aug + homes$sep + homes$oct + homes$nov + homes$dec)/12
+
+homes <- homes %>%
+  select(-c(jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec))
+
+cat('Dimension of selected homes data:', dim(homes))
+```
+
+
+
+```{r}
+head(homes,1)
+write.csv(homes, paste(path_out, 'clean_homes.csv'), row.names = FALSE)
+```
+
+<I> Join files </I>     
+Now we'll join the education, wages, and home values dataframes using state and county as the keys.  This will give us a master data file to use when we start the project.
+```{r}
+#Join education and wages using sql
+master <- sqldf('SELECT * 
+                    FROM education
+                    INNER JOIN wages ON (education.county = wages.county AND education.state_long =
+                    wages.state)')
+
+master <- clean_names(master)
+cat('Master data size after joining education and wages is', dim(master), '\n')
+
+#Join master with homes using merge
+master <- merge(master, homes)
+
+#Clean the master by removing unneeded columns
+master <- master %>%
+  select(-c(state_short, state_long, state_2, county_2, ownership, position))
+
+cat('Master data with education, wages, and homes data is', dim(master))
+```
+
+```{r}
+head(master,1)
+write.csv(master, paste(path_out, 'master.csv'), row.names = FALSE)
+```
