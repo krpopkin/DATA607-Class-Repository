@@ -1,0 +1,262 @@
+[
+ {
+   "state_short": "AL",
+   "state_long": "Alabama",
+   "region": "South"
+ },
+ {
+   "state_short": "AK",
+   "state_long": "Alaska",
+   "region": "West"
+ },
+ {
+   "state_short": "AZ",
+   "state_long": "Arizona",
+   "region": "West"
+ },
+ {
+   "state_short": "AR",
+   "state_long": "Arkansas",
+   "region": "South"
+ },
+ {
+   "state_short": "CA",
+   "state_long": "California",
+   "region": "West"
+ },
+ {
+   "state_short": "CO",
+   "state_long": "Colorado",
+   "region": "West"
+ },
+ {
+   "state_short": "CT",
+   "state_long": "Connecticut",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "DE",
+   "state_long": "Delaware",
+   "region": "South"
+ },
+ {
+   "state_short": "DC",
+   "state_long": "District of Columbia",
+   "region": "South"
+ },
+ {
+   "state_short": "FL",
+   "state_long": "Florida",
+   "region": "South"
+ },
+ {
+   "state_short": "GA",
+   "state_long": "Georgia",
+   "region": "South"
+ },
+ {
+   "state_short": "HI",
+   "state_long": "Hawaii",
+   "region": "West"
+ },
+ {
+   "state_short": "ID",
+   "state_long": "Idaho",
+   "region": "West"
+ },
+ {
+   "state_short": "IL",
+   "state_long": "Illinois",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "IN",
+   "state_long": "Indiana",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "IA",
+   "state_long": "Iowa",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "KS",
+   "state_long": "Kansas",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "KY",
+   "state_long": "Kentucky",
+   "region": "South"
+ },
+ {
+   "state_short": "LA",
+   "state_long": "Louisiana",
+   "region": "South"
+ },
+ {
+   "state_short": "ME",
+   "state_long": "Maine",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "MD",
+   "state_long": "Maryland",
+   "region": "South"
+ },
+ {
+   "state_short": "MA",
+   "state_long": "Massachusetts",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "MI",
+   "state_long": "Michigan",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "MN",
+   "state_long": "Minnesota",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "MS",
+   "state_long": "Mississippi",
+   "region": "South"
+ },
+ {
+   "state_short": "MO",
+   "state_long": "Missouri",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "MT",
+   "state_long": "Montana",
+   "region": "West"
+ },
+ {
+   "state_short": "NE",
+   "state_long": "Nebraska",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "NV",
+   "state_long": "Nevada",
+   "region": "West"
+ },
+ {
+   "state_short": "NH",
+   "state_long": "New Hampshire",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "NJ",
+   "state_long": "New Jersey",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "NM",
+   "state_long": "New Mexico",
+   "region": "West"
+ },
+ {
+   "state_short": "NY",
+   "state_long": "New York",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "NC",
+   "state_long": "North Carolina",
+   "region": "South"
+ },
+ {
+   "state_short": "ND",
+   "state_long": "North Dakota",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "OH",
+   "state_long": "Ohio",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "OK",
+   "state_long": "Oklahoma",
+   "region": "South"
+ },
+ {
+   "state_short": "OR",
+   "state_long": "Oregon",
+   "region": "West"
+ },
+ {
+   "state_short": "PA",
+   "state_long": "Pennsylvania",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "PR",
+   "state_long": "Puerto Rico",
+   "region": "Puerto Rico"
+ },
+ {
+   "state_short": "RI",
+   "state_long": "Rhode Island",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "SC",
+   "state_long": "South Carolina",
+   "region": "South"
+ },
+ {
+   "state_short": "SD",
+   "state_long": "South Dakota",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "TN",
+   "state_long": "Tennessee",
+   "region": "South"
+ },
+ {
+   "state_short": "TX",
+   "state_long": "Texas",
+   "region": "South"
+ },
+ {
+   "state_short": "UT",
+   "state_long": "Utah",
+   "region": "West"
+ },
+ {
+   "state_short": "VT",
+   "state_long": "Vermont",
+   "region": "Northeast"
+ },
+ {
+   "state_short": "VA",
+   "state_long": "Virginia",
+   "region": "South"
+ },
+ {
+   "state_short": "WA",
+   "state_long": "Washington",
+   "region": "West"
+ },
+ {
+   "state_short": "WV",
+   "state_long": "West Virginia",
+   "region": "South"
+ },
+ {
+   "state_short": "WI",
+   "state_long": "Wisconsin",
+   "region": "Midwest"
+ },
+ {
+   "state_short": "WY",
+   "state_long": "Wyoming",
+   "region": "West"
+ }
+]

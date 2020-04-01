@@ -1,0 +1,210 @@
+{
+   "AL": {
+      "state_long": "Alabama",
+      "region": "South"
+   },
+   "AK": {
+      "state_long": "Alaska",
+      "region": "West"
+   },
+   "AZ": {
+      "state_long": "Arizona",
+      "region": "West"
+   },
+   "AR": {
+      "state_long": "Arkansas",
+      "region": "South"
+   },
+   "CA": {
+      "state_long": "California",
+      "region": "West"
+   },
+   "CO": {
+      "state_long": "Colorado",
+      "region": "West"
+   },
+   "CT": {
+      "state_long": "Connecticut",
+      "region": "Northeast"
+   },
+   "DE": {
+      "state_long": "Delaware",
+      "region": "South"
+   },
+   "DC": {
+      "state_long": "District of Columbia",
+      "region": "South"
+   },
+   "FL": {
+      "state_long": "Florida",
+      "region": "South"
+   },
+   "GA": {
+      "state_long": "Georgia",
+      "region": "South"
+   },
+   "HI": {
+      "state_long": "Hawaii",
+      "region": "West"
+   },
+   "ID": {
+      "state_long": "Idaho",
+      "region": "West"
+   },
+   "IL": {
+      "state_long": "Illinois",
+      "region": "Midwest"
+   },
+   "IN": {
+      "state_long": "Indiana",
+      "region": "Midwest"
+   },
+   "IA": {
+      "state_long": "Iowa",
+      "region": "Midwest"
+   },
+   "KS": {
+      "state_long": "Kansas",
+      "region": "Midwest"
+   },
+   "KY": {
+      "state_long": "Kentucky",
+      "region": "South"
+   },
+   "LA": {
+      "state_long": "Louisiana",
+      "region": "South"
+   },
+   "ME": {
+      "state_long": "Maine",
+      "region": "Northeast"
+   },
+   "MD": {
+      "state_long": "Maryland",
+      "region": "South"
+   },
+   "MA": {
+      "state_long": "Massachusetts",
+      "region": "Northeast"
+   },
+   "MI": {
+      "state_long": "Michigan",
+      "region": "Midwest"
+   },
+   "MN": {
+      "state_long": "Minnesota",
+      "region": "Midwest"
+   },
+   "MS": {
+      "state_long": "Mississippi",
+      "region": "South"
+   },
+   "MO": {
+      "state_long": "Missouri",
+      "region": "Midwest"
+   },
+   "MT": {
+      "state_long": "Montana",
+      "region": "West"
+   },
+   "NE": {
+      "state_long": "Nebraska",
+      "region": "Midwest"
+   },
+   "NV": {
+      "state_long": "Nevada",
+      "region": "West"
+   },
+   "NH": {
+      "state_long": "New Hampshire",
+      "region": "Northeast"
+   },
+   "NJ": {
+      "state_long": "New Jersey",
+      "region": "Northeast"
+   },
+   "NM": {
+      "state_long": "New Mexico",
+      "region": "West"
+   },
+   "NY": {
+      "state_long": "New York",
+      "region": "Northeast"
+   },
+   "NC": {
+      "state_long": "North Carolina",
+      "region": "South"
+   },
+   "ND": {
+      "state_long": "North Dakota",
+      "region": "Midwest"
+   },
+   "OH": {
+      "state_long": "Ohio",
+      "region": "Midwest"
+   },
+   "OK": {
+      "state_long": "Oklahoma",
+      "region": "South"
+   },
+   "OR": {
+      "state_long": "Oregon",
+      "region": "West"
+   },
+   "PA": {
+      "state_long": "Pennsylvania",
+      "region": "Northeast"
+   },
+   "PR": {
+      "state_long": "Puerto Rico",
+      "region": "Puerto Rico"
+   },
+   "RI": {
+      "state_long": "Rhode Island",
+      "region": "Northeast"
+   },
+   "SC": {
+      "state_long": "South Carolina",
+      "region": "South"
+   },
+   "SD": {
+      "state_long": "South Dakota",
+      "region": "Midwest"
+   },
+   "TN": {
+      "state_long": "Tennessee",
+      "region": "South"
+   },
+   "TX": {
+      "state_long": "Texas",
+      "region": "South"
+   },
+   "UT": {
+      "state_long": "Utah",
+      "region": "West"
+   },
+   "VT": {
+      "state_long": "Vermont",
+      "region": "Northeast"
+   },
+   "VA": {
+      "state_long": "Virginia",
+      "region": "South"
+   },
+   "WA": {
+      "state_long": "Washington",
+      "region": "West"
+   },
+   "WV": {
+      "state_long": "West Virginia",
+      "region": "South"
+   },
+   "WI": {
+      "state_long": "Wisconsin",
+      "region": "Midwest"
+   },
+   "WY": {
+      "state_long": "Wyoming",
+      "region": "West"
+   }
+}
