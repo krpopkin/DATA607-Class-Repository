@@ -14,6 +14,7 @@ knitr::opts_chunk$set(warning = FALSE)
 ```{r}
 #libraries
 library(dplyr)
+library(rjson)
 library(janitor)
 library(sqldf)
 library(stringr)
@@ -57,7 +58,7 @@ Finally, a fourth csv called "master" is created that is a merge of all three fi
 <I> States </I>
 ```{r}
 #load state data
-json_data <- fromJSON(file = "")
+json_data <- fromJSON(file = "https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Final_Project/Data/state_mapping.json")
 ```
 
 ```{r}
@@ -200,3 +201,5 @@ cat('Master data with education, wages, and homes data is', dim(master))
 head(master,1)
 write.csv(master, paste(path_out, 'master.csv'), row.names = FALSE)
 ```
+
+This is the end of data cleaning and transformation.  To continue with this project, click [this link](https://github.com/krpopkin/DATA607-Class-Repository/blob/master/Final_Project/04_Visualization.Rmd) to review the Visualization work on Github and this link to review on RPubs
