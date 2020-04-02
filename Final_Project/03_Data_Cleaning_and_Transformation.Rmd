@@ -26,10 +26,15 @@ library(ggplot2)
 
 There are many factors theorized to influence a home’s value and for this project we’ll attempt to answer if two popular topics, education and wages, can be used as predictors for a third popular topic, home values.
 
-### Cases 
-Cases are counties in the United States for this project and there are 2,745 that we'll use to answer the research question.
+<B> Features </B>    
+<I> Education: categories of high school dropout, high school diploma, some college, four year degree    
+<I> Wages: annual avg wage   
+<I> Geography: county, state, and census regions   
 
-### Data source and method of collection:
+<B> Predict </B>   
+<I> Home Values: </I> 
+
+### About the Data:
 Data is collected from several sources listed below:
 
 <B> Wages: </B> [Quarterly Census of Employment and Wages](https://www.bls.gov/cew/downloadable-data-files.htm)  
@@ -41,17 +46,25 @@ Revenues and expenditures are audited after the close of the fiscal year and are
 <B> Home Values: </B> [Zillow](https://www.zillow.com/research/data/)  
 Zillow Home Value Index (ZHVI) is a smoothed, seasonally adjusted measure of the typical home value and market changes across a given region and housing type. Zillow publishes top-tier ZHVI (typical value for homes within the 65th to 95th percentile range for a given region) and bottom-tier ZHVI (typical value for homes that fall within the 5th to 35th percentile range for a given region). 
 
-### Type of study 
-This is an observational study.
+<B> State Information: </B>   
+A json file of state abbreviation, state full name, and census region each state is in.
 
-### Dependent Variable
-The response variable is home values and is quantitative.
+### Data Cleaning and Transformations:
+In this section we'll load, clean, and transform the state, education, wage, and housing data. For each load the features of interest will be selected, rows filtered as needed, and the results written to clean_education, clean_wages, and clean_homes csv files.  
 
-### Independent Variable
-There are two independent variables; wages which is quantitative and education level which is qualitative.
+Finally, a fourth csv called "master" is created that is a merge of all three files using state and county as the key fields. This file will serve as the input file for the Visualization and Analysis notebooks.
 
-### Data Preparation
-In this section we'll load education, wage, and housing data. For each load the features of interest will be selected, rows filtered as needed, and the results written to clean_education, clean_wages, and clean_homes csv files.  A fourth csv called "master" is also created that is a merge of all three files using state and county as the key fields.
+<I> States </I>
+```{r}
+#load state data
+json_data <- fromJSON(file = "")
+```
+
+```{r}
+state_mapping <- as.data.frame(json_data)
+state_mapping <- state_mapping %>% `colnames<-`(c('state_short', 'state_long', 'region'))
+head(state_mapping, 1)
+```
 
 <I> Education data </I>
 ```{r}
@@ -80,8 +93,6 @@ cat('Dimension of selected education data', dim(education), "\n")
 education <- subset(education, dropout != '')
 
 #add the full state name and census region to the education dataframe
-state_mapping <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/state_mapping.csv')
-
 education <- sqldf('SELECT * 
                     FROM education
                     JOIN state_mapping ON education.state = state_mapping.state_short')
@@ -157,8 +168,6 @@ homes <- homes %>%
 
 cat('Dimension of selected homes data:', dim(homes))
 ```
-
-
 
 ```{r}
 head(homes,1)
