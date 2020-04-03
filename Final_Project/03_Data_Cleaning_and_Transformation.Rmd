@@ -11,15 +11,13 @@ knitr::opts_chunk$set(message = FALSE)
 knitr::opts_chunk$set(warning = FALSE)
 ```
 
-```{r}
+```{r libraries}
 #libraries
 library(dplyr)
 library(rjson)
 library(janitor)
 library(sqldf)
 library(stringr)
-library(psych)
-library(ggplot2)
 ```
 
 ### Research question 
@@ -28,12 +26,12 @@ library(ggplot2)
 There are many factors theorized to influence a home’s value and for this project we’ll attempt to answer if two popular topics, education and wages, can be used as predictors for a third popular topic, home values.
 
 <B> Features </B>    
-<I> Education: categories of high school dropout, high school diploma, some college, four year degree    
-<I> Wages: annual avg wage   
-<I> Geography: county, state, and census regions   
+<I> Education:</I> categories of high school dropout, high school diploma, some college, four year degree    
+<I> Wages:</I> average annual wage   
+<I> Geography:</I> county, state, and census regions   
 
 <B> Predict </B>   
-<I> Home Values: </I> 
+<I> Home Values: </I> average home value for each county   
 
 ### About the Data:
 Data is collected from several sources listed below:
@@ -56,9 +54,9 @@ In this section we'll load, clean, and transform the state, education, wage, and
 Finally, a fourth csv called "master" is created that is a merge of all three files using state and county as the key fields. This file will serve as the input file for the Visualization and Analysis notebooks.
 
 <I> States </I>
-```{r}
+```{r load-state-data}
 #load state data
-json_data <- fromJSON(file = "https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Final_Project/Data/state_mapping.json")
+json_data <- fromJSON(file = 'https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Final_Project/Data/state_mapping.json')
 ```
 
 ```{r}
@@ -68,9 +66,9 @@ head(state_mapping, 1)
 ```
 
 <I> Education data </I>
-```{r}
+```{r load-education-data}
 # load education data
-education <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/Education(Graduation_Rates).csv')
+education <- read.csv('https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Final_Project/Data/Education(Graduation_Rates).csv')
 
 cat('Dimension of raw education data', dim(education),"\n")
 
@@ -111,9 +109,9 @@ write.csv(education, paste(path_out, 'clean_education.csv'), row.names = FALSE)
 ```
 
 <I> Wages data </I>
-```{r}
+```{r load-wages-data}
 # load wages data
-wages <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/allhlcn18.csv')
+wages <- read.csv('https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Final_Project/Data/allhlcn18.csv')
 
 cat('Dimension of raw wage data:', dim(wages), '\n')
 
@@ -149,9 +147,9 @@ write.csv(wages, paste(path_out, 'clean_wages.csv'), row.names = FALSE)
 ```
 
 <I> Home Values data </I>
-```{r}
+```{r load-home-values-data}
 #load home values data
-homes <- read.csv('https://raw.githubusercontent.com/krpopkin/Data606_Final_Project_Repository/master/01Data/County_Zhvi_AllHomes(Home_Values).csv')
+homes <- read.csv('https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Final_Project/Data/County_Zhvi_AllHomes(Home_Values).csv')
 
 homes <- clean_names(homes)
 
@@ -176,8 +174,8 @@ write.csv(homes, paste(path_out, 'clean_homes.csv'), row.names = FALSE)
 ```
 
 <I> Join files </I>     
-Now we'll join the education, wages, and home values dataframes using state and county as the keys.  This will give us a master data file to use when we start the project.
-```{r}
+Now we'll join the education, wages, and home values dataframes using state and county as the keys.  This will give us a master data file to use for the rest of the project.
+```{r create-master-data-file}
 #Join education and wages using sql
 master <- sqldf('SELECT * 
                     FROM education
@@ -202,4 +200,4 @@ head(master,1)
 write.csv(master, paste(path_out, 'master.csv'), row.names = FALSE)
 ```
 
-This is the end of data cleaning and transformation.  To continue with this project, click [this link](https://github.com/krpopkin/DATA607-Class-Repository/blob/master/Final_Project/04_Visualization.Rmd) to review the Visualization work on Github and this link to review on RPubs
+This is the end of Data Cleaning and Transformation.  To continue with this project, click this link to review on RPubs and [this link](https://github.com/krpopkin/DATA607-Class-Repository/blob/master/Final_Project/04_Visualization.Rmd) to review the Visualization work on Github.

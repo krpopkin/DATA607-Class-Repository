@@ -1,0 +1,280 @@
+---
+title: "Assignment 10 - Sentiment Analysis"
+author: "Ken Popkin"
+---
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+```{r echo = TRUE, message=FALSE, warning=FALSE}
+library(tidytext)
+library(textdata)
+```
+
+### Introduction to Assignment 10
+<I> Citation: </I> In Text Mining with R, [Chapter 2](https://www.tidytextmining.com/sentiment.html) looks at Sentiment Analysis. For the assignment below all the code was copied from this source and rerun.  
+
+<I>Assignment:</I>   
+Part 1. Get the base code from Text Mining with R, chapter 2 working as-is in this notebook. <br> <br>
+Part 2. Extend the code in two ways: <br>
+   a. Work with a different corpus <br>
+   b. Incorporate at least one additional sentiment lexicon
+
+### Part 1: Get base code working
+```{r}
+#afinn
+afinn_sentiments <- get_sentiments("afinn")
+
+#bing
+bing_sentiments <- get_sentiments("bing")
+
+#nrc
+nrc_sentiments <- get_sentiments("nrc")
+```
+
+```{r echo = TRUE, message=FALSE, warning=FALSE}
+library(janeaustenr)
+library(dplyr)
+library(stringr)
+
+#Put the text in a tidy format
+tidy_books <- austen_books() %>%
+  group_by(book) %>%
+  mutate(linenumber = row_number(),
+         chapter = cumsum(str_detect(text, regex("^chapter [\\divxlc]", 
+                                                 ignore_case = TRUE)))) %>%
+  ungroup() %>%
+  unnest_tokens(word, text)
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+
+#Complete the sentiment analysis
+#filter for the joy words, then filter() the data frame with the text from the books for the words from Emma and #use inner_join() to perform the sentiment analysis.
+nrc_joy <- get_sentiments("nrc") %>% 
+  filter(sentiment == "joy")
+
+tidy_books %>%
+  filter(book == "Emma") %>%
+  inner_join(nrc_joy) %>%
+  count(word, sort = TRUE)
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(tidyr)
+
+jane_austen_sentiment <- tidy_books %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(book, index = linenumber %/% 80, sentiment) %>%
+  spread(sentiment, n, fill = 0) %>%
+  mutate(sentiment = positive - negative)
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+library(ggplot2)
+
+ggplot(jane_austen_sentiment, aes(index, sentiment, fill = book)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~book, ncol = 2, scales = "free_x")
+
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#Section 2.3 Comparing the three sentiment dictionaries
+pride_prejudice <- tidy_books %>% 
+  filter(book == "Pride & Prejudice")
+
+pride_prejudice
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+afinn <- pride_prejudice %>% 
+  inner_join(get_sentiments("afinn")) %>% 
+  group_by(index = linenumber %/% 80) %>% 
+  summarise(sentiment = sum(value)) %>% 
+  mutate(method = "AFINN")
+
+
+bing_and_nrc <- bind_rows(pride_prejudice %>% 
+                            inner_join(get_sentiments("bing")) %>%
+                            mutate(method = "Bing et al."),
+                          pride_prejudice %>% 
+                            inner_join(get_sentiments("nrc") %>% 
+                                         filter(sentiment %in% c("positive", 
+                                                                 "negative"))) %>%
+                            mutate(method = "NRC")) %>%
+  count(method, index = linenumber %/% 80, sentiment) %>%
+  spread(sentiment, n, fill = 0) %>%
+  mutate(sentiment = positive - negative)
+```
+
+```{r}
+#Positive and negative words in each lexicon
+get_sentiments("nrc") %>% 
+     filter(sentiment %in% c("positive", 
+                             "negative")) %>% 
+  count(sentiment)
+
+
+get_sentiments("bing") %>% 
+  count(sentiment)
+```
+
+```{r}
+#Bing word counts
+bing_word_counts <- tidy_books %>%
+  inner_join(get_sentiments("bing")) %>%
+  count(word, sentiment, sort = TRUE) %>%
+  ungroup()
+
+
+bing_word_counts
+```
+
+```{r}
+#Bing word count plots
+bing_word_counts %>%
+  group_by(sentiment) %>%
+  top_n(10) %>%
+  ungroup() %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n, fill = sentiment)) +
+  geom_col(show.legend = FALSE) +
+  facet_wrap(~sentiment, scales = "free_y") +
+  labs(y = "Contribution to sentiment",
+       x = NULL) +
+  coord_flip()
+```
+
+```{r}
+#How to exclude words to not include (i.e. "miss" is seen as a negative, but could just be a title "Miss Jones")
+custom_stop_words <- bind_rows(tibble(word = c("miss"), 
+                                          lexicon = c("custom")), 
+                               stop_words)
+
+custom_stop_words
+```
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#Word Clouds
+library(wordcloud)
+
+tidy_books %>%
+  anti_join(stop_words) %>%
+  count(word) %>%
+  with(wordcloud(word, n, max.words = 100))
+```
+
+```{r}
+#2.6 Looking at units beyond just words
+PandP_sentences <- tibble(text = prideprejudice) %>% 
+  unnest_tokens(sentence, text, token = "sentences")
+
+PandP_sentences$sentence[2]
+```
+
+```{r}
+#Split into a dataframe by chapter
+austen_chapters <- austen_books() %>%
+  group_by(book) %>%
+  unnest_tokens(chapter, text, token = "regex", 
+                pattern = "Chapter|CHAPTER [\\dIVXLC]") %>%
+  ungroup()
+
+
+austen_chapters %>% 
+  group_by(book) %>% 
+  summarise(chapters = n())
+```
+
+```{r}
+#For each book, which chapter has the highest number of negative words
+bingnegative <- get_sentiments("bing") %>% 
+  filter(sentiment == "negative")
+
+
+wordcounts <- tidy_books %>%
+  group_by(book, chapter) %>%
+  summarize(words = n())
+
+
+tidy_books %>%
+  semi_join(bingnegative) %>%
+  group_by(book, chapter) %>%
+  summarize(negativewords = n()) %>%
+  left_join(wordcounts, by = c("book", "chapter")) %>%
+  mutate(ratio = negativewords/words) %>%
+  filter(chapter != 0) %>%
+  top_n(1) %>%
+  ungroup()
+```
+
+### Part 2: Extend the code and work with a different corpus
+This section extends the above code by working with the Gutenberg corpus, library(guttenbergr), instead of JaneAusten and incorporating the "squzhet" sentiment lexicon to...
+
+1. obtain a work from the Gutenberg corpus
+2. run get_sentiments using syuzhet
+3. histogram of the positive and negative sentences count
+4. create a word cloud
+
+```{r echo=TRUE, warning=FALSE, message=FALSE}
+library(gutenbergr)
+library(dplyr)
+library(stringr)
+library(syuzhet)
+```
+ 
+<I> Obtain a Work from the Gutenberg Corpus </I>
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+#Obtain Plato's, "The Republic" corpus
+plato <- gutenberg_works(author == "Plato", title == "The Republic")
+
+therepublicid <- plato$gutenberg_id
+
+republic_corpus <- gutenberg_download(therepublicid)
+
+republic_words <- get_tokens(republic_corpus$text, pattern = "\\W")
+
+cat('Word count of The Republic is', length(republic_words), 'words')
+```
+
+<I> Get Sentiment using syuzhet </I>
+```{r, messages=FALSE, warning=FALSE}
+#Get sentiment using syuzhet 
+republic_sentences <- get_sentences(republic_corpus$text)
+
+republic_sentiment <- get_sentiment(republic_sentences, method="syuzhet")
+```
+
+```{r}
+#Count the number of positive and negative sentences in The Republic
+pos_sentences <- length(which(republic_sentiment > 0))
+neutral_sentences <- length(which(republic_sentiment == 0))
+neg_sentences <- length(which(republic_sentiment < 0))
+tot_sentences <- length(republic_sentiment)
+
+#In syuzhet positives get a value > 0 and negatives get a value < 0, and 0 is neutral.
+cat('Number of positive, neutral, and negative sentences in The Republic is', pos_sentences, neutral_sentences, 'and', neg_sentences, 'respectively for a total of', tot_sentences, 'sentences')
+```
+
+<I> Histogram of the Positive and Negative Sentences Count </I>
+```{r}
+#Histogram of the positive and negative sentences
+republic_sentiment_df <- as.data.frame(republic_sentiment)
+republic_sentiment_df <- subset(republic_sentiment_df,republic_sentiment != 0)
+ggplot(republic_sentiment_df, aes(x=republic_sentiment)) + geom_histogram(bins = 90)
+```
+
+<I> Create a Word Cloud </I> 
+```{r}
+#Create a word cloud of "The Republic"
+republic_words <- republic_corpus %>% unnest_tokens(word,text)
+
+republic_words %>%
+  anti_join(stop_words) %>%
+  count(word) %>%
+  with(wordcloud(word, n, max.words = 100))
+```
