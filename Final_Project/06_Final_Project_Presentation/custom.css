@@ -1,0 +1,10 @@
+.reveal section del {
+  color: green;
+}
+
+<style>
+slides > slide { overflow: scroll; }
+slides > slide:not(.nobackground):after {
+  content: '';
+}
+</style>

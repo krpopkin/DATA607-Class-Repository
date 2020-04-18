@@ -1,0 +1,131 @@
+Final_Project_Presentation
+Home Values
+========================================================
+author: Ken Popkin
+css: custom.css
+date: April 20, 2020
+autosize: true
+font-family: Calibri
+
+Contents
+========================================================
+
+- Introduction
+- About the Data
+- Correlations
+- Scatterplots
+- Regression Results
+
+Introduction
+========================================================
+<I> <del> Can education and wages be used as predictors for home values? </del> </I>
+<br> <br>
+There are many factors theorized to influence a home's value and for this project we'll attempt to answer if two popular topics, education and wages, can be used as predictors for a third popular topic, home values.
+<br> <br>
+<B> Features </B>    
+<I> Education: </I><small> HS dropout, HS diploma, some college, four year degree</small> <br> 
+<I> Wages: </I> <small> average annual wage </small> <br>
+<I> Geography: </I> <small> county, state, and census regions </small>
+
+<B> Predict </B  <br> <br>
+<I> Home Values: </I> <small> average home value for each county </small>   
+
+About the Data
+========================================================
+![title](about_the_data.png)
+
+
+Correlations
+========================================================
+```{r, echo=FALSE}
+library(dplyr)
+# load data
+master <- read.csv('https://raw.githubusercontent.com/krpopkin/DATA607-Class-Repository/master/Final_Project/Data/master.csv')
+
+#Select the data for the heat map
+chm <- master %>%
+  select(avg_annual_pay, resident_count, college_degree = four_year_degree_percent, avg_home_value)
+```
+
+The heat map shows correlations of 52, 39, and 69% for avg annual pay, population, and college degree respectively.
+```{r, echo=FALSE}
+#Calculate the correlation values
+library(reshape2)
+cormat <- round(cor(chm),2)
+
+melted_cormat <- melt(cormat)
+
+#Create the Heatmap
+library(ggplot2)
+ggheatmap <- ggplot(data = melted_cormat, aes(Var2, Var1, fill = value))+
+ geom_tile(color = "white")+
+ scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
+   midpoint = 0, limit = c(-1,1), space = "Lab", 
+   name="Pearson\nCorrelation") +
+  theme_minimal()+ 
+ theme(axis.text.x = element_text(angle = 45, vjust = 1, 
+    size = 12, hjust = 1))+
+ coord_fixed()
+
+reorder_cormat <- function(cormat){
+# Use correlation between variables as distance
+dd <- as.dist((1-cormat)/2)
+hc <- hclust(dd)
+cormat <-cormat[hc$order, hc$order]
+}
+
+ggheatmap + 
+geom_text(aes(Var2, Var1, label = value), color = "black", size = 4)
+```
+
+Scatterplots
+========================================================
+There are 2,745 counties across 50 states, but only 4 census regions. We'll use regions to create several scatter charts of the relationship between education, wages, resident count, and home values.
+```{r, echo=FALSE}
+require(scales)
+library(ggplot2)
+library(ggpubr)
+library(ggfortify)
+
+scatterdf <- select(master, region, region_num, hs_diploma_percent, four_year_degree_percent, avg_annual_pay, resident_count, avg_home_value)
+
+#Scatter chart of hs diploma percent
+hsd_scatter <- ggplot(scatterdf, aes(avg_home_value, hs_diploma_percent, colour = region)) + 
+  geom_point(alpha=0.5, position = 'jitter') +
+  scale_x_continuous(labels = comma) + 
+  scale_y_continuous(labels = comma)
+
+#Scatter chart of four year degree percent
+fyd_scatter <- ggplot(scatterdf, aes(avg_home_value, four_year_degree_percent, colour = region)) + 
+  geom_point(alpha=0.5, position = 'jitter') +
+  scale_x_continuous(labels = comma) + 
+  scale_y_continuous(labels = comma)
+
+#Scatter chart of average annual pay
+aap_scatter <- ggplot(scatterdf, aes(avg_home_value, avg_annual_pay, colour = region)) + 
+  geom_point(alpha=0.5, position = 'jitter') +
+  scale_x_continuous(labels = comma) + 
+  scale_y_continuous(labels = comma)
+
+#Scatter chart of resident count
+rc_scatter <- ggplot(scatterdf, aes(avg_home_value, resident_count, colour = region)) + 
+  geom_point(alpha=0.5, position = 'jitter') +
+  scale_x_continuous(labels = comma) + 
+  scale_y_continuous(labels = comma)
+
+#Show scatter charts
+ggarrange(hsd_scatter, fyd_scatter, aap_scatter, rc_scatter, 
+                    labels = c("hsd", "fyd", "aap", "rc"),
+                    ncol = 2, nrow = 2,
+                    common.legend = TRUE, legend = "bottom")
+```
+
+Regression Results
+========================================================
+```{r, echo=FALSE}
+rmdata <- master %>%
+  select(region_num, hs = hs_diploma_percent, college = four_year_degree_percent, wages = avg_annual_pay, rc = resident_count, hv = avg_home_value)
+
+rmall <- lm(hv ~ region_num + hs + college + wages + rc, data = rmdata)
+summary(rmall)
+```

@@ -1,0 +1,42 @@
+---
+title: "Assignment 12 - Recommender Systems"
+author: "Ken Popkin"
+---
+
+### Introduction to Assignment 12
+Your task is to analyze an existing recommender system that you find interesting.  You should:  
+
+1. Perform a Scenario Design analysis.  Consider whether it makes sense for your selected recommender system to perform scenario design twice, once for the organization (e.g. Amazon.com) and once for the organization's customers.
+
+2. Attempt to reverse engineer what you can about the site, from the site interface and any available information that you can find on the Internet or elsewhere.
+
+3. Include specific recommendations about how to improve the site's recommendation capabilities going forward. 
+
+### About the Site
+[How Y'all, Youse, and You Guys Talk](https://www.nytimes.com/interactive/2014/upshot/dialect-quiz-map.html)
+
+<B> My personal experience with this site </B>   
+I selected this site because it's a fun & friendly recommender.  After answering 25 questions, the site predicts the three most likely cities near where you grew up.  I was raised in upstate NY and the site identified New York City, Yonkers, and Providence for me. My daughter was raised in Grand Rapids, MI and also took this survey.  Her most likely cities are Detroit, Grand Rapids, and Rochester, IN.  Granted this is only two peoples results - but in both cases the results have high accuracy.
+
+If you have some time, take the quiz :)
+
+<B> Detail from the site </B>   
+The data for the quiz and maps shown here come from over 350,000 survey responses collected from August to October 2013 by Josh Katz, a graphics editor for the New York Times who developed this quiz and has since written “Speaking American,” a visual exploration of American regional dialects.
+
+Most of the questions used in this quiz are based on those in the Harvard Dialect Survey, a linguistics project begun in 2002 by Bert Vaux and Scott Golder. The original questions and results for that survey can be found on Dr. Vaux’s current website.
+
+### Scenario Design Analysis
+<B> Who are your target users? </B>
+Anyone and everyone who wants to have a little fun taking a quiz to academic researchers who would find this application of linguistics a good starting point for their ideas.
+
+
+<B> What are their key goals </B>
+The creator of this quiz went on to write a book called [Speaking American](https://www.amazon.com/dp/0544703391/).  On Amazon it states, "The answers to these questions—and the distinctions they reveal about who says what and where they say it—are not just the ultimate in cocktail party fodder; they are also windows into the history of our nation, our regions, and our language. On page after page, readers will be fascinated and charmed by these stunning maps of how Americans speak as they gain new insights into our language and ourselves."
+
+<B> How can you help them accomplish those goals (Recommendations) </B>
+Josh has done a fantastic job researching and building out this quiz (and related book). There aren't a lot of recommendations I can think of other than a few observations about the technology behind the quiz.  I've listed these below...
+
+1. When you start the quiz it asks you to create an account, but after taking the quiz and logging back in you can't access your original results.  Instead you need to start all over, so I recommend adding the ability to log in and view your original results.
+
+2. After taking the quiz a second time on Microsoft Edge, when I pressed submit the site got hung up.  I switched over to Chrome took the quiz for a third time and was able to get my results again.  I recommend either calling out that Edge is not a good platform for the quiz or fixing Edge to work as well as Chrome.
+

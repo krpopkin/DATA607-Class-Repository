@@ -195,7 +195,7 @@ ggarrange(hsd_scatter, fyd_scatter, aap_scatter, rc_scatter,
                     common.legend = TRUE, legend = "bottom")
 ```
 
-<B> Violin Ploat </B>   
+<B> Violin Plot </B>   
 We'll conclude this visuals section with comparisons using violin plots   
 <I> Home Values </I>
 ```{r violin-plots}
@@ -252,3 +252,8 @@ The visualizations have served their purpose of making us much more familiar wit
 Here is a summary of what's been learned so far... <br>
 1. High school education is normally distributed.<br><br>
 2. Four year degrees, wages, and home values are all right skewed (this consistency in their skew could help a model's ability to make predictions.)<br><br>3. Home values do appear to be correlated to education and wages.<br><br>4. In the violin plot we also saw that resident count in each county might be a feature worth including in a model to predict home values.<br><br>5. Overall, viewing this data by census region worked well.  The visuals definitely highlight that the Midwest is the lowest cost area and that the West and Northeast are both higher cost and a source of most of the outlier data.  This is probably what most of us would have guessed, but it's always good to see data that validates what we've already perceived or been told is true.   
+
+### References
+[This article from STHDA](http://www.sthda.com/english/wiki/ggplot2-quick-correlation-matrix-heatmap-r-software-and-data-visualization) was a huge help in generating the heatmaps.
+
+[This article from STHDA](http://www.sthda.com/english/articles/39-regression-model-diagnostics/161-linear-regression-assumptions-and-diagnostics-in-r-essentials/#diagnostic-plots) helped me analye the data's alignment to regression conditions.
